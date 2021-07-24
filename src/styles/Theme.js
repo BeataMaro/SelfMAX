@@ -19,6 +19,7 @@ const theme = {
   },
   shadows: {
     shadow1: "0 5px 20px rgba(30, 30, 31, 0.05)",
+    shadow2: "2px 2px 10px rgba(0, 0, 0, 0.5)",
   },
 }
 

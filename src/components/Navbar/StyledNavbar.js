@@ -16,7 +16,6 @@ export const StyledNavigation = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: capitalize;
   z-index: 2;
 
   @media (max-width: 768px) {

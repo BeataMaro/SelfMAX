@@ -25,6 +25,7 @@ import styled from "styled-components"
 const StyledText = styled.section`
   color: ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => theme.colors.white};
+  margin-top: 2rem;
   padding: 2rem;
   font-weight: 400;
 

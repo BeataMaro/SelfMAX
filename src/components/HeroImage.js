@@ -5,33 +5,37 @@ import { BgImage } from "gbimage-bridge"
 import styled from "styled-components"
 
 const StyledTitle = styled.div`
-  width: 30%;
+  width: 35%;
   position: absolute;
   top: 55%;
-  left: 2%;
+  left: 1rem;
   background-color: goldenrod;
   color: white;
-  padding: 0;
+  padding: 2rem;
 
   @media (max-width: 992px) {
-    width: 50%;
+    width: 55%;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -100%);
+    padding: 1rem;
   }
 
   @media (max-width: 576px) {
-    width: 70%;
+    width: 75%;
   }
 
   h1 {
+    margin: 0 2.5rem;
     text-align: center;
     letter-spacing: 3px;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.white};
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       font-size: 1.7rem;
+      margin: 1rem;
     }
   }
 `
@@ -44,7 +48,7 @@ const HeroImage = () => {
     <>
       <BgImage image={pluginImage} className="hero" preserveStackingContext>
         <StyledTitle>
-          <h1>Witaj na stronie SelfMAX!</h1>
+          <h1>Witaj na stronie SELFMAX!</h1>
         </StyledTitle>
       </BgImage>
     </>

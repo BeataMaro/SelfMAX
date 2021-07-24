@@ -56,7 +56,7 @@ export const StyledNavlist = styled.ul`
       margin-top: 3.6rem;
       top: 0;
       left: 0;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: ${({ theme }) => theme.shadows.shadow1};
       z-index: 100;
 
       & li {
