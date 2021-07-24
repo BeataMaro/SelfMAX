@@ -2,6 +2,7 @@ const theme = {
   fonts: {
     main: "Kanit, sans-serif",
     saira: "Saira Semi Condensed, sans-serif",
+    nunito: "Nunito, sans-serif",
   },
   colors: {
     main: "hsl(41, 95%, 50%)",

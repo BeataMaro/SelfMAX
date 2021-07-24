@@ -23,7 +23,7 @@ export const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
     font-family: ${({ theme }) => theme.fonts.saira};
     font-size: 16px;
-    color: '#1a202c';
+    color: ${({ theme }) => theme.colors.black};
   }
 
   main {
@@ -76,13 +76,13 @@ a {
 }
 
 .hero {
-  min-height: 80vh;
+  min-height: 90vh;
   width: 100%;
-  margin: auto;
+  margin-left: auto;
+  background-attachment: fixed;
   position: relative;
-  padding: 3rem;
-  filter: blur(3px);
-
+  margin-top: -12vh;
+  
 }
 .logo {
 

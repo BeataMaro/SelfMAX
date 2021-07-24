@@ -27,13 +27,12 @@ export const StyledNavlist = styled.ul`
     }
     .nav-item {
       color: ${({ theme }) => theme.colors.grey};
-      letter-spacing: 0.3px;
+      letter-spacing: 1.8px;
       white-space: nowrap;
       transition: all 200ms ease-in;
 
       @media (max-width: 768px) {
         text-align: center;
-        text-transform: capitalize;
         margin: 1rem 0;
         font-size: 1.5rem;
         z-index: 20;

@@ -16,9 +16,7 @@ export const StyledNavigation = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
   z-index: 2;
 
   @media (max-width: 768px) {
