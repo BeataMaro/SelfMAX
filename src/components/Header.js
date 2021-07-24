@@ -2,25 +2,25 @@ import React from "react"
 import HeroImage from "./HeroImage"
 import styled from "styled-components"
 
-const StyledTitle = styled.div`
-  width: 20%;
-  position: fixed;
-  top: 50%;
-  left: 10%;
-  transform: translate(-10%, -50%);
-  z-index: 0;
+// const StyledTitle = styled.div`
+//   width: 20%;
+//   position: fixed;
+//   top: 50%;
+//   left: 10%;
+//   transform: translate(-10%, -50%);
+//   z-index: 0;
 
-  @media (max-width: 768px) {
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-  }
+//   @media (max-width: 768px) {
+//     top: 100%;
+//     left: 50%;
+//     transform: translate(-50%, -100%);
+//   }
 
-  h1 {
-    text-align: center;
-    letter-spacing: 3px;
-  }
-`
+//   h1 {
+//     text-align: center;
+//     letter-spacing: 3px;
+//   }
+// `
 
 const StyledText = styled.section`
   color: ${({ theme }) => theme.colors.black};
@@ -37,9 +37,7 @@ const Header = () => {
   return (
     <>
       <HeroImage />
-      <StyledTitle>
-        <h1>Witaj na stronie SelfMAX!</h1>
-      </StyledTitle>
+
       <StyledText>
         <p>
           Znajdziesz tutaj zakres naszej oferty oraz przykładowe realizacje.

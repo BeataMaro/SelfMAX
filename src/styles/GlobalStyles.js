@@ -81,7 +81,7 @@ a {
   margin-left: auto;
   background-attachment: fixed;
   position: relative;
-  margin-top: -12vh;
+  margin-top: -15vh;
   
 }
 .logo {
