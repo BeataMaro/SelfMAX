@@ -36,6 +36,7 @@ export const StyledNavlist = styled.ul`
         margin: 1rem 0;
         font-size: 1.5rem;
         z-index: 20;
+        color: ${({ theme }) => theme.colors.lightGrey};
       }
     }
 

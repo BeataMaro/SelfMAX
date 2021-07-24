@@ -5,7 +5,8 @@ const theme = {
     nunito: "Nunito, sans-serif",
   },
   colors: {
-    main: "hsl(41, 95%, 50%)",
+    // main: "hsl(41, 95%, 50%)",
+    main: "goldenrod",
     grey: "hsl(0, 0%, 46%)",
     lightGrey: "hsl(0, 0%, 89%)",
     darkGrey: "hsl(40, 3%, 21%)",
