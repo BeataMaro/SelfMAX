@@ -1,7 +1,7 @@
 import React from "react"
 
 import ProductsList from "../../components/ProductsList"
-import Seo from "../../components/seo"
+import Seo from "../../components/Seo"
 
 const index = () => {
   return (

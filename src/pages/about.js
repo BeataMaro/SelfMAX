@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 
 import { Button } from "../components/atoms/Button"
-import Seo from "../components/seo"
+import Seo from "../components/Seo"
 
 const About = () => {
   const { file } = useStaticQuery(query)

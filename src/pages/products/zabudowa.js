@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Seo from "../../components/seo"
+import Seo from "../../components/Seo"
 
 const zabudowa = () => {
   return (
