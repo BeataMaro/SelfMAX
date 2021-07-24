@@ -17,12 +17,6 @@ export const StyledNavlist = styled.ul`
     transition: all 0.5s ease-in;
     margin-right: 1rem;
 
-    /* @media (max-width: 768px) {
-      margin-right: 0;
-      /* padding: 1rem; */
-    /* font-size: 0.8rem; */
-    /* }  */
-
     &:hover {
       cursor: pointer;
       & > .nav-item:not(.active-link) {

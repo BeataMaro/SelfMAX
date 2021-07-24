@@ -7,14 +7,13 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-// import { Normalize } from "styled-normalize"
 
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles } from "../styles/GlobalStyles"
 import Theme from "../styles/Theme"
 
 import Navbar from "./Navbar"
-// import Footer from "./Footer"
+import Footer from "./Footer"
 import styled from "styled-components"
 
 const StyledWrapper = styled.div`
@@ -31,6 +30,7 @@ const Layout = ({ children }) => {
       <StyledWrapper>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </StyledWrapper>
     </ThemeProvider>
   )

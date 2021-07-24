@@ -74,6 +74,16 @@ a {
   cursor: pointer;
   }
 }
+
+.hero {
+  min-height: 80vh;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding: 3rem;
+  filter: blur(3px);
+
+}
 .logo {
 
   max-width: 100%;
