@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import styled from "styled-components"
+
+import { animationMoveY } from "../styles/Animations"
 
 const StyledTitle = styled.div`
   width: 35%;
@@ -45,10 +47,15 @@ const HeroImage = () => {
   const { heroBgImage } = useStaticQuery(query)
   const pluginImage = getImage(heroBgImage)
 
+  const titleRef = useRef(null)
+  useEffect(() => {
+    animationMoveY(titleRef.current, true)
+  }, [])
+
   return (
     <>
       <BgImage image={pluginImage} className="hero" preserveStackingContext>
-        <StyledTitle>
+        <StyledTitle ref={titleRef}>
           <h1>Witaj na stronie SELFMAX!</h1>
         </StyledTitle>
       </BgImage>

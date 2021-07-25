@@ -1,18 +1,24 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 
 import { Button } from "../components/atoms/Button"
 import Seo from "../components/Seo"
+import { animationMoveX } from "../styles/Animations"
 
 const About = () => {
   const { file } = useStaticQuery(query)
   const aboutImg = getImage(file.childImageSharp)
-  console.log(aboutImg)
+
+  const sectionRef = useRef(null)
+  useEffect(() => {
+    animationMoveX(sectionRef.current, true)
+  }, [])
+
   return (
     <>
       <Seo title="o nas" />
-      <section>
+      <section ref={sectionRef}>
         <h2 className="section-title">O nas</h2>
         <p>
           Selfmax doskonali się w montażu zadaszeń aluminiowych od 2001 roku. Ze

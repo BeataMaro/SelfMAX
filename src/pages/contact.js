@@ -1,5 +1,5 @@
-import React from "react"
-// import React, { useEffect, useRef } from "react"
+// import React from "react"
+import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import { FormspreeProvider } from "@formspree/react"
 // import { animationMoveY } from "../styles/Animation"
@@ -8,6 +8,7 @@ import { FormspreeProvider } from "@formspree/react"
 // import Map from "../components/Map"
 import Seo from "../components/Seo"
 import ContactForm from "../components/ContactForm"
+import { animationMoveX } from "../styles/Animations"
 
 const StyledContactPage = styled.div`
   display: grid;
@@ -34,15 +35,15 @@ const StyledContactPage = styled.div`
 `
 
 const Contact = () => {
-  //   const sectionRef = useRef(null)
-  //   useEffect(() => {
-  //     animationMoveY(sectionRef.current, true)
-  //   }, [])
+  const sectionRef = useRef(null)
+  useEffect(() => {
+    animationMoveX(sectionRef.current, true)
+  }, [])
 
   return (
     <>
       <Seo title="Kontakt" />
-      <section>
+      <section ref={sectionRef}>
         <h2 className="section-title">Kontakt</h2>
         <StyledContactPage>
           <article>
