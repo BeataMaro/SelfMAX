@@ -45,7 +45,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   ::selection {
   background-color: ${({ theme }) => theme.colors.grey};
-  color: ${({ theme }) => theme.colors.green};
+  color: ${({ theme }) => theme.colors.success};
 }
 
  ::placeholder {

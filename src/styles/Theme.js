@@ -11,7 +11,7 @@ const theme = {
     lightGrey: "hsl(0, 0%, 89%)",
     darkGrey: "hsl(40, 3%, 21%)",
     greenGrey: "hsl(183, 10%, 64%)",
-    green: "hsl(90, 70%, 35%)",
+    success: "hsl(90, 70%, 35%)",
     darkGreen: "hsl(91, 78%, 12%)",
     white: "hsl(0, 0%, 97%)",
     black: "hsl(0, 0%, 18%)",
