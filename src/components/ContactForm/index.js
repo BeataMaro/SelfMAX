@@ -11,8 +11,6 @@ const ContactForm = () => {
       <form
         className="kwes-form"
         action={`https://kwes.io/api/foreign/forms/${process.env.KWES_KEY}`}
-        no-success-message
-        no-error-message
       >
         <label htmlFor="name">Imię</label>
         <input type="text" name="name" rules="max:255" />
