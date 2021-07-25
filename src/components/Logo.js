@@ -8,7 +8,6 @@ export default function Logo() {
       <StaticImage
         src="../assets/selfMAX-logo.png"
         alt="Logo selfMAX"
-        // style={{ width: "100px", maxWidth: "100%" }}
         className="logo"
       />
     </Link>

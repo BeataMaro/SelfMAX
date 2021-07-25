@@ -8,13 +8,14 @@ const StyledTitle = styled.div`
   width: 35%;
   position: absolute;
   top: 55%;
-  left: 1rem;
+  left: 7rem;
+  /* transform: translate(-20%, -55%); */
   background-color: goldenrod;
   color: white;
   padding: 2rem;
 
   @media (max-width: 992px) {
-    width: 55%;
+    width: 60%;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -100%);

@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}` || `.env`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -80,6 +83,19 @@ module.exports = {
       options: {
         name: `products`,
         path: `${__dirname}/src/assets/products/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `SelfMAX`,
+        short_name: `SelfMAX`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: "standalone",
+        icon: "src/assets/selfMAX-logo.png", // This path is relative to the root of the site.
+        crossOrigin: `use-credentials`,
       },
     },
   ],

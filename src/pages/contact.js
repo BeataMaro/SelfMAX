@@ -9,6 +9,8 @@ import styled from "styled-components"
 // import Map from "../components/Map"
 import Seo from "../components/Seo"
 
+import ContactForm from "../components/ContactForm"
+
 const StyledContactPage = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -46,6 +48,7 @@ const Contact = () => {
         <h2 className="section-title">Kontakt</h2>
         <StyledContactPage>
           <article>
+            <ContactForm />
             {/* <FormspreeProvider project="1723153946022771743">
               <ContactForm />
             </FormspreeProvider> */}
