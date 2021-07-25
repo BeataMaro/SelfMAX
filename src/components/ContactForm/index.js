@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react"
+import { Link } from "gatsby"
 import { useForm, ValidationError } from "@formspree/react"
 import styled from "styled-components"
 
@@ -34,7 +35,7 @@ const ContactForm = () => {
         <textarea
           id="message"
           name="message"
-          rows="10"
+          rows="5"
           cols="10"
           maxLength="250"
         />
@@ -43,9 +44,20 @@ const ContactForm = () => {
           field="message"
           errors={state.errors}
         />
-        <Button type="submit" disabled={state.submitting}>
+        <div style={{ display: "flex" }}>
+          <input type="checkbox" name="terms" />
+          <label htmlFor="terms">
+            Zapoznałam/łem się z informacją o
+            <Link to="/terms">
+              <span>administratorze i przetwarzaniu danych</span>
+            </Link>
+            .
+          </label>
+        </div>
+        <Button type="submit" disabled={state.submitting} empty>
           Wyślij
         </Button>
+
         <StyledInfo>
           <p>Wiadomość wysłana pomyślnie.</p>
           <p>Dziękujemy!</p>
@@ -72,6 +84,16 @@ const ContactForm = () => {
         maxLength="250"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
+      <div style={{ display: "flex" }}>
+        <input type="checkbox" name="terms" />
+        <label htmlFor="terms">
+          Zapoznałam/łem się z informacją o
+          <Link to="/terms">
+            <span>administratorze i przetwarzaniu danych</span>
+          </Link>
+          .
+        </label>
+      </div>
       <Button type="submit" disabled={state.submitting}>
         Wyślij
       </Button>

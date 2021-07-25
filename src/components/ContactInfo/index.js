@@ -40,7 +40,9 @@ const ContactInfo = () => {
   return (
     <article>
       <StyledInfo>
-        {/* <strong>Dariusz Łakomski</strong> */}
+        <h3>
+          Skontaktuj się z nami wypełniając formularz kontaktowy lub zadzwoń
+        </h3>
         <StyledIcon>
           <FontAwesomeIcon icon={faMobileAlt} />
         </StyledIcon>
