@@ -2,18 +2,19 @@
 import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import { FormspreeProvider } from "@formspree/react"
-// import { animationMoveY } from "../styles/Animation"
 
-// import ContactInfo from "../components/ContactInfo"
-// import Map from "../components/Map"
+import ContactInfo from "../components/ContactInfo"
+import Map from "../components/Map"
 import Seo from "../components/Seo"
 import ContactForm from "../components/ContactForm"
 import { animationMoveX } from "../styles/Animations"
 
 const StyledContactPage = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  border: 1px solid green;
 
   article {
     @media (max-width: 768px) {
@@ -51,10 +52,12 @@ const Contact = () => {
               <ContactForm />
             </FormspreeProvider>
           </article>
-          <article></article>
-          <article></article>
-          {/* <ContactInfo /> */}
-          {/* <Map /> */}
+          <article>
+            <ContactInfo />
+          </article>
+          <article>
+            <Map />
+          </article>
         </StyledContactPage>
       </section>
     </>

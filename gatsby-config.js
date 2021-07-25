@@ -61,6 +61,11 @@ module.exports = {
         link: `/contact`,
         submenu: [],
       },
+      {
+        name: `+48 503 696 926`,
+        link: `/contact`,
+        submenu: [],
+      },
     ],
   },
   plugins: [

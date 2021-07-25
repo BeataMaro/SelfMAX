@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 :root {
   --nav-height: 50px;
   scroll-padding-top: calc(var(--nav-height) + 10px);
-  scroll-padding-top: 60px;
+  scroll-padding-top: 12vh;
 
 }
 
@@ -29,14 +29,6 @@ export const GlobalStyles = createGlobalStyle`
   main {
     flex: 1 0 auto;
   }
-
-  /* #gatsby-focus-wrapper {
-  
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } */
   body {
 
     line-height: 1.5;
@@ -52,14 +44,12 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.greenGrey};
   }
 
-  section, header {
-  
+  section, header { 
   max-width: 1400px;
-  min-height: 70vh;
   background-color: ${({ theme }) => theme.colors.white};
   border: .5px solid ${({ theme }) => theme.colors.lightGrey};
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   }
 ul {
   list-style: none;
@@ -76,12 +66,11 @@ a {
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
-  margin-left: auto;
   background-attachment: fixed;
   position: relative;
-  margin-top: -15vh;
+  /* clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%); */
   
 }
 .logo {
@@ -92,6 +81,8 @@ a {
 
   @media (max-width: 768px) {
     width: 5.5rem;
+    z-index: 100;
+  
   }
   
 }

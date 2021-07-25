@@ -14,12 +14,12 @@ const theme = {
     success: "hsl(90, 70%, 35%)",
     darkGreen: "hsl(91, 78%, 12%)",
     white: "hsl(0, 0%, 97%)",
-    black: "hsl(0, 0%, 18%)",
+    black: "hsl(0, 0%, 10%)",
     brown: "hsl(0, 20%, 40%)",
   },
   shadows: {
     shadow1: "0 5px 20px rgba(30, 30, 31, 0.05)",
-    shadow2: "2px 2px 10px rgba(0, 0, 0, 0.5)",
+    shadow2: "1px 1px 2px rgba(0, 0, 0, 0.5)",
   },
 }
 

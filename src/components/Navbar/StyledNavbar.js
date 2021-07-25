@@ -1,11 +1,4 @@
 import styled from "styled-components"
-// import styled, { createGlobalStyle } from "styled-components"
-
-// export const ModalStyles = createGlobalStyle`
-//   body {
-//     overflow-y: scroll;
-//   }
-// `
 
 export const StyledNavigation = styled.nav`
   position: sticky;
@@ -16,9 +9,10 @@ export const StyledNavigation = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 2;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     width: 100%;
     position: sticky;
     top: 0;
@@ -26,6 +20,7 @@ export const StyledNavigation = styled.nav`
     right: 0;
     bottom: 0;
     padding: 0 1rem 0 0;
+    overflow: hidden;
   }
 `
 //hamburger icon
@@ -35,7 +30,7 @@ export const Toggle = styled.div`
   cursor: pointer;
   z-index: 200;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     display: flex;
   }
 `
@@ -44,15 +39,19 @@ export const Navbox = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     width: 100%;
     max-height: 100vh;
-    height: 40%;
+    height: 30%;
     transition: all 0.35s linear;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: ${({ theme }) => theme.colors.black};
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  @media (max-width: 768px) {
+    height: 40%;
   }
   &[open] {
     top: -100%;

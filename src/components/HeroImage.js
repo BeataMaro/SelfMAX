@@ -67,9 +67,9 @@ export default HeroImage
 
 export const query = graphql`
   {
-    heroBgImage: file(relativePath: { eq: "hero/poliweglan-hero.png" }) {
+    heroBgImage: file(relativePath: { eq: "hero/hero.png" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, width: 2000)
+        gatsbyImageData(placeholder: BLURRED, width: 4000)
       }
     }
   }
