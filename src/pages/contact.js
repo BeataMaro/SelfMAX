@@ -1,14 +1,12 @@
 import React from "react"
 // import React, { useEffect, useRef } from "react"
-// import ContactForm from "../components/ContactForm/ContactForm"
 import styled from "styled-components"
-// import { FormspreeProvider } from "@formspree/react"
+import { FormspreeProvider } from "@formspree/react"
 // import { animationMoveY } from "../styles/Animation"
 
 // import ContactInfo from "../components/ContactInfo"
 // import Map from "../components/Map"
 import Seo from "../components/Seo"
-
 import ContactForm from "../components/ContactForm"
 
 const StyledContactPage = styled.div`
@@ -48,10 +46,9 @@ const Contact = () => {
         <h2 className="section-title">Kontakt</h2>
         <StyledContactPage>
           <article>
-            <ContactForm />
-            {/* <FormspreeProvider project="1723153946022771743">
+            <FormspreeProvider project="1730305811177012389">
               <ContactForm />
-            </FormspreeProvider> */}
+            </FormspreeProvider>
           </article>
           <article></article>
           <article></article>

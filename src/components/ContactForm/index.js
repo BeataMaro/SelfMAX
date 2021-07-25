@@ -1,34 +1,80 @@
-import React, { useEffect } from "react"
-import kwesforms from "kwesforms"
+import React from "react"
+import { useForm, ValidationError } from "@formspree/react"
+
+import { StyledForm } from "./StyledContactForm"
+import { Button } from "../atoms/Button"
 
 const ContactForm = () => {
-  useEffect(() => {
-    kwesforms.init()
-  }, [])
+  const [state, handleSubmit] = useForm("ContactSelfMAX")
 
+  if (state.succeeded) {
+    return <p style={{ color: "teal" }}>Dziękujemy!</p>
+  }
+
+  //   if (state.succeeded) {
+  //     return (
+  //       <StyledForm onSubmit={handleSubmit} autocomplete="off">
+  //         <label htmlFor="name">Imię</label>
+  //         <input id="name" type="text" name="name" />
+
+  //         <label htmlFor="email">Adres e-mail</label>
+  //         <input id="email" type="email" name="email" />
+  //         <ValidationError prefix="Email" field="email" errors={state.errors} />
+  //         <label htmlFor="phone">Numer telefonu</label>
+  //         <input id="phone" type="numeric" name="phone" />
+  //         <ValidationError
+  //           style={{ color: "orangered" }}
+  //           prefix="Phone"
+  //           field="phone"
+  //           errors={state.errors}
+  //         />
+
+  //         <label htmlFor="message">Wiadomość</label>
+  //         <textarea
+  //           id="message"
+  //           name="message"
+  //           rows="10"
+  //           cols="10"
+  //           maxLength="250"
+  //         />
+  //         <ValidationError
+  //           prefix="Message"
+  //           field="message"
+  //           errors={state.errors}
+  //         />
+
+  //         <p style={{ color: "teal" }}>
+  //           Wiadomość wysłana pomyślnie. Dziękujemy!
+  //         </p>
+  //         <Button empty type="submit" disabled={state.submitting}>
+  //           Wyślij
+  //         </Button>
+  //       </StyledForm>
+  //     )
+  //   }
   return (
-    <div>
-      <form
-        className="kwes-form"
-        action={`https://kwes.io/api/foreign/forms/${process.env.KWES_KEY}`}
-      >
-        <label htmlFor="name">Imię</label>
-        <input type="text" name="name" rules="max:255" />
-        <label htmlFor="email">Adres e-mail</label>
-        <input type="email" name="email" rules="required|email" />
-        <label htmlFor="phone">Numer telefonu</label>
-        <input type="text" name="phone" rules="numeric" />
-        <label htmlFor="message">Wiadomość</label>
-        <textarea name="message" rules="max: 500" />
-        <button type="submit">Wyślij</button>
-
-        <input type="checkbox" name="terms" rules="accepted" />
-        <label htmlFor="terms">
-          Zapoznałem/łam się z informacją o administratorze i przetwarzaniu
-          danych.
-        </label>
-      </form>
-    </div>
+    <StyledForm onSubmit={handleSubmit}>
+      <label htmlFor="name">Imię</label>
+      <input id="name" type="text" name="name" />
+      <label htmlFor="email">Adres e-mail</label>
+      <input id="email" type="email" name="email" />
+      <ValidationError prefix="Email" field="email" errors={state.errors} />
+      <label htmlFor="phone">Numer telefonu</label>
+      <input id="phone" type="numeric" name="phone" />
+      <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+      <label htmlFor="message">Wiadomość</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="10"
+        cols="10"
+        maxLength="250"
+      />
+      <ValidationError prefix="Message" field="message" errors={state.errors} />
+      <Button type="submit" disabled={state.submitting}>
+        Wyślij
+      </Button>
+    </StyledForm>
   )
 }
 

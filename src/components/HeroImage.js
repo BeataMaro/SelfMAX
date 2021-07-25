@@ -32,7 +32,7 @@ const StyledTitle = styled.div`
     letter-spacing: 3px;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.white};
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
 
     @media (max-width: 768px) {
       font-size: 1.7rem;
