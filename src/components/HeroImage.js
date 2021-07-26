@@ -18,7 +18,7 @@ const StyledTitle = styled.div`
 
   @media (max-width: 992px) {
     width: 60%;
-    top: 100%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -100%);
     padding: 1rem;

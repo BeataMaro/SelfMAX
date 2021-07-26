@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
 
-import { StyledNavlist, StyledIcon } from "./StyledNavbarLinks"
+import { StyledNavlist } from "./StyledVerticalNavLinks"
 
 const NavbarLinks = ({ toggleMenu }) => {
   const { site } = useStaticQuery(query)
@@ -49,7 +49,7 @@ const NavbarLinks = ({ toggleMenu }) => {
           </li>
         ))}
       </StyledNavlist>
-      <StyledIcon>
+      {/* <StyledIcon>
         <a
           href="https://www.facebook.com/SelfmaxPolska"
           target="_blank"
@@ -57,7 +57,7 @@ const NavbarLinks = ({ toggleMenu }) => {
         >
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
-      </StyledIcon>
+      </StyledIcon> */}
     </>
   )
 }

@@ -2,40 +2,51 @@ import styled from "styled-components"
 
 export const StyledNavlist = styled.ul`
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
 
   @media (max-width: 768px) {
-    flex-direction: column;
     text-align: center;
   }
 
   li {
     position: relative;
     width: 100%;
+    border: 1px solid ${({ theme }) => theme.colors.lightGrey};
+    border-bottom: none;
     transition: all 0.5s ease-in;
-    margin-right: 0.6rem;
 
     @media (max-width: 768px) {
       margin-top: 1rem;
+      padding: 0.5rem;
+      border: none;
     }
 
     &:hover {
-      cursor: pointer;
+      @media (max-width: 768px) {
+        & > .nav-item {
+          border: 1px solid ${({ theme }) => theme.colors.lightGrey};
+          border-bottom: none;
+          padding: 0.5rem;
+        }
+      }
       & > .nav-item:not(.active-link) {
         color: ${({ theme }) => theme.colors.main};
       }
     }
     .nav-item {
+      width: 100%;
       color: ${({ theme }) => theme.colors.lightGrey};
       letter-spacing: 1px;
       white-space: nowrap;
       transition: all 200ms ease-in;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
+
       /* text-shadow: ${({ theme }) => theme.shadows.shadow2}; */
 
       @media (max-width: 768px) {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 0.5rem;
         z-index: 500;
       }
     }
@@ -52,16 +63,16 @@ export const StyledNavlist = styled.ul`
       opacity: 0;
       display: none;
       position: absolute;
-      transition: all 0.5s ease;
-      margin-top: 3.6rem;
+      margin-left: 100%;
       top: 0;
       left: 0;
       box-shadow: ${({ theme }) => theme.shadows.shadow1};
+      transition: all 0.5s ease;
       z-index: 3000;
 
       & li {
         transition: 0.5s ease;
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
 
         .nav-item {
           display: block;
@@ -84,15 +95,5 @@ export const StyledNavlist = styled.ul`
         display: block;
       }
     }
-  }
-`
-
-export const StyledIcon = styled.div`
-  color: white;
-  background-color: ${({ theme }) => theme.colors.main};
-  padding: 10px;
-  border-radius: 10px;
-  @media (max-width: 768px) {
-    display: none;
   }
 `

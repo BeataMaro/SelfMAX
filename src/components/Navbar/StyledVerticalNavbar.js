@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 export const StyledNavigation = styled.nav`
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: 100%;
-  padding: 0 2rem 0 1rem;
-  height: 12vh;
+  left: 0;
+  height: 60vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   /* background-color: rgba(0, 0, 0, 0.9); */
@@ -14,6 +14,9 @@ export const StyledNavigation = styled.nav`
 
   @media (max-width: 992px) {
     width: 100%;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     left: 0;

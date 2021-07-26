@@ -13,6 +13,7 @@ import { GlobalStyles } from "../styles/GlobalStyles"
 import Theme from "../styles/Theme"
 
 import Navbar from "./Navbar"
+import ContactCorner from "./ContactCorner"
 import Footer from "./Footer"
 import styled from "styled-components"
 
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <StyledWrapper>
         <Navbar />
+        <ContactCorner />
         <main>{children}</main>
         <Footer />
       </StyledWrapper>

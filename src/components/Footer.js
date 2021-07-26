@@ -3,10 +3,12 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   margin-top: auto;
   background-color: transparent;
   color: lightgray;
-  padding: 1rem 3rem;
+  padding: 1rem;
 
   & p {
     color: ${({ theme }) => theme.colors.grey};
@@ -20,9 +22,8 @@ const StyledFooter = styled.footer`
 export const Footer = () => {
   return (
     <StyledFooter>
-      <p>&copy; Copyright 2021</p>
+      <p>&copy; 2021 SelfMAX. Wszelkie prawa zastrzeżone.</p>
       <p>
-        Images:{" "}
         <a
           href="https:www.unsplash.com"
           rel="noreferrer"
@@ -32,26 +33,7 @@ export const Footer = () => {
           www.unsplash.com
         </a>
       </p>
-      <p>
-        Icons:{" "}
-        <a
-          href="https://www.freepik.com"
-          rel="noreferrer"
-          title="Freepik"
-          target="_blank"
-        >
-          Freepik
-        </a>{" "}
-        from{" "}
-        <a
-          href="https://www.flaticon.com/"
-          rel="noreferrer"
-          title="Flaticon"
-          target="_blank"
-        >
-          www.flaticon.com
-        </a>
-      </p>
+      <p>Powered by Beta</p>
     </StyledFooter>
   )
 }

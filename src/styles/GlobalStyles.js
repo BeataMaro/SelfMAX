@@ -67,21 +67,26 @@ a {
 
 .hero {
   min-height: 100vh;
-  width: 100%;
+  margin-top: -12vh;
+  width: 80%;
+  margin-left: auto;
   background-attachment: fixed;
   position: relative;
   /* clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%); */
   
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+  
 }
 .logo {
-
   max-width: 100%;
-  width: 6rem;
+  width: 5.2rem;
   max-height: 15vh;
+  z-index: 100;
 
-  @media (max-width: 768px) {
-    width: 5.5rem;
-    z-index: 100;
+  @media (max-width: 992px) {
+    width: 5rem;
   
   }
   
@@ -103,5 +108,33 @@ a {
 max-width: 100%;
 width: 600px;
 }
+
+.error {
+  color: ${({ theme }) => theme.colors.main};
+  white-space: pre-line;
+}
+
+.checkboxInpt {
+  margin-right: 1rem;
+}
+
+/* .checkboxInpt {
+  position: relative;
+  visibility: hidden;
+
+  &::checked {
+
+  }
+  &::after {
+    visibility: visible;
+    position: absolute;
+    top:0;
+    left: 0;
+    content: "o";
+    width: 10px;
+    height: 10px;
+    background: red;
+  }
+} */
 
 `
