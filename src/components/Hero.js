@@ -3,36 +3,17 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const StyledHero = styled.div`
-  width: 75%;
-  margin-top: -12vh;
-  margin-left: auto;
+  position: relative;
+  display: flex;
 
-  @media (max-width: 992px) {
-    width: 100%;
-  }
-`
-
-const StyledTitle = styled.h1`
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  text-align: center;
-  width: 20%;
-  background-color: ${({ theme }) => theme.colors.main};
-  /* font-family: ${({ theme }) => theme.fonts.dodum}; */
-  font-weight: 400;
-  text-shadow: ${({ theme }) => theme.shadows.shadow2};
-  color: ${({ theme }) => theme.colors.black};
-  padding: 1rem;
-
-  @media (max-width: 992px) {
-    width: 50%;
-    top: 50%;
-    left: 10%;
-  }
-  @media (max-width: 768px) {
-    width: 70%;
-    top: 30%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 `
 
@@ -41,12 +22,17 @@ const Hero = () => {
     <>
       <StyledHero>
         <StaticImage
-          src="../assets/hero/hero.png"
+          src="../assets/hero/hero1.jpg"
           alt=""
           placeholder="blurred"
           className="hero-image"
         />
-        {/* <StyledTitle>Witaj na stronie SelfMAX!</StyledTitle> */}
+        <StaticImage
+          src="../assets/hero/hero2.jpg"
+          alt=""
+          placeholder="blurred"
+          className="hero-image"
+        />
       </StyledHero>
     </>
   )

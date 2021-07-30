@@ -6,20 +6,11 @@ export const StyledNavigation = styled.nav`
   width: 100%;
   padding: 0 1rem;
   height: 12vh;
+  background-color: ${({ theme }) => theme.colors.white};
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 4000;
-
-  @media (max-width: 768px) {
-    padding: 0;
-    background-image: linear-gradient(
-      to right,
-      transparent,
-      75%,
-      ${({ theme }) => theme.colors.black} 25%
-    );
-  }
 `
 //hamburger icon
 export const Toggle = styled.div`
@@ -45,7 +36,8 @@ export const Navbox = styled.div`
     position: fixed;
     top: 0;
     right: 0;
-    background-color: hsla(229, 30%, 21%, 0.99);
+    /* background-color: hsla(229, 30%, 21%, 0.99); */
+    background-color: ${({ theme }) => theme.colors.main};
   }
 
   @media (max-width: 768px) {

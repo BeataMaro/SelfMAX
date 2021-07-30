@@ -63,11 +63,7 @@ a {
 }
 
 .hero-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* bottom: 0; */
-
+  max-width: 100%;
 }
 
 .logo {
@@ -82,6 +78,7 @@ a {
 }
 
 .section-title {
+  margin-top: 3rem;
   width: 100%;
   color: ${({ theme }) => theme.colors.black};
   border-bottom: .5px solid ${({ theme }) => theme.colors.lightGrey};

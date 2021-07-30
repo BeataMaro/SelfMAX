@@ -1,12 +1,17 @@
 import styled from "styled-components"
 
 export const StyledTop = styled.div`
+  position: fixed;
   width: 100%;
-  position: sticky;
-  top: 0;
-
-  background-color: rgba(255, 255, 255, 0.4);
+  top: 12vh;
+  right: 0;
+  background-color: white;
   padding: 1rem 2rem;
+  z-index: 1000;
+
+  @media (max-width: 768px) {
+    padding: 0.2rem 1rem;
+  }
 `
 
 export const StyledIcons = styled.div`
@@ -14,7 +19,6 @@ export const StyledIcons = styled.div`
   color: ${({ theme }) => theme.colors.black};
   display: flex;
   justify-content: flex-end;
-  z-index: 200;
 
   .phone,
   .facebook {

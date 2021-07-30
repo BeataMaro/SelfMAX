@@ -30,7 +30,7 @@ export const StyledNavlist = styled.ul`
 
     &:hover {
       & > .nav-item:not(.active-link) {
-        color: ${({ theme }) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.black};
       }
     }
     .nav-item {
@@ -43,7 +43,7 @@ export const StyledNavlist = styled.ul`
       @media (max-width: 992px) {
         font-size: 1.4rem;
         z-index: 500;
-        color: ${({ theme }) => theme.colors.lightGrey};
+        color: ${({ theme }) => theme.colors.black};
       }
     }
 
@@ -72,11 +72,10 @@ export const StyledNavlist = styled.ul`
         border-bottom: 0.2px solid ${({ theme }) => theme.colors.lightGrey};
 
         &:hover {
-          background-color: ${({ theme }) => theme.colors.lightGrey};
+          background-color: white;
           border: 0.2px solid ${({ theme }) => theme.colors.lightGrey};
           border-left: 0.2px solid transparent;
           border-right: 0.2px solid transparent;
-          box-shadow: ${({ theme }) => theme.shadows.shadow1};
         }
 
         .nav-item {

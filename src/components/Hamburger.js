@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 const Hamburger = styled.div`
-  background-color: ${({ theme }) => theme.colors.grey};
+  background-color: ${({ theme }) => theme.colors.black};
   width: 60px;
-  height: 0.2rem;
+  height: 0.3rem;
   border-radius: 40px;
   transition: all 0.3s linear;
   align-self: center;
@@ -24,9 +24,9 @@ const Hamburger = styled.div`
   ::after {
     position: absolute;
     content: "";
-    height: 0.2rem;
+    height: 0.3rem;
     border-radius: 40px;
-    background-color: ${({ theme }) => theme.colors.grey};
+    background-color: ${({ theme }) => theme.colors.black};
     transition: all 0.3s linear;
   }
 

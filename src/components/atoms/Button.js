@@ -18,7 +18,7 @@ export const Button = styled.button`
   cursor: pointer;
   position: relative;
 
-  &::before,
+  /* &::before,
   &::after {
     content: "";
     position: absolute;
@@ -26,7 +26,7 @@ export const Button = styled.button`
     width: 50%;
     height: 20px;
     background-color: ${({ empty }) =>
-      empty ? "transparent" : "rgba(0, 0, 0, 0.3)"};
+    empty ? "transparent" : "rgba(0, 0, 0, 0.3)"};
     transition: all 0.25s ease-in;
     filter: blur(5px);
     z-index: -1;
@@ -49,7 +49,7 @@ export const Button = styled.button`
   }
   &:hover::after {
     background-color: rgba(0, 0, 0, 0.7);
-  }
+  } */
 
   &:hover {
     background-color: ${({ empty, theme }) =>

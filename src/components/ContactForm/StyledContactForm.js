@@ -52,6 +52,7 @@ export const StyledTerms = styled.div`
   align-items: center;
   a {
     color: ${({ theme }) => theme.colors.main};
+    margin-left: 4px;
   }
 `
 
