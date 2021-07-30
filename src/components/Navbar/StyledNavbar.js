@@ -4,22 +4,21 @@ export const StyledNavigation = styled.nav`
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 0 2rem 0 0;
+  padding: 0 1rem;
   height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.darkGrey};
-  z-index: 2;
+  z-index: 4000;
 
-  @media (max-width: 992px) {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+  @media (max-width: 768px) {
+    padding: 0;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      75%,
+      ${({ theme }) => theme.colors.black} 25%
+    );
   }
 `
 //hamburger icon
@@ -27,10 +26,11 @@ export const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  z-index: 200;
+  z-index: 5000;
 
   @media (max-width: 992px) {
     display: flex;
+    margin-right: 1rem;
   }
 `
 export const Navbox = styled.div`
@@ -40,13 +40,12 @@ export const Navbox = styled.div`
 
   @media (max-width: 992px) {
     width: 100%;
-    max-height: 100vh;
     height: 30%;
     transition: all 0.35s linear;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: hsla(229, 30%, 21%, 0.99);
   }
 
   @media (max-width: 768px) {

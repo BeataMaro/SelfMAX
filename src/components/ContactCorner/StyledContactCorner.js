@@ -11,7 +11,6 @@ export const StyledTop = styled.div`
 
 export const StyledIcons = styled.div`
   margin-left: auto;
-  /* width: 30%; */
   color: ${({ theme }) => theme.colors.black};
   display: flex;
   justify-content: flex-end;
@@ -24,7 +23,6 @@ export const StyledIcons = styled.div`
   }
 
   @media (max-width: 768px) {
-    /* display: none; */
     width: 100%;
     justify-content: flex-end;
     padding: 1rem;

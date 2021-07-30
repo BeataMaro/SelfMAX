@@ -22,7 +22,7 @@ const StyledTitle = styled.h1`
   /* font-family: ${({ theme }) => theme.fonts.dodum}; */
   font-weight: 400;
   text-shadow: ${({ theme }) => theme.shadows.shadow2};
-  color: white;
+  color: ${({ theme }) => theme.colors.black};
   padding: 1rem;
 
   @media (max-width: 992px) {
@@ -46,7 +46,7 @@ const Hero = () => {
           placeholder="blurred"
           className="hero-image"
         />
-        <StyledTitle>Witaj na stronie SelfMAX!</StyledTitle>
+        {/* <StyledTitle>Witaj na stronie SelfMAX!</StyledTitle> */}
       </StyledHero>
     </>
   )

@@ -18,10 +18,8 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   html {
-    
-    box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: ${({ theme }) => theme.fonts.saira};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     font-size: 16px;
     color: ${({ theme }) => theme.colors.black};
   }
@@ -33,7 +31,6 @@ export const GlobalStyles = createGlobalStyle`
 
     line-height: 1.5;
     letter-spacing: 0;
-    /* overflow: hidden; */
   }
   ::selection {
   background-color: ${({ theme }) => theme.colors.grey};
@@ -66,34 +63,22 @@ a {
 }
 
 .hero-image {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* bottom: 0; */
+
 }
 
-/* .hero {
-  min-height: 100vh;
-  margin-top: -12vh;
-  width: 80%;
-  margin-left: auto;
-  background-attachment: fixed;
-  position: relative;
-  /* clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%); */
-  
-  /* @media (max-width: 992px) { */
-    /* width: 100%; */
-  /* }  */
-  
-/* } */
 .logo {
   max-width: 100%;
   width: 5.2rem;
   max-height: 15vh;
-  z-index: 100;
+  z-index: 3000;
 
   @media (max-width: 992px) {
-    width: 5rem;
-  
+    width: 5rem; 
   }
-  
 }
 
 .section-title {
@@ -115,7 +100,7 @@ width: 600px;
 }
 
 .error {
-  color: ${({ theme }) => theme.colors.main};
+  color: ${({ theme }) => theme.colors.error};
   white-space: pre-line;
 }
 

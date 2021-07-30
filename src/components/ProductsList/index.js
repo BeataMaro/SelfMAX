@@ -19,9 +19,11 @@ const ProductsList = () => {
   return (
     <>
       {edges.map(({ node }) => (
-        <Link to={node.base.substr(0, node.base.lastIndexOf("."))}>
+        <Link
+          to={node.base.substr(0, node.base.lastIndexOf("."))}
+          key={node.id}
+        >
           <GatsbyImage
-            key={node.id}
             image={node?.childrenImageSharp[0]?.gatsbyImageData}
             alt=""
           />

@@ -33,7 +33,7 @@ const StyledTitle = styled.div`
     text-align: center;
     letter-spacing: 3px;
     font-weight: 500;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.navy};
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
 
     @media (max-width: 768px) {
@@ -55,9 +55,9 @@ const HeroImage = () => {
   return (
     <>
       <BgImage image={pluginImage} className="hero" preserveStackingContext>
-        <StyledTitle ref={titleRef}>
+        {/* <StyledTitle ref={titleRef}>
           <h1>Witaj na stronie SELFMAX!</h1>
-        </StyledTitle>
+        </StyledTitle> */}
       </BgImage>
     </>
   )

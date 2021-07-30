@@ -6,9 +6,10 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.colors.black};
   color: lightgray;
   padding: 1rem;
+  z-index: 5000;
 
   & p {
     color: ${({ theme }) => theme.colors.grey};
@@ -24,16 +25,15 @@ export const Footer = () => {
     <StyledFooter>
       <p>&copy; 2021 SelfMAX. Wszelkie prawa zastrzeżone.</p>
       <p>
+        Powered by{" "}
         <a
-          href="https:www.unsplash.com"
-          rel="noreferrer"
-          title="Unsplash"
+          href="https://beatamaro-portfolio.netlify.app"
           target="_blank"
+          rel="noreferrer"
         >
-          www.unsplash.com
+          Beta
         </a>
       </p>
-      <p>Powered by Beta</p>
     </StyledFooter>
   )
 }
