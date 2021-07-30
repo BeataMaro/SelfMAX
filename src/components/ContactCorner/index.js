@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
 
-import { StyledIcons } from "./StyledContactCorner.js"
+import { StyledTop, StyledIcons } from "./StyledContactCorner.js"
 
 const ContactCorner = () => {
   return (
-    <div>
+    <StyledTop>
       <StyledIcons>
         <Link to="/contact">
           <p className="phone">+48 503 696 926</p>
@@ -20,7 +20,7 @@ const ContactCorner = () => {
           <FontAwesomeIcon icon={faFacebookF} className="facebook" />
         </a>
       </StyledIcons>
-    </div>
+    </StyledTop>
   )
 }
 

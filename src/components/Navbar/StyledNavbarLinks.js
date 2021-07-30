@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
 export const StyledNavlist = styled.ul`
+  /* background-color: pink;*/
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     flex-direction: column;
     text-align: center;
   }
@@ -13,30 +14,38 @@ export const StyledNavlist = styled.ul`
   li {
     position: relative;
     width: 100%;
+    border: 1px solid transparent;
+    border-bottom: none;
     transition: all 0.5s ease-in;
-    margin-right: 0.6rem;
 
     @media (max-width: 768px) {
       margin-top: 1rem;
+
+      &:hover {
+        border: 1px solid ${({ theme }) => theme.colors.lightGrey};
+        border-bottom: none;
+      }
     }
 
     &:hover {
       cursor: pointer;
       & > .nav-item:not(.active-link) {
-        color: ${({ theme }) => theme.colors.main};
+        color: white;
+        /* color: ${({ theme }) => theme.colors.main}; */
       }
     }
     .nav-item {
       color: ${({ theme }) => theme.colors.lightGrey};
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       white-space: nowrap;
-      transition: all 200ms ease-in;
+      transition: all 0.2s ease-in;
       font-size: 1.1rem;
       /* text-shadow: ${({ theme }) => theme.shadows.shadow2}; */
 
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         font-size: 1.4rem;
         z-index: 500;
+        /* padding: 3rem; */
       }
     }
 
@@ -47,21 +56,26 @@ export const StyledNavlist = styled.ul`
     /* submenu style */
     & > ul {
       visibility: hidden;
-      background-color: ${({ theme }) => theme.colors.black};
+      background-color: ${({ theme }) => theme.colors.darkGrey};
       color: ${({ theme }) => theme.colors.grey};
       opacity: 0;
       display: none;
       position: absolute;
       transition: all 0.5s ease;
-      margin-top: 3.6rem;
+      margin-top: 3.2rem;
       top: 0;
       left: 0;
-      box-shadow: ${({ theme }) => theme.shadows.shadow1};
+      /* box-shadow: ${({ theme }) => theme.shadows.shadow1}; */
       z-index: 3000;
 
       & li {
-        transition: 0.5s ease;
+        transition: 0.2s ease-in;
         padding: 1.5rem;
+
+        &:hover {
+          /* background-color: hsl(168, 89%, 11%); */
+          background-color: skyblue;
+        }
 
         .nav-item {
           display: block;
@@ -74,7 +88,7 @@ export const StyledNavlist = styled.ul`
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       padding: 0.8rem;
 
       /* &:focus-within > ul, */

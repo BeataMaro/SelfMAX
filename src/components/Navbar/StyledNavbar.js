@@ -4,12 +4,12 @@ export const StyledNavigation = styled.nav`
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 0 2rem 0 1rem;
+  padding: 0 2rem 0 0;
   height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-color: ${({ theme }) => theme.colors.darkGrey};
   z-index: 2;
 
   @media (max-width: 992px) {

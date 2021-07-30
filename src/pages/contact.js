@@ -14,20 +14,21 @@ const StyledContactPage = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  border: 1px solid green;
 
   article {
-    @media (max-width: 768px) {
-      grid-column: 1 / -1;
-    }
-
     &:nth-of-type(1) {
       grid-column: 1 / 3;
+      @media (max-width: 768px) {
+        grid-column: 1 / -1;
+      }
     }
     &:nth-of-type(2) {
+      grid-column: 3 / 5;
       display: grid;
       place-items: center;
-      grid-column: 3 / 5;
+      @media (max-width: 768px) {
+        grid-column: 1 / -1;
+      }
     }
     &:nth-of-type(3) {
       grid-column: 1 / -1;

@@ -44,12 +44,12 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.greenGrey};
   }
 
-  section, header { 
-  max-width: 1400px;
+  section { 
+  max-width: 1100px;
   background-color: ${({ theme }) => theme.colors.white};
   border: .5px solid ${({ theme }) => theme.colors.lightGrey};
   margin: 0 auto;
-  /* padding: 2rem; */
+  padding: 0 1rem;
   }
 ul {
   list-style: none;
@@ -65,7 +65,11 @@ a {
   }
 }
 
-.hero {
+.hero-image {
+  position: relative;
+}
+
+/* .hero {
   min-height: 100vh;
   margin-top: -12vh;
   width: 80%;
@@ -74,11 +78,11 @@ a {
   position: relative;
   /* clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%); */
   
-  @media (max-width: 992px) {
-    width: 100%;
-  }
+  /* @media (max-width: 992px) { */
+    /* width: 100%; */
+  /* }  */
   
-}
+/* } */
 .logo {
   max-width: 100%;
   width: 5.2rem;

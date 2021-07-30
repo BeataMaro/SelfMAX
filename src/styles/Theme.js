@@ -1,8 +1,10 @@
 const theme = {
   fonts: {
-    main: "Kanit, sans-serif",
+    main: "Montserrat', sans-serif",
+    kanit: "Kanit, sans-serif",
     saira: "Saira Semi Condensed, sans-serif",
     nunito: "Nunito, sans-serif",
+    dodum: "Gowun Dodum, sans-serif",
   },
   colors: {
     // main: "hsl(41, 95%, 50%)",
@@ -12,10 +14,11 @@ const theme = {
     darkGrey: "hsl(40, 3%, 21%)",
     greenGrey: "hsl(183, 10%, 64%)",
     success: "hsl(90, 70%, 35%)",
-    darkGreen: "hsl(91, 78%, 12%)",
     white: "hsl(0, 0%, 97%)",
     black: "hsl(0, 0%, 10%)",
     brown: "hsl(0, 20%, 40%)",
+    navy: "hsl(204, 55%, 32%)",
+    darkGreen: "hsla(168, 89%, 11%, 0.941)",
   },
   shadows: {
     shadow1: "0 5px 20px rgba(30, 30, 31, 0.05)",

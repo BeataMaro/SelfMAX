@@ -2,17 +2,15 @@ import styled from "styled-components"
 
 export const StyledProducts = styled.div`
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  display: flex;
+  justify-content: space-space-evenly;
+  flex-wrap: wrap;
 `
 
 export const StyledCategory = styled.div`
-  /* width: 80%; */
-  height: 250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 40%;
+  /* height: 250px; */
+  border: 3px solid purple;
 
   /* border: 1px solid ${({ theme }) => theme.colors.lightGrey}; */
   transition: all 0.2s linear;
@@ -47,16 +45,24 @@ export const StyledH3 = styled.h3`
 `
 
 export const StyledThumbnail = styled.div`
+  position: relative;
   height: 200px;
   width: 320px;
   /* width: 100%; */
-  position: relative;
   /* padding: 1rem; */
   border: 1px solid ${({ theme }) => theme.colors.lightGrey};
   transition: 0.2s ease-in;
   z-index: 0;
-  border: 4px solid red;
+  /* border: 4px solid red; */
   &:hover {
     opacity: 0.8;
+  }
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 `
