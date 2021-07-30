@@ -19,7 +19,7 @@ const StyledTitle = styled.h1`
   text-align: center;
   width: 20%;
   background-color: ${({ theme }) => theme.colors.main};
-  font-family: ${({ theme }) => theme.fonts.dodum};
+  /* font-family: ${({ theme }) => theme.fonts.dodum}; */
   font-weight: 400;
   text-shadow: ${({ theme }) => theme.shadows.shadow2};
   color: white;

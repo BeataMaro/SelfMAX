@@ -97,14 +97,15 @@ a {
 }
 
 .section-title {
-    width: 100%;
-  color: ${({ theme }) => theme.colors.lightGrey};
-  background-color: ${({ theme }) => theme.colors.grey};
-  padding: 2rem;
-  letter-spacing: 3px;
+  width: 100%;
+  color: ${({ theme }) => theme.colors.black};
+  border-bottom: .5px solid ${({ theme }) => theme.colors.lightGrey};
+  padding: 1rem 0;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
-.image {
+.img {
   max-width: 100%;
 }
 
@@ -140,5 +141,6 @@ width: 600px;
     background: red;
   }
 } */
+
 
 `

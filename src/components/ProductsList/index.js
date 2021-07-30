@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-// import { getImage } from "gatsby-plugin-image"
-// import { BgImage } from "gbimage-bridge"
 
 import { Button } from "../../components/atoms/Button"
 import {
@@ -18,20 +16,16 @@ const ProductsList = () => {
     allFile: { edges },
   } = useStaticQuery(query)
 
-  edges.map(({ node }) =>
-    console.log(node.childrenImageSharp[0].gatsbyImageData)
-  )
-
-  // const pluginImage = getImage(heroBgImage)
-
   return (
     <>
       {edges.map(({ node }) => (
-        <GatsbyImage
-          key={node.id}
-          image={node?.childrenImageSharp[0]?.gatsbyImageData}
-          alt=""
-        />
+        <Link to={node.base.substr(0, node.base.lastIndexOf("."))}>
+          <GatsbyImage
+            key={node.id}
+            image={node?.childrenImageSharp[0]?.gatsbyImageData}
+            alt=""
+          />
+        </Link>
       ))}
     </>
     // <StyledProducts>
@@ -137,6 +131,7 @@ export const query = graphql`
       edges {
         node {
           id
+          base
           childrenImageSharp {
             gatsbyImageData(placeholder: BLURRED)
           }

@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const StyledNavlist = styled.ul`
-  /* background-color: pink;*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,9 +16,11 @@ export const StyledNavlist = styled.ul`
     border: 1px solid transparent;
     border-bottom: none;
     transition: all 0.5s ease-in;
+    cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       margin-top: 1rem;
+      padding: 0 1.5rem;
 
       &:hover {
         border: 1px solid ${({ theme }) => theme.colors.lightGrey};
@@ -28,10 +29,9 @@ export const StyledNavlist = styled.ul`
     }
 
     &:hover {
-      cursor: pointer;
       & > .nav-item:not(.active-link) {
-        color: white;
-        /* color: ${({ theme }) => theme.colors.main}; */
+        color: ${({ theme }) => theme.colors.white};
+        text-shadow: ${({ theme }) => theme.shadows.shadow2};
       }
     }
     .nav-item {
@@ -40,12 +40,10 @@ export const StyledNavlist = styled.ul`
       white-space: nowrap;
       transition: all 0.2s ease-in;
       font-size: 1.1rem;
-      /* text-shadow: ${({ theme }) => theme.shadows.shadow2}; */
 
       @media (max-width: 992px) {
         font-size: 1.4rem;
         z-index: 500;
-        /* padding: 3rem; */
       }
     }
 
@@ -69,12 +67,11 @@ export const StyledNavlist = styled.ul`
       z-index: 3000;
 
       & li {
-        transition: 0.2s ease-in;
+        transition: 0.12s ease;
         padding: 1.5rem;
 
         &:hover {
-          /* background-color: hsl(168, 89%, 11%); */
-          background-color: skyblue;
+          background-color: ${({ theme }) => theme.colors.black};
         }
 
         .nav-item {
