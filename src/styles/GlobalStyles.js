@@ -150,8 +150,7 @@ width: 600px;
   right: 0;
   bottom: 0;
   max-width: 100%;
-  transition: .3s ease-in;
-
+  transition: 0.4s ease-in-out;
 }
 
 .thumb-button {

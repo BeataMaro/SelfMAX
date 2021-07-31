@@ -8,12 +8,12 @@ const StyledText = styled.section`
   p {
     margin-top: 1.2rem;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2.2rem;
   }
 
   strong {
-    color: black;
+    font-weight: 300;
   }
 `
 

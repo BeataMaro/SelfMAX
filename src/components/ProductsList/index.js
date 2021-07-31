@@ -32,9 +32,7 @@ const ProductsList = () => {
               <StyledCategory
                 className={node.base.substr(0, node.base.lastIndexOf("."))}
               />
-              <Button empty className="thumb-button">
-                Sprawdź
-              </Button>
+              <Button className="thumb-button">Sprawdź</Button>
             </StyledThumbnail>
           </StyledThumbnailContainer>
         </Link>
