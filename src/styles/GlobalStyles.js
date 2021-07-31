@@ -3,9 +3,9 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyles = createGlobalStyle`
 
 :root {
-  --nav-height: 50px;
+  --nav-height: 15vh;
   scroll-padding-top: calc(var(--nav-height) + 10px);
-  scroll-padding-top: 12vh;
+  scroll-padding-top: 15vh;
 
 }
 
@@ -42,11 +42,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   section { 
-  max-width: 1100px;
+  max-width: 1200px;
   background-color: ${({ theme }) => theme.colors.white};
-  border: .5px solid ${({ theme }) => theme.colors.lightGrey};
+  box-shadow: ${({ theme }) => theme.shadows.shadow1};
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem;
+  margin: 5rem auto;
   }
 ul {
   list-style: none;
@@ -78,16 +79,15 @@ a {
 }
 
 .section-title {
-  margin-top: 3rem;
   width: 100%;
   color: ${({ theme }) => theme.colors.black};
   border-bottom: .5px solid ${({ theme }) => theme.colors.lightGrey};
   padding: 1rem 0;
-  letter-spacing: 1px;
-  font-weight: 500;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
 }
 
-.img {
+img {
   max-width: 100%;
 }
 
@@ -103,6 +103,10 @@ width: 600px;
 
 .checkboxInpt {
   margin-right: 1rem;
+}
+
+.thumb {
+
 }
 
 /* .checkboxInpt {

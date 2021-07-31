@@ -26,6 +26,7 @@ const ProductsList = () => {
           <GatsbyImage
             image={node?.childrenImageSharp[0]?.gatsbyImageData}
             alt=""
+            className="thumb"
           />
         </Link>
       ))}

@@ -23,7 +23,7 @@ const theme = {
     error: "hsl(350, 85%, 49%)",
   },
   shadows: {
-    shadow1: "0 5px 20px rgba(30, 30, 31, 0.09)",
+    shadow1: "1px 5px 10px rgba(30, 30, 31, 0.2)",
     shadow2: "1px 1px 2px rgba(0, 0, 0, 0.5)",
   },
 }

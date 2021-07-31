@@ -41,7 +41,7 @@ const About = () => {
 export default About
 
 export const query = graphql`
-  query myQuery {
+  {
     file(relativeDirectory: { eq: "about" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED)

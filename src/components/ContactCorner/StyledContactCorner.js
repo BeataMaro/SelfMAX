@@ -1,13 +1,13 @@
 import styled from "styled-components"
 
-export const StyledTop = styled.div`
+export const StyledContactBar = styled.div`
   position: fixed;
   width: 100%;
   top: 12vh;
   right: 0;
-  background-color: white;
+  background-color: transparent;
   padding: 1rem 2rem;
-  z-index: 1000;
+  z-index: 3000;
 
   @media (max-width: 768px) {
     padding: 0.2rem 1rem;

@@ -22,13 +22,13 @@ const Hero = () => {
     <>
       <StyledHero>
         <StaticImage
-          src="../assets/hero/hero1.jpg"
+          src="../assets/hero/hero2.jpg"
           alt=""
           placeholder="blurred"
           className="hero-image"
         />
         <StaticImage
-          src="../assets/hero/hero2.jpg"
+          src="../assets/hero/hero1.jpg"
           alt=""
           placeholder="blurred"
           className="hero-image"
