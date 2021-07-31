@@ -105,7 +105,65 @@ width: 600px;
   margin-right: 1rem;
 }
 
+.lamele {
+    &::after {
+      content: "Lamele";
+  }
+}
+
+.carporty {
+    &::after {
+      content: "Carporty";
+  }
+}
+
+.ogrodyzimowe {
+  &::after {
+    content: "Ogrody zimowe";
+  }
+}
+
+.zabudowa {
+    &::after {
+      content: "Zabudowa";
+  }
+}
+
+.poliweglan {
+/* white-space: nowrap; */
+  &::after {
+    content: "Zadaszenia z poliwęglanu";
+  }
+}
+
+.dachyrzymskie {
+  &::after {
+    content: "Dachy rzymskie";
+  }
+}
+
+
 .thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  transition: .3s ease-in;
+
+}
+
+.thumb-button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* &:hover {
+    background-color: pink;
+    opacity: 1;
+  } */
 
 }
 

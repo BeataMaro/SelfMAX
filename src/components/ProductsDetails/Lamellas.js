@@ -15,6 +15,8 @@ const Lamellas = () => {
     getImage(node?.childrenImageSharp[0]?.gatsbyImageData)
   )
 
+  console.log(images)
+
   const sectionRef = useRef(null)
   useEffect(() => {
     animationMoveX(sectionRef.current, true)
@@ -32,7 +34,7 @@ const Lamellas = () => {
         pogorszy.{" "}
       </p>
       {images.map((img, idx) => (
-        <GatsbyImage key={idx} image={img} alt="" />
+        <GatsbyImage key={idx} image={img} alt="Product realization" />
       ))}
     </StyledProductsDetails>
   )

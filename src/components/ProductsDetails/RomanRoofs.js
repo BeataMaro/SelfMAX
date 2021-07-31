@@ -30,7 +30,7 @@ const RomanRoofs = () => {
         tworzy na twoim tarasie przytulny, wakacyjny klimat.
       </p>
       {images.map((img, idx) => (
-        <GatsbyImage key={idx} image={img} alt="" />
+        <GatsbyImage key={idx} image={img} alt="Product realization" />
       ))}
     </StyledProductsDetails>
   )

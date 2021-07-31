@@ -32,7 +32,7 @@ const Carports = () => {
         nawet dla rejonów górskich.
       </p>
       {images.map((img, idx) => (
-        <GatsbyImage key={idx} image={img} alt="" />
+        <GatsbyImage key={idx} image={img} alt="Product realization" />
       ))}
     </StyledProductsDetails>
   )

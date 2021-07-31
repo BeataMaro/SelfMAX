@@ -31,7 +31,7 @@ const WinterGardens = () => {
         wychodzenia na zewnątrz.
       </p>
       {images.map((img, idx) => (
-        <GatsbyImage key={idx} image={img} alt="" />
+        <GatsbyImage key={idx} image={img} alt="Product realization" />
       ))}
     </StyledProductsDetails>
   )

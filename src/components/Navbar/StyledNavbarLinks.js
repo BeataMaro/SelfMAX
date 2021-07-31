@@ -18,6 +18,12 @@ export const StyledNavlist = styled.ul`
     transition: all 0.2s ease;
     cursor: pointer;
 
+    &:hover {
+      & > .nav-item:not(.active-link) {
+        color: ${({ theme }) => theme.colors.main};
+      }
+    }
+
     @media (max-width: 992px) {
       margin-top: 1rem;
       padding: 0 1.5rem;
@@ -28,13 +34,7 @@ export const StyledNavlist = styled.ul`
       }
     }
 
-    &:hover {
-      & > .nav-item:not(.active-link) {
-        color: ${({ theme }) => theme.colors.black};
-      }
-    }
     .nav-item {
-      color: ${({ theme }) => theme.colors.darkGrey};
       letter-spacing: 0.5px;
       white-space: nowrap;
       transition: all 0.2s ease-in;
@@ -43,7 +43,7 @@ export const StyledNavlist = styled.ul`
       @media (max-width: 992px) {
         font-size: 1.4rem;
         z-index: 500;
-        color: ${({ theme }) => theme.colors.black};
+        color: ${({ theme }) => theme.colors.lightGrey};
       }
     }
 

@@ -2,15 +2,17 @@ import styled from "styled-components"
 
 export const StyledContactBar = styled.div`
   position: fixed;
-  width: 100%;
   top: 12vh;
   right: 0;
-  background-color: transparent;
-  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  /* background-color: ${({ theme }) => theme.colors.main}; */
+  border-radius: 0 0 0 1rem;
   z-index: 3000;
+  padding: 0.2rem;
+  box-shadow: ${({ theme }) => theme.shadows.shadow1};
 
-  @media (max-width: 768px) {
-    padding: 0.2rem 1rem;
+  @media (min-width: 992px) {
+    padding: 1rem 2rem;
   }
 `
 

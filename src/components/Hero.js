@@ -4,7 +4,16 @@ import styled from "styled-components"
 
 const StyledHero = styled.div`
   position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
+
+  .mobile {
+    display: inline-block;
+  }
+
+  .desktop {
+    display: none;
+  }
 
   &::after {
     content: "";
@@ -15,6 +24,16 @@ const StyledHero = styled.div`
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  @media (min-width: 992px) {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+      margin: auto;
+    }
+  }
 `
 
 const Hero = () => {
@@ -23,15 +42,16 @@ const Hero = () => {
       <StyledHero>
         <StaticImage
           src="../assets/hero/hero2.jpg"
-          alt=""
+          alt="Zadaszenie z poliwęglanu"
           placeholder="blurred"
-          className="hero-image"
+          className="hero-image desktop"
         />
+
         <StaticImage
-          src="../assets/hero/hero1.jpg"
-          alt=""
+          src="../assets/hero/hero-flip.jpg"
+          alt="Ogród zimowy"
           placeholder="blurred"
-          className="hero-image"
+          className="hero-image mobile"
         />
       </StyledHero>
     </>

@@ -36,8 +36,8 @@ export const Navbox = styled.div`
     position: fixed;
     top: 0;
     right: 0;
-    /* background-color: hsla(229, 30%, 21%, 0.99); */
-    background-color: ${({ theme }) => theme.colors.main};
+    background-color: hsla(229, 30%, 21%, 0.99);
+    /* background-color: ${({ theme }) => theme.colors.main}; */
   }
 
   @media (max-width: 768px) {

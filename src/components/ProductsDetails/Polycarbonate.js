@@ -32,7 +32,7 @@ const Polycarbonate = () => {
         kosztami sprawia, że jest to najczęściej wybierane rozwiązanie.
       </p>
       {images.map((img, idx) => (
-        <GatsbyImage key={idx} image={img} alt="" />
+        <GatsbyImage key={idx} image={img} alt="Product realization" />
       ))}
     </StyledProductsDetails>
   )
