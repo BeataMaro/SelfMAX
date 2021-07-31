@@ -1,25 +1,26 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { StyledProductsDetails } from "./StyledProductsDetails"
 import BreadCrumbs from "../BreadCrumbs"
+import { animationMoveX } from "../../styles/Animations"
 
 const RomanRoofs = () => {
   const {
     allFile: { edges },
   } = useStaticQuery(query)
 
-  const images = []
-  {
-    edges.map(({ node }) => {
-      let image = getImage(node?.childrenImageSharp[0]?.gatsbyImageData)
-      images.push(image)
-    })
-  }
+  const images = edges.map(({ node }) =>
+    getImage(node?.childrenImageSharp[0]?.gatsbyImageData)
+  )
+  const sectionRef = useRef(null)
+  useEffect(() => {
+    animationMoveX(sectionRef.current, true)
+  }, [])
 
   return (
-    <StyledProductsDetails>
+    <StyledProductsDetails ref={sectionRef}>
       <BreadCrumbs />
       <h2>Dachy rzymskie</h2>
       <p>

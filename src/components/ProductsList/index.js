@@ -2,14 +2,14 @@ import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { Button } from "../../components/atoms/Button"
-import {
-  StyledProducts,
-  StyledCategory,
-  StyledDescription,
-  StyledH3,
-  StyledThumbnail,
-} from "./StyledProductsList"
+// import { Button } from "../../components/atoms/Button"
+// import {
+//   StyledProducts,
+//   StyledCategory,
+//   StyledDescription,
+//   StyledH3,
+//   StyledThumbnail,
+// } from "./StyledProductsList"
 
 const ProductsList = () => {
   const {
