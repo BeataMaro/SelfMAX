@@ -63,22 +63,19 @@ a {
 }
 
 .hero-image {
-  width: 100%;
-  min-height: 40vh;
+  /* width: 100%; */
+  min-height: 60vh;
   background-attachment: fixed;
   background-size: contain;
-  background-position: center 20%;
+  background-position: center 30%;
+ 
   
   @media (min-width: 768px) {
-    min-height: 55vh;
-    background-position: center center;
+    min-height: 65vh;
+    background-position: center 0;
   }
   @media (min-width: 992px) {
-    min-height: 65vh;
-  }
-  @media (min-width: 1200px) {
-    width: 85%;
-    min-height: 70vh;
+    min-height: 75vh;
   }
 }
 

@@ -6,16 +6,7 @@ import styled from "styled-components"
 
 const StyledHero = styled.div`
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(55, 55, 55, 0.4);
-  }
+  background-color: rgba(55, 55, 55, 0.2);
 `
 
 const HeroImage = () => {
@@ -37,7 +28,7 @@ export default HeroImage
 
 export const query = graphql`
   {
-    heroBgImage: file(relativePath: { eq: "hero/hero-flip.jpg" }) {
+    heroBgImage: file(relativePath: { eq: "hero/hero2.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED)
       }
