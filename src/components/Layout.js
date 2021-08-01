@@ -17,7 +17,7 @@ import Footer from "./Footer"
 import styled from "styled-components"
 
 const StyledWrapper = styled.div`
-  min-height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,11 +27,11 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
-      <StyledWrapper>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </StyledWrapper>
+      {/* <StyledWrapper> */}
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
+      {/* </StyledWrapper> */}
     </ThemeProvider>
   )
 }

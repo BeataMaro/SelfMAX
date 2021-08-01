@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   main {
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
   }
   body {
 
@@ -68,10 +68,9 @@ a {
   min-height: 90vh;
   background-attachment: fixed;
   background-size: contain;
-  /* background-position: left center; */
   
   @media (min-width: 1200px) {
-    width: 74%;
+    width: 75%;
   }
 }
 
@@ -82,7 +81,7 @@ a {
   z-index: 3000;
 
   @media (max-width: 992px) {
-    width: 5rem; 
+    width: 4rem; 
   }
 }
 
@@ -139,13 +138,14 @@ width: 600px;
 }
 
 .poliweglan {
-/* white-space: nowrap; */
+  width: 60%;
   &::after {
     content: "Zadaszenia z poliwęglanu";
   }
 }
 
 .dachyrzymskie {
+ 
   &::after {
     content: "Dachy rzymskie";
   }

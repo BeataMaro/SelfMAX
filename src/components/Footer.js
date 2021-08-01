@@ -6,17 +6,21 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  background-color: ${({ theme }) => theme.colors.black};
-  color: lightgray;
-  padding: 1rem;
+  background-color: ${({ theme }) => theme.colors.lightGrey};
+  padding: 2rem;
   z-index: 5000;
+
+  @media (max-width: 992px) {
+    padding: 2rem 1rem;
+  }
 
   & p {
     color: ${({ theme }) => theme.colors.grey};
     line-height: 1;
+    font-size: 1rem;
   }
   & a {
-    color: hsl(90, 80%, 40%);
+    color: ${({ theme }) => theme.colors.greenGrey};
   }
 `
 

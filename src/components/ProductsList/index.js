@@ -1,11 +1,11 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import {
   StyledProducts,
+  StyledLink,
   StyledCategory,
-  StyledThumbnailContainer,
   StyledThumbnail,
 } from "./StyledProductsList"
 
@@ -17,23 +17,24 @@ const ProductsList = () => {
   return (
     <StyledProducts>
       {edges.map(({ node }) => (
-        <Link
+        <StyledLink
           to={node.base.substr(0, node.base.lastIndexOf("."))}
           key={node.id}
         >
-          <StyledThumbnailContainer>
-            <StyledThumbnail>
-              <GatsbyImage
-                image={node?.childrenImageSharp[0]?.gatsbyImageData}
-                alt="Product realization thumb"
-                className="thumb"
-              />
-              <StyledCategory
-                className={node.base.substr(0, node.base.lastIndexOf("."))}
-              />
-            </StyledThumbnail>
-          </StyledThumbnailContainer>
-        </Link>
+          <StyledThumbnail>
+            <GatsbyImage
+              image={node?.childrenImageSharp[0]?.gatsbyImageData}
+              alt="Product realization thumb"
+              className="thumb"
+            />
+            <StyledCategory
+              className={`thumb-category ${node.base.substr(
+                0,
+                node.base.lastIndexOf(".")
+              )}`}
+            />
+          </StyledThumbnail>
+        </StyledLink>
       ))}
     </StyledProducts>
   )

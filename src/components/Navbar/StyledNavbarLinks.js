@@ -69,10 +69,9 @@ export const StyledNavlist = styled.ul`
       position: absolute;
       top: 0;
       left: 0;
-      margin-top: 3.2rem;
+      margin-top: 3.5rem;
       background-color: ${({ theme }) => theme.colors.white};
       box-shadow: ${({ theme }) => theme.shadows.shadow1};
-      border-radius: 6px;
       transition: all 0.2s ease;
       z-index: 3000;
 
@@ -83,8 +82,8 @@ export const StyledNavlist = styled.ul`
         border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};
 
         &:hover {
-          background-color: ${({ theme }) => theme.colors.white};
           border-color: ${({ theme }) => theme.colors.greenGrey};
+          background-color: white;
           border-left: 0.05px solid transparent;
           border-right: 0.05px solid transparent;
         }

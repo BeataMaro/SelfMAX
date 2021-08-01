@@ -45,7 +45,6 @@ const Hamburger = styled.div`
     width: 30px;
     height: 0.2rem;
     background-color: ${({ theme }) => theme.colors.lightGrey};
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
 
   &[open]::after {
