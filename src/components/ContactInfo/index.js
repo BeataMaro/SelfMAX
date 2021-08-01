@@ -4,34 +4,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelopeOpen, faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 
-const StyledInfo = styled.div`
+const StyledInfo = styled.article`
   text-align: center;
-  border: 1px solid red;
-  /* height: 100%; */
-  color: ${({ theme }) => theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.black};
 
-  p {
-    a {
-      color: ${({ theme }) => theme.colors.darkGrey};
-      display: block;
-    }
-  }
-
-  svg {
-    color: ${({ theme }) => theme.colors.darkGrey};
-    font-size: 1rem;
-  }
-
-  strong {
+  h3 {
+    letter-spacing: 1px;
     font-weight: 400;
+    width: 90%;
+  }
+
+  p,
+  strong {
+    letter-spacing: 0.6px;
+    font-weight: 400;
+  }
+`
+
+const StyledCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+`
+
+const StyledIcons = styled.div`
+  display: flex;
+  align-items: space-between;
+  min-width: 70%;
+  background-color: ${({ theme }) => theme.colors.lightGrey};
+  padding: 1rem;
+
+  @media (min-width: 992px) {
+    min-width: 60%;
   }
 `
 
 const StyledIcon = styled.div`
   width: 3rem;
   height: 3rem;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
-  margin: auto;
+  color: ${({ theme }) => theme.colors.darkGrey};
+  margin-right: 1rem;
+  background-color: ${({ theme }) => theme.colors.white};
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -39,31 +53,33 @@ const StyledIcon = styled.div`
 
 const ContactInfo = () => {
   return (
-    <article>
-      <StyledInfo>
-        <h3>
-          Skontaktuj się z nami wypełniając formularz kontaktowy lub zadzwoń
-        </h3>
-        <StyledIcon>
-          <FontAwesomeIcon icon={faMobileAlt} />
-        </StyledIcon>
-        <p>+48 503 696 926</p>
-        <div>
+    <StyledInfo>
+      <h3>
+        Skontaktuj się z nami wypełniając formularz kontaktowy lub zadzwoń
+      </h3>
+      <StyledIcons>
+        <StyledCol>
+          <StyledIcon>
+            <FontAwesomeIcon icon={faMobileAlt} />
+          </StyledIcon>
           <StyledIcon>
             <FontAwesomeIcon icon={faEnvelopeOpen} />
           </StyledIcon>
-          <strong>dariusz@lakomski.pl</strong>
-        </div>
-        <div>
-          <a
-            href="https://www.facebook.com/SelfmaxPolska"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <StyledIcon>
+          <StyledIcon>
+            <a
+              href="https://www.facebook.com/SelfmaxPolska"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
-            </StyledIcon>
-          </a>
+            </a>
+          </StyledIcon>
+        </StyledCol>
+
+        <StyledCol>
+          <p>+48 503 696 926</p>
+          <strong>dariusz@lakomski.pl</strong>
+
           <a
             href="https://www.facebook.com/SelfmaxPolska"
             target="_blank"
@@ -71,9 +87,9 @@ const ContactInfo = () => {
           >
             <strong>@SelfmaxPolska</strong>
           </a>
-        </div>
-      </StyledInfo>
-    </article>
+        </StyledCol>
+      </StyledIcons>
+    </StyledInfo>
   )
 }
 

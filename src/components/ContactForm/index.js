@@ -25,10 +25,9 @@ const ContactForm = () => {
           Adres e-mail
         </label>
         <input id="email" type="email" name="email" />
-        {/* <ValidationError prefix="Email" field="email" errors={state.errors} /> */}
+
         <label htmlFor="phone">Numer telefonu</label>
         <input id="phone" type="numeric" name="phone" />
-        {/* <ValidationError prefix="Phone" field="phone" errors={state.errors} /> */}
         <label htmlFor="message" req="true">
           Wiadomość
         </label>
@@ -39,11 +38,6 @@ const ContactForm = () => {
           cols="10"
           maxLength="250"
         />
-        {/* <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        /> */}
         <StyledTerms>
           <input type="checkbox" name="terms" className="checkboxInpt" />
           <label htmlFor="terms" req="true">
@@ -80,20 +74,8 @@ const ContactForm = () => {
         Adres e-mail
       </label>
       <input id="email" type="email" name="email" />
-      {/* <ValidationError
-        prefix="Adres e-mail jest wymagany."
-        field="email"
-        errors={state.errors}
-        className="error"
-      /> */}
       <label htmlFor="phone">Numer telefonu</label>
       <input id="phone" type="numeric" name="phone" />
-      {/* <ValidationError
-        prefix="Numer telefonu powinien składać sie z cyfr."
-        field="phone"
-        errors={state.errors}
-        className="error"
-      /> */}
       <label htmlFor="message" req="true">
         Wiadomość
       </label>
@@ -104,13 +86,6 @@ const ContactForm = () => {
         cols="10"
         maxLength="250"
       />
-
-      {/* <ValidationError
-        prefix="Wpisz treść wiadomości."
-        field="message"
-        errors={state.errors}
-        className="error"
-      /> */}
       <StyledTerms>
         <input type="checkbox" name="terms" className="checkboxInpt" />
         <label htmlFor="terms" req="true">
@@ -120,12 +95,6 @@ const ContactForm = () => {
           </Link>
           .
         </label>
-        {/* <ValidationError
-          prefix="Zaznacz zgodę na przetwarzanie danych osobowych."
-          field="terms"
-          errors={state.errors}
-          className="error"
-        /> */}
       </StyledTerms>
       <Button type="submit" disabled={state.submitting} empty>
         Wyślij

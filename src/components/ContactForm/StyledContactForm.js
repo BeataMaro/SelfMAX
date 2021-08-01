@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  /* gap: 0.5rem; */
   padding: 2rem;
   color: ${({ theme }) => theme.colors.darkGrey};
   background-color: ${({ theme }) => theme.colors.lightGrey};
