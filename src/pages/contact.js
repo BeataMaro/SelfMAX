@@ -23,8 +23,7 @@ const StyledContactPage = styled.div`
     }
     &:nth-of-type(2) {
       grid-column: 3 / 5;
-      display: grid;
-      place-items: center;
+
       @media (max-width: 768px) {
         grid-column: 1 / -1;
         order: -1;

@@ -5,19 +5,55 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelopeOpen, faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 
 const StyledInfo = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
   color: ${({ theme }) => theme.colors.black};
+  padding: 2rem;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "☊";
+    font-size: 7rem;
+    color: ${({ theme }) => theme.colors.lightGrey};
+  }
 
   h3 {
     letter-spacing: 1px;
     font-weight: 400;
-    width: 90%;
+    z-index: 100;
+  }
+  h4 {
+    margin: 2rem auto;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1000;
   }
 
   p,
   strong {
     letter-spacing: 0.6px;
     font-weight: 400;
+  }
+`
+
+const StyledIcons = styled.div`
+  align-self: flex-start;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-evenly;
+  margin-right: 1rem;
+  min-width: 70%;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    min-width: 60%;
   }
 `
 
@@ -28,24 +64,11 @@ const StyledCol = styled.div`
   align-items: flex-start;
 `
 
-const StyledIcons = styled.div`
-  display: flex;
-  align-items: space-between;
-  min-width: 70%;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
-  padding: 1rem;
-
-  @media (min-width: 992px) {
-    min-width: 60%;
-  }
-`
-
 const StyledIcon = styled.div`
   width: 3rem;
   height: 3rem;
   color: ${({ theme }) => theme.colors.darkGrey};
-  margin-right: 1rem;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.lightGrey};
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -54,9 +77,13 @@ const StyledIcon = styled.div`
 const ContactInfo = () => {
   return (
     <StyledInfo>
-      <h3>
-        Skontaktuj się z nami wypełniając formularz kontaktowy lub zadzwoń
-      </h3>
+      <div>
+        <h3>
+          Jeśli zainteresowała Cię nasza oferta, wybierz najwygodniejszy dla
+          siebie sposób kontaktu.
+        </h3>
+        <h4>Wypełnij formularz lub zadzwoń.</h4>
+      </div>
       <StyledIcons>
         <StyledCol>
           <StyledIcon>
@@ -75,7 +102,6 @@ const ContactInfo = () => {
             </a>
           </StyledIcon>
         </StyledCol>
-
         <StyledCol>
           <p>+48 503 696 926</p>
           <strong>dariusz@lakomski.pl</strong>
