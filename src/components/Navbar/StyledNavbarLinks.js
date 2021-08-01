@@ -13,42 +13,52 @@ export const StyledNavlist = styled.ul`
   li {
     position: relative;
     width: 100%;
-    border: 1px solid transparent;
-    border-bottom: none;
-    transition: all 0.2s ease;
     cursor: pointer;
 
     &:hover {
       & > .nav-item:not(.active-link) {
-        color: ${({ theme }) => theme.colors.main};
+        color: orangered;
       }
     }
 
     @media (max-width: 992px) {
       margin-top: 1rem;
       padding: 0 1.5rem;
-
-      &:hover {
-        border: 1px solid ${({ theme }) => theme.colors.lightGrey};
-        border-bottom: none;
-      }
+      text-shadow: 1px 1px 5px black;
     }
 
     .nav-item {
-      letter-spacing: 0.5px;
+      letter-spacing: 2px;
       white-space: nowrap;
       transition: all 0.2s ease-in;
       font-size: 1.1rem;
+
+      &[products="true"] {
+        &::after {
+          content: "▾";
+          font-size: 1.5rem;
+          display: inline-block;
+          margin-left: 6px;
+          transition: 0.25s ease-in;
+        }
+        &:hover::after {
+          transform: rotate(90deg);
+          color: ${({ theme }) => theme.colors.black};
+        }
+      }
 
       @media (max-width: 992px) {
         font-size: 1.4rem;
         z-index: 500;
         color: ${({ theme }) => theme.colors.lightGrey};
+        &[products="true"]::after {
+          display: none;
+        }
       }
     }
 
     .active-link {
-      color: ${({ theme }) => theme.colors.main};
+      font-weight: 600;
     }
 
     /* submenu style */

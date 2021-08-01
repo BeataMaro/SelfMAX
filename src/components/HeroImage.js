@@ -4,62 +4,41 @@ import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import styled from "styled-components"
 
-import { animationMoveY } from "../styles/Animations"
+// import { animationMoveY } from "../styles/Animations"
 
-const StyledTitle = styled.div`
-  width: 35%;
-  position: absolute;
-  top: 55%;
-  left: 7rem;
-  /* transform: translate(-20%, -55%); */
-  background-color: goldenrod;
-  color: white;
-  padding: 2rem;
+const StyledHero = styled.div`
+  position: relative;
+  /* height: 50vh; */
 
-  @media (max-width: 992px) {
-    width: 60%;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    padding: 1rem;
-  }
-
-  @media (max-width: 576px) {
-    width: 75%;
-  }
-
-  h1 {
-    margin: 0 2.5rem;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.colors.navy};
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
-
-    @media (max-width: 768px) {
-      font-size: 1.7rem;
-      margin: 1rem;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 55, 55, 0.2);
   }
 `
 
 const HeroImage = () => {
   const { heroBgImage } = useStaticQuery(query)
+
   const pluginImage = getImage(heroBgImage)
 
-  const titleRef = useRef(null)
-  useEffect(() => {
-    animationMoveY(titleRef.current, true)
-  }, [])
+  // const titleRef = useRef(null)
+  // useEffect(() => {
+  //   animationMoveY(titleRef.current, true)
+  // }, [])
 
   return (
-    <>
-      <BgImage image={pluginImage} className="hero" preserveStackingContext>
-        {/* <StyledTitle ref={titleRef}>
-          <h1>Witaj na stronie SELFMAX!</h1>
-        </StyledTitle> */}
-      </BgImage>
-    </>
+    <StyledHero>
+      <BgImage
+        image={pluginImage}
+        preserveStackingContext
+        className="hero-image"
+      ></BgImage>
+    </StyledHero>
   )
 }
 
@@ -67,9 +46,9 @@ export default HeroImage
 
 export const query = graphql`
   {
-    heroBgImage: file(relativePath: { eq: "hero/hero.png" }) {
+    heroBgImage: file(relativePath: { eq: "hero/hero-flip.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, width: 4000)
+        gatsbyImageData(placeholder: BLURRED)
       }
     }
   }

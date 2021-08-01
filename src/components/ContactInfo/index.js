@@ -6,7 +6,8 @@ import { faEnvelopeOpen, faMobileAlt } from "@fortawesome/free-solid-svg-icons"
 
 const StyledInfo = styled.div`
   text-align: center;
-  height: 50%;
+  border: 1px solid red;
+  /* height: 100%; */
   color: ${({ theme }) => theme.colors.darkGrey};
 
   p {

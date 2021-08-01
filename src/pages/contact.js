@@ -1,4 +1,3 @@
-// import React from "react"
 import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import { FormspreeProvider } from "@formspree/react"
@@ -53,12 +52,10 @@ const Contact = () => {
               <ContactForm />
             </FormspreeProvider>
           </article>
-          <article>
-            <ContactInfo />
-          </article>
-          <article>
-            <Map />
-          </article>
+
+          <ContactInfo />
+
+          <Map />
         </StyledContactPage>
       </section>
     </>

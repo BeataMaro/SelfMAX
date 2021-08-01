@@ -40,7 +40,7 @@ const StyledInfo = styled.div`
 `
 
 const StyledLink = styled(Link)`
-  color: orangered;
+  color: ${({ theme }) => theme.colors.error};
   cursor: pointer;
 
   :hover {
@@ -57,7 +57,7 @@ const Error404Page = () => {
         <StyledLink to="/">Wróć na stronę główną</StyledLink>
       </StyledInfo>
       <StaticImage
-        src="../assets/hero/hero.png"
+        src="../assets/hero/poliweglan-hero.png"
         alt="Dom z zadaszeniem z poliwęglanu"
       />
     </StyledError>

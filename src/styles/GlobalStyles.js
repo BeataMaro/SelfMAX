@@ -33,8 +33,8 @@ export const GlobalStyles = createGlobalStyle`
     letter-spacing: 0;
   }
   ::selection {
-  background-color: ${({ theme }) => theme.colors.grey};
-  color: ${({ theme }) => theme.colors.success};
+  background-color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.lightGrey};
 }
 
  ::placeholder {
@@ -64,7 +64,15 @@ a {
 }
 
 .hero-image {
-  max-width: 100%;
+  width: 100%;
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-size: contain;
+  /* background-position: left center; */
+  
+  @media (min-width: 1200px) {
+    width: 74%;
+  }
 }
 
 .logo {
@@ -85,6 +93,7 @@ a {
   padding: 1rem 0;
   margin-bottom: 1rem;
   letter-spacing: 2px;
+  font-weight: 500;
 }
 
 img {
@@ -142,7 +151,6 @@ width: 600px;
   }
 }
 
-
 .thumb {
   position: absolute;
   top: 0;
@@ -153,18 +161,7 @@ width: 600px;
   transition: 0.4s ease-in-out;
 }
 
-.thumb-button {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-  /* &:hover {
-    background-color: pink;
-    opacity: 1;
-  } */
-
-}
 
 /* .checkboxInpt {
   position: relative;

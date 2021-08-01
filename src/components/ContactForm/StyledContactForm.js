@@ -14,7 +14,7 @@ export const StyledForm = styled.form`
     border: 1px solid ${({ theme }) => theme.colors.grey};
     border-radius: 6px;
     background-color: transparent;
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.grey};
     padding: 1rem;
 
     &:active {
@@ -40,8 +40,10 @@ export const StyledForm = styled.form`
   }
 
   label[req] {
+    position: relative;
     &::after {
-      content: "*";
+      content: "✳";
+      font-size: 0.8rem;
       color: ${({ theme }) => theme.colors.main};
     }
   }

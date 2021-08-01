@@ -1,13 +1,13 @@
 import React from "react"
-import Hero from "./Hero"
+import HeroImage from "./HeroImage"
 import HeroText from "./HeroText"
 
 const Header = () => {
   return (
-    <>
-      <Hero />
+    <header>
+      <HeroImage />
       <HeroText />
-    </>
+    </header>
   )
 }
 

@@ -13,10 +13,10 @@ const Hamburger = styled.div`
     transform: rotate(-45deg);
     width: 30px;
     height: 0.2rem;
-    background-color: ${({ theme }) => theme.colors.grey};
+    background-color: ${({ theme }) => theme.colors.lightGrey};
     &:hover,
     &:hover::before {
-      background-color: ${({ theme }) => theme.colors.lightGrey};
+      background-color: ${({ theme }) => theme.colors.white};
     }
   }
 
@@ -44,7 +44,8 @@ const Hamburger = styled.div`
     transform: rotate(-90deg) translate(-10px, 0) rotate(0deg);
     width: 30px;
     height: 0.2rem;
-    background-color: ${({ theme }) => theme.colors.grey};
+    background-color: ${({ theme }) => theme.colors.lightGrey};
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
 
   &[open]::after {

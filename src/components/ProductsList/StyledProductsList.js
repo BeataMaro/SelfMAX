@@ -16,18 +16,19 @@ export const StyledProducts = styled.div`
 
 export const StyledCategory = styled.div`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  width: 100%;
   text-align: center;
   padding: 1.5rem;
   transition: all 0.2s linear;
   cursor: pointer;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.lightGrey};
   letter-spacing: 3px;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: ${({ theme }) => theme.colors.black};
 `
 
 export const StyledThumbnailContainer = styled.div`
@@ -38,17 +39,22 @@ export const StyledThumbnailContainer = styled.div`
 export const StyledThumbnail = styled.div`
   position: relative;
   width: 90vw;
-  height: 500px;
+  height: 400px;
+  max-height: 500px;
   background-color: ${({ theme }) => theme.colors.lightGrey};
   transition: 0.4s ease-in-out;
 
-  button {
+  .thumb-button {
     opacity: 0;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
     transition: 0.2s ease;
   }
 
   &:hover {
-    button {
+    .thumb-button {
       opacity: 1;
     }
     .thumb {
