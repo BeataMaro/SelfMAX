@@ -15,12 +15,12 @@ const StyledFooter = styled.footer`
   }
 
   & p {
-    color: ${({ theme }) => theme.colors.grey};
+    color: ${({ theme }) => theme.colors.greenGrey};
     line-height: 1;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   & a {
-    color: ${({ theme }) => theme.colors.greenGrey};
+    color: ${({ theme }) => theme.colors.main};
   }
 `
 
