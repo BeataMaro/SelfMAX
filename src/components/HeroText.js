@@ -22,7 +22,7 @@ const StyledText = styled.article`
     strong {
       display: block;
       font-weight: inherit;
-      font-family: ${({ theme }) => theme.fonts.dancing};
+      /* font-family: ${({ theme }) => theme.fonts.dancing}; */
       &::before {
         content: "⇝";
         margin-right: 1rem;

@@ -4,10 +4,10 @@ import HeroText from "./HeroText"
 
 const Header = () => {
   return (
-    <header>
+    <>
       <HeroImage />
       <HeroText />
-    </header>
+    </>
   )
 }
 

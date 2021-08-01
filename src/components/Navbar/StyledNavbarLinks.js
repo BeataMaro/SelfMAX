@@ -34,9 +34,9 @@ export const StyledNavlist = styled.ul`
       font-size: 1.1rem;
 
       &[products="true"] {
+        display: flex;
         &::after {
           content: "▾";
-          font-size: 1.6rem;
           display: inline-block;
           margin-left: 8px;
           transition: 0.25s ease-in;
