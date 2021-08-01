@@ -17,20 +17,20 @@ export const StyledNavlist = styled.ul`
 
     &:hover {
       & > .nav-item:not(.active-link) {
-        color: orangered;
+        color: ${({ theme }) => theme.colors.black};
       }
     }
 
     @media (max-width: 992px) {
       margin-top: 1rem;
       padding: 0 1.5rem;
-      text-shadow: 1px 1px 5px black;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
 
     .nav-item {
       letter-spacing: 2px;
       white-space: nowrap;
-      transition: all 0.2s ease-in;
+      transition: all 0.1s ease-in;
       font-size: 1.1rem;
 
       &[products="true"] {
@@ -58,7 +58,7 @@ export const StyledNavlist = styled.ul`
     }
 
     .active-link {
-      font-weight: 600;
+      color: ${({ theme }) => theme.colors.main};
     }
 
     /* submenu style */
@@ -72,29 +72,26 @@ export const StyledNavlist = styled.ul`
       margin-top: 3.2rem;
       background-color: ${({ theme }) => theme.colors.white};
       box-shadow: ${({ theme }) => theme.shadows.shadow1};
+      border-radius: 6px;
       transition: all 0.2s ease;
       z-index: 3000;
 
       & li {
         color: ${({ theme }) => theme.colors.grey};
         padding: 1.5rem;
-        border: 0.2px solid transparent;
-        border-bottom: 0.2px solid ${({ theme }) => theme.colors.lightGrey};
+        border: 0.05px solid transparent;
+        border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};
 
         &:hover {
-          background-color: white;
-          border: 0.2px solid ${({ theme }) => theme.colors.lightGrey};
-          border-left: 0.2px solid transparent;
-          border-right: 0.2px solid transparent;
+          background-color: ${({ theme }) => theme.colors.white};
+          border-color: ${({ theme }) => theme.colors.greenGrey};
+          border-left: 0.05px solid transparent;
+          border-right: 0.05px solid transparent;
         }
 
         .nav-item {
           display: block;
           width: 100%;
-        }
-
-        .active-link {
-          color: ${({ theme }) => theme.colors.main};
         }
       }
     }

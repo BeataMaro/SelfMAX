@@ -11,6 +11,7 @@ export const StyledNavigation = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   z-index: 4000;
 `
 //hamburger icon
@@ -38,7 +39,7 @@ export const Navbox = styled.div`
     top: 0;
     right: 0;
     left: 0;
-    background-color: ${({ theme }) => theme.colors.black};
+    background-color: ${({ theme }) => theme.colors.grey};
   }
 
   &[open] {

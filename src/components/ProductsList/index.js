@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { Button } from "../../components/atoms/Button"
 import {
   StyledProducts,
   StyledCategory,
@@ -32,7 +31,6 @@ const ProductsList = () => {
               <StyledCategory
                 className={node.base.substr(0, node.base.lastIndexOf("."))}
               />
-              <Button className="thumb-button">Sprawdź</Button>
             </StyledThumbnail>
           </StyledThumbnailContainer>
         </Link>
