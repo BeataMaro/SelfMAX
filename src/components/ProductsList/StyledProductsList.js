@@ -35,6 +35,7 @@ export const StyledLink = styled(Link)`
   border-radius: 5px;
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   width: 100%;
+  height: 350px;
 
   @media (min-width: 768px) {
     width: 49%;

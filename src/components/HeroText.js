@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import styled from "styled-components"
+import { animationMoveY } from "../styles/Animations"
 
 const StyledText = styled.article`
   width: 100%;
   margin: auto;
-  padding: 3rem;
+  padding: 2.5rem;
   color: ${({ theme }) => theme.colors.greenGrey};
   background-color: ${({ theme }) => theme.colors.white};
   @media (min-width: 992px) {
@@ -41,9 +42,15 @@ const StyledText = styled.article`
 `
 
 const HeroText = () => {
+  const titleRef = useRef(null)
+
+  useEffect(() => {
+    animationMoveY(titleRef.current, true)
+  }, [])
+
   return (
     <StyledText>
-      <h1>
+      <h1 ref={titleRef}>
         Witaj na stronie <strong>SelfMAX!</strong>
       </h1>
       <p>

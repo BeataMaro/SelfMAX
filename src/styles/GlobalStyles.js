@@ -86,7 +86,7 @@ a {
   max-width: 100%;
   width: 5.2rem;
   max-height: 15vh;
-  z-index: 3000;
+
 
   @media (max-width: 992px) {
     width: 4rem; 
