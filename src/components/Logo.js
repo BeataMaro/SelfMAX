@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <Link to="/">
       <StaticImage
-        src="../assets/selfMAX-logo.png"
+        src="../assets/logo-SelfMAX.png"
         alt="Logo selfMAX"
         className="logo"
       />
