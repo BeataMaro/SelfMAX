@@ -36,9 +36,9 @@ export const StyledNavlist = styled.ul`
       &[products="true"] {
         &::after {
           content: "▾";
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           display: inline-block;
-          margin-left: 6px;
+          margin-left: 8px;
           transition: 0.25s ease-in;
         }
         &:hover::after {

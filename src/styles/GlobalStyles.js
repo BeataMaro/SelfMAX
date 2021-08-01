@@ -69,13 +69,12 @@ a {
   background-size: contain;
   background-position: center 30%;
  
-  
   @media (min-width: 768px) {
     min-height: 65vh;
     background-position: center 0;
   }
   @media (min-width: 992px) {
-    min-height: 75vh;
+    min-height: 70vh;
   }
 }
 
@@ -100,9 +99,9 @@ a {
   font-weight: 500;
 }
 
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 .static-gif {
 max-width: 100%;
@@ -162,6 +161,8 @@ width: 600px;
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%; 
   /* max-width: 100%; */
   transition: 0.4s ease-in-out;
 }
