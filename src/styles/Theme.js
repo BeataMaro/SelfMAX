@@ -2,6 +2,7 @@ const theme = {
   fonts: {
     main: "Montserrat, sans-serif",
     poppins: "Poppins, sans-serif;",
+    dancing: "Dancing Script, cursive;",
     kanit: "Kanit, sans-serif",
     saira: "Saira Semi Condensed, sans-serif",
     nunito: "Nunito, sans-serif",

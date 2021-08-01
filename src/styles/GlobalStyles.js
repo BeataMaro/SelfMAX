@@ -25,10 +25,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   main {
-    /* flex: 1 0 auto; */
+    flex: 1 0 auto;
   }
   body {
-
     line-height: 1.5;
     letter-spacing: 0;
   }
@@ -65,12 +64,21 @@ a {
 
 .hero-image {
   width: 100%;
-  min-height: 90vh;
+  min-height: 40vh;
   background-attachment: fixed;
   background-size: contain;
+  background-position: center 20%;
   
+  @media (min-width: 768px) {
+    min-height: 55vh;
+    background-position: center center;
+  }
+  @media (min-width: 992px) {
+    min-height: 65vh;
+  }
   @media (min-width: 1200px) {
-    width: 75%;
+    width: 85%;
+    min-height: 70vh;
   }
 }
 

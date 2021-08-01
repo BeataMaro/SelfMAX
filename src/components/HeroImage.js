@@ -17,10 +17,10 @@ const StyledHero = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(55, 55, 55, 0.6);
+    background-color: rgba(55, 55, 55, 0.4);
   }
 
-  &::after {
+  /* &::after {
     content: "⟿";
     display: inline-block;
     color: ${({ theme }) => theme.colors.black};
@@ -29,7 +29,7 @@ const StyledHero = styled.div`
     right: 1rem;
     font-size: 2.5rem;
     transform: rotate(90deg);
-  }
+  } */
 `
 
 const HeroImage = () => {

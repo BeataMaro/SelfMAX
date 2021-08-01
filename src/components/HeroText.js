@@ -6,7 +6,7 @@ const StyledText = styled.article`
   margin: auto;
   padding: 3rem;
   color: ${({ theme }) => theme.colors.greenGrey};
-
+  background-color: ${({ theme }) => theme.colors.white};
   @media (min-width: 992px) {
     width: 50%;
     padding: 2rem;
@@ -21,6 +21,7 @@ const StyledText = styled.article`
     strong {
       display: block;
       font-weight: inherit;
+      font-family: ${({ theme }) => theme.fonts.dancing};
       &::before {
         content: "⇝";
         margin-right: 5px;
