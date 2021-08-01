@@ -5,8 +5,8 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import {
   StyledProducts,
   StyledLink,
-  StyledCategory,
   StyledThumbnail,
+  StyledCategory,
 } from "./StyledProductsList"
 
 const ProductsList = () => {

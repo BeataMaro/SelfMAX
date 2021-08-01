@@ -18,6 +18,7 @@ const StyledFooter = styled.footer`
     color: ${({ theme }) => theme.colors.greenGrey};
     line-height: 1;
     font-size: 0.8rem;
+    text-align: right;
   }
   & a {
     color: ${({ theme }) => theme.colors.main};

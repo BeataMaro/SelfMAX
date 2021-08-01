@@ -25,11 +25,11 @@ const StyledText = styled.article`
       font-family: ${({ theme }) => theme.fonts.dancing};
       &::before {
         content: "⇝";
-        margin-right: 5px;
+        margin-right: 1rem;
       }
       &::after {
         content: "⇜";
-        margin-left: 5px;
+        margin-left: 1rem;
       }
     }
   }

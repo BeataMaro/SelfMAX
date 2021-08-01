@@ -9,27 +9,6 @@ export const StyledProducts = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
 `
-export const StyledCategory = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 50%;
-  text-align: center;
-  padding: 1.5rem;
-  transition: all 0.2s linear;
-  color: ${({ theme }) => theme.colors.lightGrey};
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  background-color: ${({ theme }) => theme.colors.greenGrey};
-
-  @media (max-width: 992px) {
-    font-size: 0.8rem;
-    min-width: 60%;
-  }
-`
-
 export const StyledLink = styled(Link)`
   overflow: hidden;
   border-radius: 5px;
@@ -44,7 +23,6 @@ export const StyledLink = styled(Link)`
     width: 32%;
   }
 `
-
 export const StyledThumbnail = styled.div`
   position: relative;
   height: 400px;
@@ -59,5 +37,27 @@ export const StyledThumbnail = styled.div`
     .thumb-category {
       background-color: black;
     }
+  }
+`
+
+export const StyledCategory = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50%;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  background-color: ${({ theme }) => theme.colors.greenGrey};
+  color: ${({ theme }) => theme.colors.white};
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+
+  @media (max-width: 992px) {
+    font-size: 0.8rem;
+    min-width: 60%;
   }
 `
