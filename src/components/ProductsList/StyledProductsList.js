@@ -21,7 +21,13 @@ export const StyledCategory = styled.div`
   color: ${({ theme }) => theme.colors.lightGrey};
   letter-spacing: 5px;
   text-transform: uppercase;
+  font-size: 0.9rem;
   background-color: ${({ theme }) => theme.colors.greenGrey};
+
+  @media (max-width: 992px) {
+    font-size: 0.8rem;
+    min-width: 60%;
+  }
 `
 
 export const StyledLink = styled(Link)`
