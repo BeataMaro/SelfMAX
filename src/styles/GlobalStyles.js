@@ -44,9 +44,8 @@ export const GlobalStyles = createGlobalStyle`
   max-width: 1200px;
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
-  margin: 0 auto;
   padding: 2rem;
-  margin: 5rem auto;
+  margin: 6rem auto;
   }
 ul {
   list-style: none;
@@ -98,11 +97,6 @@ a {
   letter-spacing: 2px;
   font-weight: 500;
 }
-
-/* img {
-  max-width: 100%;
-} */
-
 .static-gif {
 max-width: 100%;
 width: 600px;
@@ -163,7 +157,6 @@ width: 600px;
   bottom: 0;
   width: 100%;
   height: 100%; 
-  /* max-width: 100%; */
   transition: 0.4s ease-in-out;
 }
 

@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const StyledContactBar = styled.div`
   position: fixed;
-  top: 9vh;
+  top: 12vh;
   right: 0;
   display: grid;
   place-items: center;

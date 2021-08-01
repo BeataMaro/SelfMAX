@@ -4,7 +4,7 @@ export const StyledNavigation = styled.nav`
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 0 1rem;
+  padding: 1rem;
   height: 12vh;
   background-color: ${({ theme }) => theme.colors.white};
   border-bottom: 1px solid ${({ theme }) => theme.colors.lightGrey};

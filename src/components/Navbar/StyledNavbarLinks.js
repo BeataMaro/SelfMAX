@@ -34,7 +34,6 @@ export const StyledNavlist = styled.ul`
       font-size: 1.1rem;
 
       &[products="true"] {
-        display: flex;
         &::after {
           content: "▾";
           display: inline-block;
@@ -69,7 +68,7 @@ export const StyledNavlist = styled.ul`
       position: absolute;
       top: 0;
       left: 0;
-      margin-top: 3.5rem;
+      margin-top: 3.2rem;
       background-color: ${({ theme }) => theme.colors.white};
       box-shadow: ${({ theme }) => theme.shadows.shadow1};
       transition: all 0.2s ease;
@@ -77,7 +76,7 @@ export const StyledNavlist = styled.ul`
 
       & li {
         color: ${({ theme }) => theme.colors.grey};
-        padding: 1.5rem;
+        padding: 1.2rem;
         border: 0.05px solid transparent;
         border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};
 
@@ -91,6 +90,7 @@ export const StyledNavlist = styled.ul`
         .nav-item {
           display: block;
           width: 100%;
+          height: 100%;
         }
       }
     }
@@ -105,15 +105,5 @@ export const StyledNavlist = styled.ul`
         display: block;
       }
     }
-  }
-`
-
-export const StyledIcon = styled.div`
-  color: white;
-  background-color: ${({ theme }) => theme.colors.main};
-  padding: 10px;
-  border-radius: 10px;
-  @media (max-width: 768px) {
-    display: none;
   }
 `

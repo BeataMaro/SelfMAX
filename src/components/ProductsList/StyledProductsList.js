@@ -17,9 +17,9 @@ export const StyledLink = styled(Link)`
   height: 350px;
 
   @media (min-width: 768px) {
-    width: 49%;
+    width: 48%;
   }
-  @media (min-width: 1100px) {
+  @media (min-width: 992px) {
     width: 32%;
   }
 `
