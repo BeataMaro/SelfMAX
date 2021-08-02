@@ -50,7 +50,13 @@ export const query = graphql`
         node {
           id
           childrenImageSharp {
-            gatsbyImageData(placeholder: BLURRED)
+            gatsbyImageData(
+              placeholder: BLURRED
+              width: 900
+              height: 600
+              quality: 70
+              blurredOptions: { width: 100 }
+            )
           }
         }
       }
