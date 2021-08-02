@@ -2,12 +2,11 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const StyledProducts = styled.div`
-  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 `
 export const StyledLink = styled(Link)`
   overflow: hidden;
@@ -20,7 +19,7 @@ export const StyledLink = styled(Link)`
     width: 48%;
   }
   @media (min-width: 992px) {
-    width: 32%;
+    width: 32.5%;
   }
 `
 export const StyledThumbnail = styled.div`

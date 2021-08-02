@@ -45,13 +45,9 @@ export const GlobalStyles = createGlobalStyle`
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   padding: 2rem;
-  margin: 6rem auto;
-
-
-  @media (max-width: 768px) {
-    margin: 0;
+  margin: auto;
   }
-  }
+
 ul {
   list-style: none;
 }
