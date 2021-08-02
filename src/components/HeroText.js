@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledText = styled.section`
   h1 {
-    color: ${({ theme }) => theme.colors.darkGrey};
+    color: ${({ theme }) => theme.colors.black};
     letter-spacing: 2px;
     font-weight: 600;
     text-align: center;
@@ -15,7 +15,7 @@ const StyledText = styled.section`
 
     strong {
       display: block;
-      font-weight: inherit;
+      font-weight: 400;
 
       &::before {
         content: "⇝";
@@ -31,8 +31,7 @@ const StyledText = styled.section`
   p {
     font-weight: 400;
     letter-spacing: 1px;
-    padding: 0.7rem;
-    color: ${({ theme }) => theme.colors.grey};
+    padding: 0.5rem;
   }
 `
 
