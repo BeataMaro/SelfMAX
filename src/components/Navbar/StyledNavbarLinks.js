@@ -28,7 +28,7 @@ export const StyledNavlist = styled.ul`
     }
 
     .nav-item {
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       white-space: nowrap;
       transition: all 0.1s ease-in;
       font-size: 1.1rem;

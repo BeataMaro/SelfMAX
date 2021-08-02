@@ -46,6 +46,11 @@ export const GlobalStyles = createGlobalStyle`
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   padding: 2rem;
   margin: 6rem auto;
+
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
   }
 ul {
   list-style: none;
@@ -64,16 +69,25 @@ a {
 .hero-image {
   display: grid;
   place-items: center;
-  min-height: 80vh;
+  min-height: 75vh;
+  width: 80%;
+  margin: auto;
   background-attachment: fixed;
-  background-size: contain;
-  outline: 5px solid ${({ theme }) => theme.colors.main};
+  background-size: cover;
+  outline: 1px solid ${({ theme }) => theme.colors.main};
   outline-offset: -2rem;
   background-position: center 20%;
   
-  @media (min-width: 992px) {
-    background-size: cover;
-    outline-offset: -4rem;
+  @media (min-width: 768px) {
+    background-size: 80%;
+    min-height: 80vh;
+    background-position: center 30%;
+  }
+  @media (min-width: 992px) {  
+    background-position: center center;
+    background-size: 50%;
+    min-height: 90vh;
+    
   }
 }
 

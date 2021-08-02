@@ -1,6 +1,14 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { StyledMap } from "./StyledMap.js"
+import styled from "styled-components"
+
+const StyledMap = styled.div`
+  /* min-height: 600px; */
+  width: 100%;
+
+  /* overflow: hidden; */
+  /* background-color: ${({ theme }) => theme.colors.grey}; */
+`
 
 const Map = () => {
   return (
@@ -12,7 +20,7 @@ const Map = () => {
         target="_blank"
       >
         <StyledMap>
-          <StaticImage src="../../assets/map.PNG" alt="google map location" />
+          <StaticImage src="../assets/map.PNG" alt="google map location" />
         </StyledMap>
       </a>
     </article>

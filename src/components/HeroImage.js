@@ -7,22 +7,15 @@ import { Button } from "./atoms/Button"
 import { animationMoveY } from "../styles/Animations"
 
 const StyledHero = styled.div`
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.6);
 `
 
 const StyledHeroBtn = styled(Button)`
-  font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 50%;
   &:hover {
     text-shadow: ${({ theme }) => theme.shadows.shadow2};
   }
-  /* 
-  @media (min-width: 992px) {
-    background-color: transparent;
-    color: ${({ theme }) => theme.colors.main};
-    margin-bottom: 30%;
-  } */
 `
 
 const StyledHeroText = styled.div`
@@ -38,7 +31,7 @@ const StyledHeroText = styled.div`
   h1 {
     letter-spacing: 1.2rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.5rem 1.5rem;
     background-color: ${({ theme }) => theme.colors.white};
     color: black;
     font-size: 2rem;
@@ -46,7 +39,7 @@ const StyledHeroText = styled.div`
     margin: 30% auto 0;
 
     @media (min-width: 768px) {
-      font-size: 4rem;
+      font-size: 3rem;
       margin: 20% auto 0;
     }
   }
@@ -54,8 +47,8 @@ const StyledHeroText = styled.div`
   h2 {
     text-align: center;
     padding: 0.5rem;
-    color: ${({ theme }) => theme.colors.grey};
-    letter-spacing: 1px;
+    color: ${({ theme }) => theme.colors.lightGrey};
+    letter-spacing: 2px;
     background-color: black;
     font-size: 1rem;
     font-weight: 300;

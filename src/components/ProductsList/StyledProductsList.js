@@ -32,7 +32,7 @@ export const StyledThumbnail = styled.div`
   &:hover {
     .thumb {
       transform: scale(1.1);
-      opacity: 0.6;
+      filter: blur(2px);
     }
     .thumb-category {
       background-color: black;
