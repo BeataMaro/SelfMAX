@@ -17,12 +17,12 @@ const StyledHeroBtn = styled(Button)`
   &:hover {
     text-shadow: ${({ theme }) => theme.shadows.shadow2};
   }
-
+  /* 
   @media (min-width: 992px) {
     background-color: transparent;
     color: ${({ theme }) => theme.colors.main};
     margin-bottom: 30%;
-  }
+  } */
 `
 
 const StyledHeroText = styled.div`
@@ -41,7 +41,7 @@ const StyledHeroText = styled.div`
     padding: 0.5rem;
     background-color: ${({ theme }) => theme.colors.white};
     color: black;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     margin: 30% auto 0;
 
@@ -57,7 +57,7 @@ const StyledHeroText = styled.div`
     color: ${({ theme }) => theme.colors.grey};
     letter-spacing: 1px;
     background-color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
   }
 `
@@ -84,7 +84,7 @@ const HeroImage = () => {
         </StyledHeroText>
 
         <Link to="/products">
-          <StyledHeroBtn>Sprawdź ofertę</StyledHeroBtn>
+          <StyledHeroBtn empty>Sprawdź ofertę</StyledHeroBtn>
         </Link>
       </BgImage>
     </StyledHero>

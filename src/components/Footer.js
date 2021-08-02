@@ -19,7 +19,11 @@ const StyledFooter = styled.footer`
     line-height: 1;
     font-size: 0.8rem;
     text-align: right;
+    &.copyright {
+      text-align: left;
+    }
   }
+
   & a {
     color: ${({ theme }) => theme.colors.main};
   }
@@ -28,7 +32,9 @@ const StyledFooter = styled.footer`
 export const Footer = () => {
   return (
     <StyledFooter>
-      <p>&copy; 2021 SelfMAX. Wszelkie prawa zastrzeżone.</p>
+      <p className="copyright">
+        &copy; 2021 SelfMAX. Wszelkie prawa zastrzeżone.
+      </p>
       <p>
         Powered by{" "}
         <a

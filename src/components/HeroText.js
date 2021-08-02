@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledText = styled.section`
-  margin-top: 0;
-
   h1 {
     color: ${({ theme }) => theme.colors.black};
     letter-spacing: 2px;
@@ -64,7 +62,7 @@ const HeroText = () => {
           Nie konkurujemy cenami, dlatego jeśli szukasz najtańszego produktu to
           tutaj go nie znajdziesz. Po prostu, na jakości nie da się zaoszczędzić
           – przekonasz się o tym z biegiem lat, obserwując swój dach pod naporem
-          śniegu, lub targany porywistym wiatrem.
+          śniegu lub targany porywistym wiatrem.
         </p>
         <p>
           Usługi wykonujemy kompleksowo, przygotowujemy podłoże, montujemy
