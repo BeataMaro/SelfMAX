@@ -26,14 +26,6 @@ export const animationMoveY = (el, toTop) => {
     )
 }
 
-export const animationFade = (el, durationTime) => {
-  gsap.fromTo(
-    el,
-    { autoAlpha: 0, duration: `${durationTime}` },
-    { autoAlpha: 1 }
-  )
-}
-
 export const animationScrollBottom = el => {
   gsap.fromTo(
     el,

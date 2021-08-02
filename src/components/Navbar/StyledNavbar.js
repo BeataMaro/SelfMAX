@@ -7,7 +7,7 @@ export const StyledNavigation = styled.nav`
   padding: 1rem;
   height: 12vh;
   background-color: ${({ theme }) => theme.colors.white};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.lightGrey};
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
