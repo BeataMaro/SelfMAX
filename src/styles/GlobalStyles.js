@@ -80,8 +80,7 @@ a {
     background-position: center 30%;
   }
   @media (min-width: 992px) {  
-    background-position: center center;
-    background-size: 50%;
+    background-position: center top;
     min-height: 90vh;
     
   }

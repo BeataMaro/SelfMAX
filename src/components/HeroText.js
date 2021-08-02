@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledText = styled.section`
   h1 {
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.darkGrey};
     letter-spacing: 2px;
     font-weight: 600;
     text-align: center;

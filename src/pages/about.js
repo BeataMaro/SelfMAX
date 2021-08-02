@@ -35,7 +35,7 @@ const About = () => {
         <Link to="/products">
           <Button empty>Oferta</Button>
         </Link>
-        <GatsbyImage image={aboutImg} alt="" />
+        <GatsbyImage image={aboutImg} alt="Plants and rock wall" />
       </section>
     </>
   )
@@ -47,7 +47,13 @@ export const query = graphql`
   {
     file(relativeDirectory: { eq: "about" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED)
+        gatsbyImageData(
+          placeholder: BLURRED
+          width: 900
+          height: 600
+          quality: 70
+          blurredOptions: { width: 100 }
+        )
       }
     }
   }

@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
 import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
@@ -20,6 +24,18 @@ const Poliweglan = () => {
     animationMoveX(sectionRef.current, true)
   }, [])
 
+  const settings = {
+    dots: true,
+    // fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // cssEase: "linear",
+  }
+
   return (
     <>
       <Seo title="Zadaszenia z Poliwęglanu" />
@@ -33,9 +49,11 @@ const Poliweglan = () => {
           przestają być uciążliwe. Połączenie tych zalet ze stosunkowo niskimi
           kosztami sprawia, że jest to najczęściej wybierane rozwiązanie.
         </p>
-        {images.map((img, idx) => (
-          <GatsbyImage key={idx} image={img} alt="Product realization" />
-        ))}
+        <Slider {...settings}>
+          {images.map((img, idx) => (
+            <GatsbyImage key={idx} image={img} alt="Product realization" />
+          ))}
+        </Slider>
       </StyledProductsDetails>
     </>
   )

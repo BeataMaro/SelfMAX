@@ -90,7 +90,10 @@ export const query = graphql`
   {
     heroBgImage: file(relativePath: { eq: "hero/hero-house.png" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED)
+        gatsbyImageData(
+          placeholder: BLURRED
+          transformOptions: { cropFocus: CENTER, fit: COVER }
+        )
       }
     }
   }
