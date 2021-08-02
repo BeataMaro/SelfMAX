@@ -52,6 +52,10 @@ const StyledHeroText = styled.div`
     background-color: black;
     font-size: 1rem;
     font-weight: 300;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 `
 
