@@ -27,13 +27,10 @@ export const GlobalStyles = createGlobalStyle`
   main {
     flex: 1 0 auto;
   }
-  body {
-    line-height: 1.5;
-    letter-spacing: 0;
-  }
+
   ::selection {
-  background-color: ${({ theme }) => theme.colors.black};
-  color: ${({ theme }) => theme.colors.lightGrey};
+  background-color: ${({ theme }) => theme.colors.lightGrey};
+  color: ${({ theme }) => theme.colors.main};
 }
 
  ::placeholder {
@@ -91,20 +88,21 @@ a {
   width: 5.2rem;
   max-height: 15vh;
 
-
   @media (max-width: 992px) {
     width: 4rem; 
   }
 }
 
 .section-title {
-  width: 100%;
+  /* width: 100%; */
   color: ${({ theme }) => theme.colors.black};
   border-bottom: .5px solid ${({ theme }) => theme.colors.lightGrey};
   padding: 1rem 0;
   margin-bottom: 1rem;
   letter-spacing: 2px;
   font-weight: 500;
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
 }
 .static-gif {
 max-width: 100%;

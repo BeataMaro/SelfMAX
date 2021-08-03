@@ -17,7 +17,6 @@ const ContactInfo = () => {
           Jeśli zainteresowała Cię nasza oferta, wybierz najwygodniejszy dla
           siebie sposób kontaktu.
         </h3>
-        <h4>Wypełnij formularz lub zadzwoń.</h4>
       </div>
       <StyledIcons>
         <StyledCol>

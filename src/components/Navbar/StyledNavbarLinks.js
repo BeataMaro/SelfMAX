@@ -13,7 +13,6 @@ export const StyledNavlist = styled.ul`
   li {
     position: relative;
     width: 100%;
-    cursor: pointer;
 
     &:hover {
       & > .nav-item:not(.active-link) {
@@ -32,16 +31,17 @@ export const StyledNavlist = styled.ul`
       white-space: nowrap;
       transition: all 0.1s ease-in;
       font-size: 1.1rem;
+      cursor: pointer;
 
       &[products="true"] {
         &::after {
           content: "▾";
           display: inline-block;
           margin-left: 8px;
-          transition: 0.25s ease-in;
+          transition: 0.2s ease-in;
         }
         &:hover::after {
-          transform: rotate(90deg);
+          transform: rotate(180deg);
           color: ${({ theme }) => theme.colors.black};
         }
       }

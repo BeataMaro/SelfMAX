@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
 import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
@@ -19,6 +23,17 @@ const Ogrodyzimowe = () => {
   useEffect(() => {
     animationMoveX(sectionRef.current, true)
   }, [])
+
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  }
   return (
     <>
       <Seo title="Ogrody zimowe" />
@@ -32,9 +47,11 @@ const Ogrodyzimowe = () => {
           <br /> Możesz się nim cieszyć nawet wtedy, gdy aura nie zachęca do
           wychodzenia na zewnątrz.
         </p>
-        {images.map((img, idx) => (
-          <GatsbyImage key={idx} image={img} alt="Product realization" />
-        ))}
+        <Slider {...settings}>
+          {images.map(img => (
+            <GatsbyImage key={img.id} image={img} alt={img.base} />
+          ))}
+        </Slider>
       </StyledProductsDetails>
     </>
   )
@@ -48,6 +65,7 @@ export const query = graphql`
       edges {
         node {
           id
+          base
           childrenImageSharp {
             gatsbyImageData(
               placeholder: BLURRED

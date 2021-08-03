@@ -7,10 +7,12 @@ import { faAngleDoubleLeft } from "@fortawesome/free-solid-svg-icons"
 const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
+  transition: 0.2s ease;
   color: ${({ theme }) => theme.colors.grey};
   margin-bottom: 2rem;
   svg {
     font-size: 0.5rem;
+    color: ${({ theme }) => theme.colors.main};
   }
   span {
     margin-left: 0.5rem;

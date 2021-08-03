@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
 import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
@@ -20,6 +24,16 @@ const Lamele = () => {
   useEffect(() => {
     animationMoveX(sectionRef.current, true)
   }, [])
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  }
   return (
     <>
       <Seo title="Lamele" />
@@ -33,11 +47,11 @@ const Lamele = () => {
           pergola ochroni cię przed upałami w najgorętsze dni lub przed opadami,
           gdy pogoda się pogorszy.{" "}
         </p>
-        {carouselImages.map(img => (
-          <div key={img.id}>
-            <GatsbyImage image={img} alt={img.base} />
-          </div>
-        ))}
+        <Slider {...settings}>
+          {carouselImages.map(img => (
+            <GatsbyImage key={img.id} image={img} alt={img.base} />
+          ))}
+        </Slider>
       </StyledProductsDetails>
     </>
   )
@@ -47,7 +61,10 @@ export default Lamele
 
 export const query = graphql`
   {
-    allFile(filter: { relativeDirectory: { eq: "products/Lamele" } }) {
+    allFile(
+      filter: { relativeDirectory: { eq: "products/Lamele" } }
+      sort: { fields: base, order: ASC }
+    ) {
       edges {
         node {
           id

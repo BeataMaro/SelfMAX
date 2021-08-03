@@ -3,11 +3,20 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const StyledMap = styled.div`
-  /* min-height: 600px; */
   width: 100%;
-
-  /* overflow: hidden; */
-  /* background-color: ${({ theme }) => theme.colors.grey}; */
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 `
 
 const Map = () => {

@@ -18,7 +18,7 @@ const Zabudowa = () => {
       <Seo title="Zabudowa" />
       <StyledProductsDetails ref={sectionRef}>
         <BreadCrumbs />
-        <img src="/products/Zabudowa/gifs/gif.gif" alt="" />
+        <img src="../products/Zabudowa/gifs/gif.gif" alt="" />
       </StyledProductsDetails>
     </>
   )

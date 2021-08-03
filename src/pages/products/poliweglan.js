@@ -26,14 +26,13 @@ const Poliweglan = () => {
 
   const settings = {
     dots: true,
-    // fade: true,
+    fade: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    // cssEase: "linear",
   }
 
   return (
@@ -41,17 +40,20 @@ const Poliweglan = () => {
       <Seo title="Zadaszenia z Poliwęglanu" />
       <StyledProductsDetails ref={sectionRef}>
         <BreadCrumbs />
-        <h2>Zadaszenia z poliwęglanu</h2>
-        <p>
-          Poliwęglan komorowy grubości 16 mm ze zintegrowanym filtrem UV tworzy
-          optymalną osłonę przeciwsłoneczną. Zatrzymuje 30% światła dzięki czemu
-          na twoim tarasie jest wciąż jasno, a jednocześnie promienie słoneczne
-          przestają być uciążliwe. Połączenie tych zalet ze stosunkowo niskimi
-          kosztami sprawia, że jest to najczęściej wybierane rozwiązanie.
-        </p>
+        <div className="text">
+          <h3 className="section-title">Zadaszenia z poliwęglanu</h3>
+          <p>
+            Poliwęglan komorowy grubości 16 mm ze zintegrowanym filtrem UV
+            tworzy optymalną osłonę przeciwsłoneczną. Zatrzymuje 30% światła
+            dzięki czemu na twoim tarasie jest wciąż jasno, a jednocześnie
+            promienie słoneczne przestają być uciążliwe. Połączenie tych zalet
+            ze stosunkowo niskimi kosztami sprawia, że jest to najczęściej
+            wybierane rozwiązanie.
+          </p>
+        </div>
         <Slider {...settings}>
-          {images.map((img, idx) => (
-            <GatsbyImage key={idx} image={img} alt="Product realization" />
+          {images.map(img => (
+            <GatsbyImage key={img.id} image={img} alt={img.base} />
           ))}
         </Slider>
       </StyledProductsDetails>
@@ -67,6 +69,7 @@ export const query = graphql`
       edges {
         node {
           id
+          base
           childrenImageSharp {
             gatsbyImageData(
               placeholder: BLURRED

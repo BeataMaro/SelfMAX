@@ -7,16 +7,12 @@ export const StyledInfo = styled.article`
   align-items: center;
   text-align: center;
   color: ${({ theme }) => theme.colors.black};
+  padding: 2rem 0;
 
   h3 {
     letter-spacing: 1px;
     font-weight: 400;
-    position: relative;
-  }
-  h4 {
-    margin: 2rem auto;
-    font-weight: 600;
-    letter-spacing: 1px;
+    margin-bottom: 2rem;
   }
 
   p,
@@ -27,16 +23,9 @@ export const StyledInfo = styled.article`
 `
 
 export const StyledIcons = styled.div`
-  align-self: flex-start;
   display: flex;
-  align-items: space-between;
+  align-items: space-evenly;
   justify-content: space-evenly;
-  min-width: 75%;
-  padding: 1rem;
-
-  @media (min-width: 768px) {
-    min-width: 90%;
-  }
 `
 
 export const StyledCol = styled.div`

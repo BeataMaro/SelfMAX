@@ -10,27 +10,26 @@ import { animationMoveX } from "../styles/Animations"
 
 const StyledContactPage = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas:
+      "form form contact"
+      "form form conact"
+      "map map map";
+  }
 
   article {
+    //Form
     &:nth-of-type(1) {
-      grid-column: 1 / 3;
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-      }
+      grid-area: form;
     }
     &:nth-of-type(2) {
-      grid-column: 3 / 5;
-
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-        order: -1;
-      }
+      grid-area: contact;
     }
     &:nth-of-type(3) {
-      grid-column: 1 / -1;
+      grid-area: map;
     }
   }
 `
@@ -47,13 +46,12 @@ const Contact = () => {
       <section ref={sectionRef}>
         <h2 className="section-title">Kontakt</h2>
         <StyledContactPage>
+          <ContactInfo />
           <article>
             <FormspreeProvider project="1730305811177012389">
               <ContactForm />
             </FormspreeProvider>
           </article>
-
-          <ContactInfo />
 
           <Map />
         </StyledContactPage>

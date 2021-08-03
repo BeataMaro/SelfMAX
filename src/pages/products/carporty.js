@@ -32,9 +32,11 @@ const Carporty = () => {
           nagrzewaniem i jednocześnie zapewnia wytrzymałość na obciążenie
           śniegiem odpowiednią nawet dla rejonów górskich.
         </p>
-        {images.map((img, idx) => (
-          <GatsbyImage key={idx} image={img} alt="Product realization" />
-        ))}
+        <div className="gallery">
+          {images.map((img, idx) => (
+            <GatsbyImage key={idx} image={img} alt="Product realization" />
+          ))}
+        </div>
       </StyledProductsDetails>
     </>
   )
