@@ -94,15 +94,13 @@ a {
 }
 
 .section-title {
-  /* width: 100%; */
+ 
   color: ${({ theme }) => theme.colors.black};
-  border-bottom: .5px solid ${({ theme }) => theme.colors.lightGrey};
-  padding: 1rem 0;
-  margin-bottom: 1rem;
-  letter-spacing: 2px;
-  font-weight: 500;
-    writing-mode: vertical-lr;
-    transform: rotate(360deg);
+  border-left: 5px solid ${({ theme }) => theme.colors.main};
+  margin: 2rem 0;
+  text-transform: uppercase;
+  /* writing-mode: vertical-lr; */
+
 }
 .static-gif {
 max-width: 100%;

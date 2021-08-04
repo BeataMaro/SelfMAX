@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   margin-top: auto;
   background-color: ${({ theme }) => theme.colors.lightGrey};
-  padding: 2rem;
+  padding: 1.5rem;
   z-index: 5000;
 
   @media (max-width: 992px) {

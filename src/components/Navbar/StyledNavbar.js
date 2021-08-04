@@ -6,8 +6,8 @@ export const StyledNavigation = styled.nav`
   width: 100%;
   padding: 1rem;
   height: 12vh;
-  background-color: ${({ theme }) => theme.colors.white};
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.lightGrey};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,8 @@ export const Navbox = styled.div`
     top: 0;
     right: 0;
     left: 0;
-    background-color: ${({ theme }) => theme.colors.greenGrey};
+    background-color: ${({ theme }) => theme.colors.black};
+    box-shadow: ${({ theme }) => theme.shadows.shadow2};
   }
 
   &[open] {

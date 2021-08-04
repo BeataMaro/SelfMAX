@@ -16,7 +16,7 @@ export const StyledNavlist = styled.ul`
 
     &:hover {
       & > .nav-item:not(.active-link) {
-        color: ${({ theme }) => theme.colors.black};
+        /* color: ${({ theme }) => theme.colors.white}; */
       }
     }
 
@@ -33,16 +33,32 @@ export const StyledNavlist = styled.ul`
       font-size: 1.1rem;
       cursor: pointer;
 
+      &.desktop {
+        @media (min-width: 992px) {
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: ${({ theme }) => theme.colors.main};
+            transition: width 0.3s;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+
       &[products="true"] {
-        &::after {
+        &::before {
           content: "▾";
           display: inline-block;
-          margin-left: 8px;
+          margin-right: 8px;
           transition: 0.2s ease-in;
         }
         &:hover::after {
           transform: rotate(180deg);
-          color: ${({ theme }) => theme.colors.black};
+          color: ${({ theme }) => theme.colors.main};
         }
       }
 
@@ -50,14 +66,14 @@ export const StyledNavlist = styled.ul`
         font-size: 1.4rem;
         z-index: 500;
         color: ${({ theme }) => theme.colors.lightGrey};
-        &[products="true"]::after {
+        &[products="true"]::before {
           display: none;
         }
       }
     }
 
     .active-link {
-      color: ${({ theme }) => theme.colors.main};
+      background-color: ${({ theme }) => theme.colors.main};
     }
 
     /* submenu style */
@@ -68,14 +84,14 @@ export const StyledNavlist = styled.ul`
       position: absolute;
       top: 0;
       left: 0;
-      margin-top: 3.2rem;
+      margin-top: 3rem;
       background-color: ${({ theme }) => theme.colors.white};
-      box-shadow: ${({ theme }) => theme.shadows.shadow1};
+      box-shadow: ${({ theme }) => theme.shadows.shadow2};
       transition: all 0.2s ease;
       z-index: 3000;
 
       & li {
-        color: ${({ theme }) => theme.colors.grey};
+        color: ${({ theme }) => theme.colors.black};
         padding: 1.2rem;
         border: 0.05px solid transparent;
         border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};
@@ -87,10 +103,14 @@ export const StyledNavlist = styled.ul`
           border-right: 0.05px solid transparent;
         }
 
-        .nav-item {
+        &.nav-item {
           display: block;
           width: 100%;
           height: 100%;
+
+          &:hover::after {
+            visibility: hidden;
+          }
         }
       }
     }
@@ -103,6 +123,7 @@ export const StyledNavlist = styled.ul`
         visibility: visible;
         opacity: 1;
         display: block;
+        color: red;
       }
     }
   }

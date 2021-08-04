@@ -20,7 +20,7 @@ const NavbarLinks = ({ toggleMenu }) => {
           <li key={link.name}>
             <Link
               to={link.link}
-              className="nav-item"
+              className="nav-item desktop"
               activeClassName="active-link"
               products={`${link.name === "Produkty"}`}
               onClick={() => toggleMenu(prev => !prev)}

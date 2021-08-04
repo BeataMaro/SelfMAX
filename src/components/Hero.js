@@ -1,60 +1,31 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
-const StyledHero = styled.div`
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
+import { Button } from "../components/atoms/Button"
 
-  .mobile {
-    display: inline-block;
-  }
+const StyledContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.colors.black};
+  display: grid;
+  place-items: center;
+`
 
-  .desktop {
-    display: none;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  @media (min-width: 992px) {
-    height: 50vh;
-    .mobile {
-      display: none;
-    }
-    .desktop {
-      display: block;
-      margin: auto;
-    }
-  }
+const StyledHero = styled.h1`
+  color: transparent;
+  -webkit-text-stroke: 1px ${({ theme }) => theme.colors.white};
+  font-size: 5rem;
+  margin: 0;
 `
 
 const Hero = () => {
   return (
     <>
-      <StyledHero>
-        <StaticImage
-          src="../assets/hero/hero2.jpg"
-          alt="Zadaszenie z poliwęglanu"
-          placeholder="blurred"
-          className="hero-image desktop"
-        />
-
-        <StaticImage
-          src="../assets/hero/hero-flip.jpg"
-          alt="Ogród zimowy"
-          placeholder="blurred"
-          className="hero-image mobile"
-        />
-      </StyledHero>
+      <StyledContainer>
+        <StyledHero>SelfMax</StyledHero>
+        <Button empty>Sprawdź</Button>
+      </StyledContainer>
     </>
   )
 }

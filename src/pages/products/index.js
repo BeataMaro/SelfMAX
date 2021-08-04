@@ -13,7 +13,7 @@ const Products = () => {
     <>
       <Seo title="Produkty" />
       <section ref={sectionRef}>
-        <h2 className="section-title">Nasza oferta</h2>
+        <h2 className="section-title">Oferta</h2>
         <ProductsList />
       </section>
     </>

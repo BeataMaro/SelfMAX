@@ -49,11 +49,11 @@ export const StyledCategory = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
   text-align: center;
   padding: 1.2rem;
   letter-spacing: 5px;
-  background-color: black;
+  background-color: rgba(200, 250, 255, 0.2);
   color: ${({ theme }) => theme.colors.white};
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   transition: all 0.2s linear;
