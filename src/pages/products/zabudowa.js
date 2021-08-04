@@ -5,6 +5,7 @@ import React, { useRef, useEffect } from "react"
 import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
+import gif from "../../assets/products/Zabudowa/gifs/gif.gif"
 import Seo from "../../components/Seo"
 
 const Zabudowa = () => {
@@ -18,7 +19,7 @@ const Zabudowa = () => {
       <Seo title="Zabudowa" />
       <StyledProductsDetails ref={sectionRef}>
         <BreadCrumbs />
-        <img src="../products/Zabudowa/gifs/gif.gif" alt="" />
+        <img src={gif} alt="" className="static-gif" />
       </StyledProductsDetails>
     </>
   )

@@ -16,7 +16,7 @@ export const StyledNavlist = styled.ul`
 
     &:hover {
       & > .nav-item:not(.active-link) {
-        /* color: ${({ theme }) => theme.colors.white}; */
+        color: ${({ theme }) => theme.colors.main};
       }
     }
 
@@ -56,7 +56,7 @@ export const StyledNavlist = styled.ul`
           margin-right: 8px;
           transition: 0.2s ease-in;
         }
-        &:hover::after {
+        &:hover::before {
           transform: rotate(180deg);
           color: ${({ theme }) => theme.colors.main};
         }
@@ -74,9 +74,10 @@ export const StyledNavlist = styled.ul`
 
     .active-link {
       background-color: ${({ theme }) => theme.colors.main};
+      color: white;
     }
 
-    /* submenu style */
+    /* submenu */
     & > ul {
       visibility: hidden;
       opacity: 0;
@@ -92,12 +93,13 @@ export const StyledNavlist = styled.ul`
 
       & li {
         color: ${({ theme }) => theme.colors.black};
+        font-weight: 500;
         padding: 1.2rem;
         border: 0.05px solid transparent;
         border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};
 
         &:hover {
-          border-color: ${({ theme }) => theme.colors.greenGrey};
+          /* border-color: ${({ theme }) => theme.colors.grey}; */
           background-color: white;
           border-left: 0.05px solid transparent;
           border-right: 0.05px solid transparent;

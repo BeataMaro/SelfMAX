@@ -99,6 +99,7 @@ a {
   border-left: 5px solid ${({ theme }) => theme.colors.main};
   margin: 2rem 0;
   text-transform: uppercase;
+  display: inline-flex;
   /* writing-mode: vertical-lr; */
 
 }
