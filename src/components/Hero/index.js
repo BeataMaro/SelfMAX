@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
+import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 import { Button } from "../../components/atoms/Button"
+import { animationMoveX } from "../../styles/Animations"
 
 const StyledContainer = styled.div`
   width: 100%;
@@ -26,8 +28,8 @@ const StyledHero = styled.h1`
 `
 
 const StyledShape = styled.div`
-  width: 20vw;
-  height: 20vw;
+  width: 10vw;
+  height: 10vw;
   background-color: slateblue;
   border-radius: 50%;
   transition: 0.3s ease-in;
@@ -39,17 +41,23 @@ const StyledShape = styled.div`
   transform-origin: center;
 
   &:hover {
-    width: 10vw;
-    height: 10vw;
+    transform: scale(1.2);
   }
 `
 
 const Hero = () => {
+  const heroRef = useRef(null)
+  useEffect(() => {
+    animationMoveX(heroRef.current, true)
+  }, [])
+
   return (
     <>
       <StyledContainer>
-        <StyledHero>SelfMax</StyledHero>
-        <Button empty>Dowiedz się wiecej</Button>
+        <StyledHero ref={heroRef}>SelfMax</StyledHero>
+        <Link to="/products">
+          <Button empty>Dowiedz się wiecej</Button>
+        </Link>
         <StyledShape></StyledShape>
       </StyledContainer>
     </>

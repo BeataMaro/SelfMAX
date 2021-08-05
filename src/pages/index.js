@@ -1,13 +1,14 @@
 import React from "react"
 
-import Header from "../components/Header"
+import Hero from "../components/Hero"
 import Seo from "../components/Seo"
+import { animationMoveX } from "../styles/Animations"
 
 export default function Home() {
   return (
     <>
       <Seo title="Strona Główna" />
-      <Header />
+      <Hero />
     </>
   )
 }

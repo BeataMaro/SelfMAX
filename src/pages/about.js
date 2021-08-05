@@ -26,8 +26,8 @@ const StyledTopArticle = styled.article`
 const StyledBottomArticle = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: align-right;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 992px) {
     flex-direction: column;

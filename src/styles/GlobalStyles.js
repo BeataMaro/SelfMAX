@@ -102,14 +102,10 @@ a {
   display: inline-flex;
 
 }
-.static-gif {
-max-width: 100%;
-width: 400px;
-}
 
 .slider {
   max-width: 600px;
-  margin: 4rem auto 2rem;
+  margin: 4rem auto;
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   position: relative;
 

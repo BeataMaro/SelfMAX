@@ -106,6 +106,12 @@ export const StyledNavlist = styled.ul`
         border: 0.05px solid transparent;
         border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};
 
+        .active-link {
+          background-color: transparent;
+          color: ${({ theme }) => theme.colors.main};
+          font-weight: 500;
+        }
+
         &:hover {
           background-color: white;
           border-left: 0.05px solid transparent;
