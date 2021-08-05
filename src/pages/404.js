@@ -36,15 +36,16 @@ const StyledInfo = styled.div`
   p {
     font-weight: 500;
     margin-bottom: 2rem;
+    color: ${({ theme }) => theme.colors.textColor};
   }
 `
 
 const StyledLink = styled(Link)`
-  color: ${({ theme }) => theme.colors.error};
   cursor: pointer;
+  color: ${({ theme }) => theme.colors.main};
 
   :hover {
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.success};
   }
 `
 
@@ -52,7 +53,7 @@ const Error404Page = () => {
   return (
     <StyledError>
       <StyledInfo>
-        <h2>Przepraszamy,</h2>
+        <h2 className="section-title">Przepraszamy,</h2>
         <p>strona o podanym adresie nie istnieje.</p>
         <StyledLink to="/">Wróć na stronę główną</StyledLink>
       </StyledInfo>

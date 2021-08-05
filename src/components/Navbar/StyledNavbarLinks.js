@@ -30,7 +30,7 @@ export const StyledNavlist = styled.ul`
       letter-spacing: 1px;
       white-space: nowrap;
       transition: all 0.1s ease-in;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       cursor: pointer;
 
       &.desktop {
@@ -94,24 +94,25 @@ export const StyledNavlist = styled.ul`
       margin-top: 3rem;
       background-color: ${({ theme }) => theme.colors.white};
       box-shadow: ${({ theme }) => theme.shadows.shadow1};
+      border-radius: 2%;
+      overflow: hidden;
       transition: all 0.2s ease;
       z-index: 3000;
 
       & li {
         color: ${({ theme }) => theme.colors.black};
-        font-weight: 500;
+        font-weight: 400;
         padding: 1.2rem;
         border: 0.05px solid transparent;
         border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};
 
         &:hover {
-          /* border-color: ${({ theme }) => theme.colors.grey}; */
           background-color: white;
           border-left: 0.05px solid transparent;
           border-right: 0.05px solid transparent;
         }
 
-        &.nav-item {
+        .nav-item {
           display: block;
           width: 100%;
           height: 100%;

@@ -3,17 +3,26 @@ import styled from "styled-components"
 
 const StyledText = styled.article`
   width: 50vw;
-  margin: auto;
+  margin: 2rem auto;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 
   h2 {
     margin-bottom: 2rem;
+  }
+  p {
+    margin: 0.8rem 0;
+    line-height: 1.4;
+    color: ${({ theme }) => theme.colors.textGrey};
   }
 `
 
 const terms = () => {
   return (
     <StyledText>
-      <h2>Polityka prywatności</h2>
+      <h2 className="section-title">Polityka prywatności</h2>
       <p>
         Niniejsza Polityka Prywatności dotyczy strony: – www.selfmax.pl.
         Właściciel serwisu dokłada wszelkich starań, aby Państwa prywatność była

@@ -47,9 +47,13 @@ const Ogrodyzimowe = () => {
           <br /> Możesz się nim cieszyć nawet wtedy, gdy aura nie zachęca do
           wychodzenia na zewnątrz.
         </p>
-        <Slider {...settings}>
-          {images.map(img => (
-            <GatsbyImage key={img.id} image={img} alt={img.base} />
+        <Slider {...settings} className="slider">
+          {images.map((img, idx) => (
+            <GatsbyImage
+              key={img.id || idx}
+              image={img}
+              alt={img.base || "Ogrody zimowe - realizacje"}
+            />
           ))}
         </Slider>
       </StyledProductsDetails>

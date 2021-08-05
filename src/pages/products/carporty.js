@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
 import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
@@ -19,6 +23,18 @@ const Carporty = () => {
   useEffect(() => {
     animationMoveX(sectionRef.current, true)
   }, [])
+
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  }
+
   return (
     <>
       <Seo title="Carporty" />
@@ -34,12 +50,15 @@ const Carporty = () => {
             śniegiem odpowiednią nawet dla rejonów górskich.
           </p>
         </article>
-
-        <div className="gallery">
+        <Slider {...settings} className="slider">
           {images.map((img, idx) => (
-            <GatsbyImage key={idx} image={img} alt="Product realization" />
+            <GatsbyImage
+              key={img.id || idx}
+              image={img}
+              alt="Carporty - realizacje"
+            />
           ))}
-        </div>
+        </Slider>
       </StyledProductsDetails>
     </>
   )

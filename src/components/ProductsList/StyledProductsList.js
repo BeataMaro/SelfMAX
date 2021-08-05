@@ -10,7 +10,7 @@ export const StyledProducts = styled.div`
 `
 export const StyledLink = styled(Link)`
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 4%;
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   width: 100%;
   height: 350px;
@@ -30,7 +30,7 @@ export const StyledThumbnail = styled.div`
 
   &:hover {
     .thumb-category {
-      background-color: ${({ theme }) => theme.colors.main};
+      background-color: ${({ theme }) => theme.colors.textGrey};
     }
   }
 
@@ -43,19 +43,19 @@ export const StyledThumbnail = styled.div`
     }
   }
 `
-
 export const StyledCategory = styled.div`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
+  padding: 1rem 2rem;
   width: 100%;
   text-align: center;
-  padding: 1.2rem;
-  letter-spacing: 5px;
-  background-color: rgba(200, 250, 255, 0.2);
-  color: ${({ theme }) => theme.colors.white};
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: ${({ theme }) => theme.shadows.shadow1};
+  background-color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.lightGrey};
   transition: all 0.2s linear;
 
   @media (max-width: 992px) {

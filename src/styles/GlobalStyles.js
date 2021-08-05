@@ -100,12 +100,29 @@ a {
   margin: 2rem 0;
   text-transform: uppercase;
   display: inline-flex;
-  /* writing-mode: vertical-lr; */
 
 }
 .static-gif {
 max-width: 100%;
-width: 600px;
+width: 400px;
+}
+
+.slider {
+  max-width: 600px;
+  margin: 4rem auto 2rem;
+  box-shadow: ${({ theme }) => theme.shadows.shadow1};
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2rem;
+    bottom: -2rem;
+    left: -2rem;
+    right: -2rem;
+    background-color: #e3e6ef;
+  }
 }
 
 .error {
@@ -142,7 +159,6 @@ width: 600px;
 }
 
 .poliweglan {
-  width: 60%;
   &::after {
     content: "Zadaszenia z poliwęglanu";
   }
@@ -165,27 +181,4 @@ width: 600px;
   height: 100%; 
   transition: 0.4s ease-in-out;
 }
-
-
-
-/* .checkboxInpt {
-  position: relative;
-  visibility: hidden;
-
-  &::checked {
-
-  }
-  &::after {
-    visibility: visible;
-    position: absolute;
-    top:0;
-    left: 0;
-    content: "o";
-    width: 10px;
-    height: 10px;
-    background: red;
-  }
-} */
-
-
 `

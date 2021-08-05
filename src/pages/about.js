@@ -83,8 +83,8 @@ const About = () => {
             </p>
             <p>
               W Polsce nasze usługi są dostępne od 2020 roku. Podobnie jak to ma
-              miejsce w Austrii naszą misją jest dostarczanie klientom produktów
-              i usług o bezkompromisowej jakości.
+              miejsce w - Austrii naszą misją jest dostarczanie klientom
+              produktów i usług o bezkompromisowej jakości.
             </p>
           </StyledText>
         </StyledTopArticle>
