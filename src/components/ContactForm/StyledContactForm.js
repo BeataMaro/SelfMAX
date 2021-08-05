@@ -52,7 +52,7 @@ export const StyledTerms = styled.div`
   display: flex;
   align-items: center;
   a {
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.textGrey};
     margin-left: 4px;
   }
 `

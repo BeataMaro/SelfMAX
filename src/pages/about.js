@@ -35,7 +35,6 @@ const StyledBottomArticle = styled.div`
 
   img {
     min-width: 600px;
-    /* width: 100%; */
     max-height: 500px;
   }
 `
@@ -53,6 +52,7 @@ const StyledText = styled.article`
   p {
     margin: 0.8rem 0;
     line-height: 1.4;
+    color: ${({ theme }) => theme.colors.textGrey};
   }
 `
 

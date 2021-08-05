@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
-    font-family: ${({ theme }) => theme.fonts.poppins};
+    font-family: 'Saira Semi Condensed', sans-serif;
     font-size: 16px;
     color: ${({ theme }) => theme.colors.black};
   }
@@ -34,7 +34,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 
  ::placeholder {
-    color: ${({ theme }) => theme.colors.greenGrey};
+    color: ${({ theme }) => theme.colors.textGrey};
   }
 
   section { 

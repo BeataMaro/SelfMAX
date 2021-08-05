@@ -1,18 +1,10 @@
 const theme = {
-  fonts: {
-    main: "Montserrat, sans-serif",
-    poppins: "Poppins, sans-serif;",
-    kanit: "Kanit, sans-serif",
-    saira: "Saira Semi Condensed, sans-serif",
-    nunito: "Nunito, sans-serif",
-    dodum: "Gowun Dodum, sans-serif",
-  },
   colors: {
     main: "hsl(41, 95%, 50%)",
     grey: "hsl(0, 0%, 46%)",
     lightGrey: "hsl(0, 0%, 89%)",
     darkGrey: "hsl(40, 3%, 21%)",
-    greenGrey: "hsl(170, 15%, 40%)",
+    textGrey: "hsl(0, 0%, 46%);",
     success: "hsl(90, 70%, 30%)",
     white: "hsl(0, 0%, 97%)",
     brown: "hsl(0, 20%, 40%)",
