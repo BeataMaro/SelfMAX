@@ -56,9 +56,15 @@ export const StyledNavlist = styled.ul`
           margin-right: 8px;
           transition: 0.2s ease-in;
         }
+        &::after {
+          visibility: hidden;
+        }
         &:hover::before {
           transform: rotate(180deg);
           color: ${({ theme }) => theme.colors.main};
+        }
+        &:hover::after {
+          visibility: hidden;
         }
       }
 
@@ -87,7 +93,7 @@ export const StyledNavlist = styled.ul`
       left: 0;
       margin-top: 3rem;
       background-color: ${({ theme }) => theme.colors.white};
-      box-shadow: ${({ theme }) => theme.shadows.shadow2};
+      box-shadow: ${({ theme }) => theme.shadows.shadow1};
       transition: all 0.2s ease;
       z-index: 3000;
 

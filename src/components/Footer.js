@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
+  background-color: ${({ theme }) => theme.colors.black};
   padding: 1.5rem;
   z-index: 5000;
 

@@ -6,7 +6,7 @@ export const StyledProductsDetails = styled.section`
   }
   p {
     line-height: 1.8rem;
-    margin: 2rem;
+    margin: 2rem 0;
   }
 
   @media (min-width: 768px) {

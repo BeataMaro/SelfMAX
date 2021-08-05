@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
   color: ${({ theme }) => theme.colors.darkGrey};
   background-color: ${({ theme }) => theme.colors.lightGrey};
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
