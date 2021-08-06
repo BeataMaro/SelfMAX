@@ -14,7 +14,7 @@ const theme = {
   },
   shadows: {
     shadow1: "1px 4px 5px rgba(30, 30, 31, 0.2)",
-    shadow2: "4px 4px 0 #fff",
+    shadow2: "4px 4px 0 hsl(41, 95%, 50%)",
     shadow3: "0 50px 50px -10px rgb(0 0 0 / 30%)",
   },
 }

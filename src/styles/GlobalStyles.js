@@ -60,36 +60,44 @@ a {
 }
 
 .hero-image {
-  display: grid;
-  place-items: center;
-  min-height: 75vh;
-  width: 80%;
-  margin: auto;
-  background-attachment: fixed;
-  background-size: cover;
-  outline: 1px solid ${({ theme }) => theme.colors.main};
-  outline-offset: -2rem;
-  background-position: center 20%;
-  
-  @media (min-width: 768px) {
-    background-size: 80%;
-    min-height: 80vh;
-    background-position: center 30%;
+clip-path: polygon(0 0, 30% 15%, 70% 15%, 100% 0%, 95% 25%, 100% 65%, 50% 100%, 0 65%, 5% 25%);
+max-width: 40vw;
+position: relative;
+
+@media (max-width: 992px) {
+  max-width: 80vw;
+}
+&::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color:hsla(41, 95%, 50%, .2);
   }
-  @media (min-width: 992px) {  
-    background-position: center top;
-    min-height: 90vh;
-    
+}
+
+.hero-button {
+  @media (max-width: 992px) {
+    font-size: .8rem;
   }
 }
 
 .logo {
   max-width: 100%;
-  width: 5.2rem;
+  width: 8rem;
   max-height: 15vh;
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   @media (max-width: 992px) {
-    width: 4rem; 
+    width: 6rem; 
   }
 }
 

@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const StyledContactBar = styled.div`
   position: fixed;
-  bottom: 4rem;
+  bottom: 5rem;
   right: 0;
   display: grid;
   place-items: center;
@@ -18,10 +18,18 @@ export const StyledIcons = styled.div`
   color: ${({ theme }) => theme.colors.lightGrey};
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 
   .phone,
   .facebook {
-    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 200;
     margin-right: 1rem;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
   }
 `

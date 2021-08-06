@@ -11,7 +11,6 @@ export const Button = styled.button`
     ${({ empty, theme }) => (empty ? theme.colors.main : theme.colors.main)};
 
   font-weight: 400;
-  text-transform: capitalize;
   text-align: center;
   letter-spacing: 0.2rem;
   transition: all 0.3s ease;
