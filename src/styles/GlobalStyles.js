@@ -24,6 +24,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.black};
   }
 
+  body {
+    background-color: ${({ theme }) => theme.colors.black};
+  }
+
   main {
     flex: 1 0 auto;
   }
@@ -67,7 +71,7 @@ position: relative;
 @media (max-width: 992px) {
   max-width: 80vw;
 }
-&::after {
+/* &::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,8 +81,9 @@ position: relative;
   display: block;
   width: 50%;
   height: 100%;
-  background-color:hsla(41, 95%, 50%, .2);
-  }
+  background-color: yellow;
+  filter: blur(4px);
+  } */
 }
 
 .hero-button {
@@ -89,15 +94,12 @@ position: relative;
 
 .logo {
   max-width: 100%;
-  width: 8rem;
+  width: 6rem;
   max-height: 15vh;
   z-index: 10000;
-  position: absolute;
-  top: 0;
-  left: 0;
 
   @media (max-width: 992px) {
-    width: 6rem; 
+    width: 5rem; 
   }
 }
 

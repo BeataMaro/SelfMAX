@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Hamburger = styled.div`
-  background-color: ${({ theme }) => theme.colors.lightGrey};
+  background-color: ${({ theme }) => theme.colors.textGrey};
   width: 60px;
   height: 0.3rem;
   border-radius: 40px;
@@ -26,7 +26,7 @@ const Hamburger = styled.div`
     content: "";
     height: 0.3rem;
     border-radius: 40px;
-    background-color: ${({ theme }) => theme.colors.lightGrey};
+    background-color: ${({ theme }) => theme.colors.textGrey};
     transition: all 0.3s linear;
   }
 

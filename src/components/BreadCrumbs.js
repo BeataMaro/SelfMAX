@@ -8,7 +8,7 @@ const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   transition: 0.2s ease;
-  color: ${({ theme }) => theme.colors.grey};
+  color: ${({ theme }) => theme.colors.textGrey};
   margin-bottom: 2rem;
   svg {
     font-size: 0.5rem;

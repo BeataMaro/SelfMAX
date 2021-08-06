@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css"
 import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
+import ContactCorner from "../../components/ContactCorner"
 import Seo from "../../components/Seo"
 
 const Ogrodyzimowe = () => {
@@ -57,6 +58,7 @@ const Ogrodyzimowe = () => {
           ))}
         </Slider>
       </StyledProductsDetails>
+      <ContactCorner />
     </>
   )
 }

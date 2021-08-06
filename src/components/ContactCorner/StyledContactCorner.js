@@ -2,20 +2,20 @@ import styled from "styled-components"
 
 export const StyledContactBar = styled.div`
   position: fixed;
-  bottom: 5rem;
+  top: 80vh;
   right: 0;
   display: grid;
   place-items: center;
   background-color: rgba(255, 255, 255, 0.8);
-  background-color: ${({ theme }) => theme.colors.black};
-  border-radius: 6px 0 0 2px;
+  background-color: ${({ theme }) => theme.colors.lightGrey};
+  border-radius: 5px 5px 0 5px;
   padding: 1rem;
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   z-index: 3000;
 `
 
 export const StyledIcons = styled.div`
-  color: ${({ theme }) => theme.colors.lightGrey};
+  color: ${({ theme }) => theme.colors.black};
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -23,7 +23,7 @@ export const StyledIcons = styled.div`
   .phone,
   .facebook {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
     margin-right: 1rem;
     cursor: pointer;
 

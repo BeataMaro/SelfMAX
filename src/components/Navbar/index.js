@@ -3,7 +3,6 @@ import Logo from "../Logo"
 import Hamburger from "../Hamburger"
 import NavbarLinks from "./NavbarLinks"
 import { StyledNavigation, Toggle, Navbox } from "./StyledNavbar"
-import ContactCorner from "../ContactCorner"
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -25,7 +24,6 @@ const Navbar = () => {
           </Navbox>
         )}
       </StyledNavigation>
-      <ContactCorner />
     </>
   )
 }

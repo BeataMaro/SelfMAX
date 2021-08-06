@@ -6,7 +6,8 @@ export const StyledNavigation = styled.nav`
   width: 100%;
   padding: 1rem;
   height: 12vh;
-  background-color: ${({ theme }) => theme.colors.black};
+  /* background-color: ${({ theme }) => theme.colors.black}; */
+  background-color: transparent;
   color: ${({ theme }) => theme.colors.lightGrey};
   display: flex;
   justify-content: space-between;

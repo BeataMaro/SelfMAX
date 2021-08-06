@@ -15,28 +15,30 @@ const ProductsList = () => {
   } = useStaticQuery(query)
 
   return (
-    <StyledProducts>
-      {edges.map(({ node }) => (
-        <StyledLink
-          to={node.base.substr(0, node.base.lastIndexOf("."))}
-          key={node.id}
-        >
-          <StyledThumbnail>
-            <GatsbyImage
-              image={node?.childrenImageSharp[0]?.gatsbyImageData}
-              alt="Product realization thumb"
-              className="thumb"
-            />
-            <StyledCategory
-              className={`thumb-category ${node.base.substr(
-                0,
-                node.base.lastIndexOf(".")
-              )}`}
-            />
-          </StyledThumbnail>
-        </StyledLink>
-      ))}
-    </StyledProducts>
+    <>
+      <StyledProducts>
+        {edges.map(({ node }) => (
+          <StyledLink
+            to={node.base.substr(0, node.base.lastIndexOf("."))}
+            key={node.id}
+          >
+            <StyledThumbnail>
+              <GatsbyImage
+                image={node?.childrenImageSharp[0]?.gatsbyImageData}
+                alt="Product realization thumb"
+                className="thumb"
+              />
+              <StyledCategory
+                className={`thumb-category ${node.base.substr(
+                  0,
+                  node.base.lastIndexOf(".")
+                )}`}
+              />
+            </StyledThumbnail>
+          </StyledLink>
+        ))}
+      </StyledProducts>
+    </>
   )
 }
 

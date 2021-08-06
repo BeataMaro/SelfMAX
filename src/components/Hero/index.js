@@ -37,6 +37,7 @@ const StyledHero = styled.article`
     color: ${({ theme }) => theme.colors.lightGrey};
     font-weight: 300;
     text-align: center;
+    margin-top: 1rem;
 
     @media (max-width: 992px) {
       font-size: 0.9rem;
@@ -44,12 +45,6 @@ const StyledHero = styled.article`
     }
   }
 `
-
-const StyledText = styled.div`
-  display: grid;
-  place-items: center;
-`
-
 const Hero = () => {
   const heroRef = useRef(null)
   useEffect(() => {
@@ -59,26 +54,24 @@ const Hero = () => {
   return (
     <>
       <StyledContainer>
-        <StyledText>
-          <StyledHero ref={heroRef}>
-            <h1>
-              <strong>SelfMAX</strong>
-            </h1>
-            <h2>Zadaszenia | Ogrody zimowe | Wiaty</h2>
-          </StyledHero>
-          <Link to="/products">
-            <Button empty role="button" className="hero-button">
-              Dowiedz się wiecej
-            </Button>
-          </Link>
-        </StyledText>
+        <StyledHero ref={heroRef}>
+          <h1>
+            <strong>SelfMAX</strong>
+          </h1>
+          <h2>Zadaszenia | Ogrody zimowe | Wiaty</h2>
+        </StyledHero>
 
         <StaticImage
           src="../../assets/hero/hero2.jpg"
-          alt=""
+          alt="Zadaszenie z poliwęglanu"
           placeholder="blurred"
           className="hero-image"
         ></StaticImage>
+        <Link to="/products">
+          <Button empty role="button" className="hero-button">
+            Dowiedz się wiecej
+          </Button>
+        </Link>
       </StyledContainer>
     </>
   )

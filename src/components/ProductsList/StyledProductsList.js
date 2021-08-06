@@ -30,7 +30,7 @@ export const StyledThumbnail = styled.div`
 
   &:hover {
     .thumb-category {
-      background-color: ${({ theme }) => theme.colors.textGrey};
+      background-color: ${({ theme }) => theme.colors.black};
     }
   }
 
@@ -54,7 +54,7 @@ export const StyledCategory = styled.div`
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: ${({ theme }) => theme.shadows.shadow1};
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.textGrey};
   color: ${({ theme }) => theme.colors.lightGrey};
   transition: all 0.2s linear;
 

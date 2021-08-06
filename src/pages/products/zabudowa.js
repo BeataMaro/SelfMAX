@@ -9,6 +9,7 @@ import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
 import gif from "../../assets/products/Zabudowa/gifs/gif.gif"
+import ContactCorner from "../../components/ContactCorner"
 import Seo from "../../components/Seo"
 
 const StyledList = styled.ul`
@@ -69,6 +70,7 @@ const Zabudowa = () => {
           <img src={gif} alt="Zabudowa - prezentacja działania" />
         </div>
       </StyledProductsDetails>
+      <ContactCorner />
     </>
   )
 }

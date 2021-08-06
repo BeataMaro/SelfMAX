@@ -121,7 +121,9 @@ const About = () => {
             </p>
 
             <Link to="/products">
-              <Button empty>Oferta</Button>
+              <Button empty role="button">
+                Oferta
+              </Button>
             </Link>
           </StyledText>
         </StyledBottomArticle>
