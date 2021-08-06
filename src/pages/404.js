@@ -9,6 +9,7 @@ const StyledError = styled.div`
   justify-content: center;
   width: 90%;
   margin-left: auto;
+  background-color: ${({ theme }) => theme.colors.white};
 
   @media (max-width: 992px) {
     flex-direction: column;
