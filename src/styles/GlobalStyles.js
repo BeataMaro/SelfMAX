@@ -3,9 +3,9 @@ import { createGlobalStyle } from "styled-components"
 export const GlobalStyles = createGlobalStyle`
 
 :root {
-  --nav-height: 15vh;
+  --nav-height: 12vh;
   scroll-padding-top: calc(var(--nav-height) + 10px);
-  scroll-padding-top: 15vh;
+  scroll-padding-top: 12vh;
 
 }
 
@@ -62,31 +62,6 @@ a {
   cursor: pointer;
   }
 }
-
-.hero-image {
-clip-path: polygon(0 0, 30% 15%, 70% 15%, 100% 0%, 95% 25%, 100% 65%, 50% 100%, 0 65%, 5% 25%);
-/* clip-path: polygon(50% 0%, 100% 30%, 92% 100%, 9% 100%, 0% 30%); */
-
-max-width: 70vw;
-margin-top: 1rem;
-
-@media (min-width: 768px) {
-  max-width: 65vw;
-}
-@media (min-width: 992px) {
-  max-width: 50vw;
-}
-}
-
-.hero-button {
-  @media (max-width: 768px) {
-    font-size: .5rem;
-  }
-  @media (max-width: 992px) {
-    font-size: .8rem;
-  }
-}
-
 .logo {
   max-width: 100%;
   width: 4rem;
@@ -111,25 +86,6 @@ margin-top: 1rem;
   display: inline-flex;
 
 }
-
-.slider {
-  max-width: 600px;
-  margin: 4rem auto;
-  box-shadow: ${({ theme }) => theme.shadows.shadow1};
-  position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -2rem;
-    bottom: -2rem;
-    left: -2rem;
-    right: -2rem;
-    background-color: #e3e6ef;
-  }
-}
-
 .error {
   color: ${({ theme }) => theme.colors.error};
   white-space: pre-line;
@@ -176,14 +132,4 @@ margin-top: 1rem;
   }
 }
 
-.thumb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%; 
-  transition: 0.4s ease-in-out;
-}
 `

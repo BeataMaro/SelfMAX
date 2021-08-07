@@ -1,50 +1,11 @@
 import React, { useRef, useEffect } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import styled from "styled-components"
 
 import { Button } from "../../components/atoms/Button"
+import { StyledContainer, StyledHero } from "./StyledHero"
 import { animationMoveY } from "../../styles/Animations"
 
-const StyledContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: ${({ theme }) => theme.colors.black};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-`
-
-const StyledHero = styled.article`
-  h1 {
-    color: transparent;
-    -webkit-text-stroke: 1px ${({ theme }) => theme.colors.main};
-    text-shadow: ${({ theme }) => theme.shadows.shadow2};
-    font-size: 4rem;
-    font-weight: 200;
-    text-align: center;
-    margin: 0;
-    letter-spacing: 3px;
-
-    @media (max-width: 768px) {
-      font-size: 3rem;
-    }
-  }
-
-  h2 {
-    color: ${({ theme }) => theme.colors.lightGrey};
-    font-weight: 300;
-    text-align: center;
-    margin-top: 1rem;
-
-    @media (max-width: 992px) {
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-    }
-  }
-`
 const Hero = () => {
   const heroRef = useRef(null)
   useEffect(() => {
