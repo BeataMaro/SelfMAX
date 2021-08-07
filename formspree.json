@@ -2,7 +2,7 @@
   "forms": {
     "ContactSelfMAX": {
       "name": "ContactSelfMAX",
-      "actions": [{ "type": "email", "to": "cube.gardens.website@gmail.com" }],
+      "actions": [{ "type": "email", "to": "dariusz@lakomski.pl" }],
      "fields": {
        "name": { "type": "text", "required": true },
         "email": { "type": "email", "required": true },

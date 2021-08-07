@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const StyledNavigation = styled.nav`
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 12vh;
   padding: 1rem;

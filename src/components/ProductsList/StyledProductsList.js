@@ -15,6 +15,10 @@ export const StyledLink = styled(Link)`
   width: 100%;
   height: 350px;
 
+  &:active {
+    outline: 0.5px solid ${({ theme }) => theme.colors.lightGrey};
+  }
+
   @media (min-width: 768px) {
     width: 48%;
   }
