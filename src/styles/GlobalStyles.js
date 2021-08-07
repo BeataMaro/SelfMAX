@@ -44,7 +44,7 @@ export const GlobalStyles = createGlobalStyle`
   section { 
   max-width: 1200px;
   background-color: ${({ theme }) => theme.colors.white};
-  box-shadow: ${({ theme }) => theme.shadows.shadow1};
+  box-shadow: ${({ theme }) => theme.shadows.shadow3};
   padding: 2rem;
   margin: auto;
   }
