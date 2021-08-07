@@ -31,6 +31,7 @@ export const StyledNavlist = styled.ul`
       white-space: nowrap;
       transition: all 0.1s ease-in;
       font-size: 1.2rem;
+      font-weight: 400;
       cursor: pointer;
 
       &.desktop {
@@ -71,7 +72,6 @@ export const StyledNavlist = styled.ul`
       @media (max-width: 992px) {
         font-size: 1.4rem;
         z-index: 500;
-        color: ${({ theme }) => theme.colors.lightGrey};
         &[products="true"]::before {
           display: none;
         }
@@ -101,7 +101,6 @@ export const StyledNavlist = styled.ul`
 
       & li {
         color: ${({ theme }) => theme.colors.black};
-        font-weight: 400;
         padding: 1.2rem;
         border: 0.05px solid transparent;
         border-bottom: 0.05px solid ${({ theme }) => theme.colors.lightGrey};

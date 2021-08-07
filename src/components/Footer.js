@@ -15,10 +15,11 @@ const StyledFooter = styled.footer`
   }
 
   & p {
-    color: ${({ theme }) => theme.colors.textGrey};
+    color: ${({ theme }) => theme.colors.lightGrey};
     line-height: 1;
     font-size: 0.7rem;
     text-align: right;
+
     &.copyright {
       text-align: left;
     }

@@ -65,11 +65,14 @@ a {
 
 .hero-image {
 clip-path: polygon(0 0, 30% 15%, 70% 15%, 100% 0%, 95% 25%, 100% 65%, 50% 100%, 0 65%, 5% 25%);
-max-width: 40vw;
-position: relative;
+max-width: 70vw;
+margin-top: 1rem;
 
-@media (max-width: 992px) {
-  max-width: 80vw;
+@media (min-width: 768px) {
+  max-width: 65vw;
+}
+@media (min-width: 992px) {
+  max-width: 40vw;
 }
 /* &::after {
   position: absolute;
@@ -94,12 +97,16 @@ position: relative;
 
 .logo {
   max-width: 100%;
-  width: 6rem;
+  width: 4rem;
   max-height: 15vh;
   z-index: 10000;
 
-  @media (max-width: 992px) {
-    width: 5rem; 
+  @media (min-width: 768px) {
+    width: 5rem;
+  }
+
+  @media (min-width: 992px) {
+    width: 6rem; 
   }
 }
 

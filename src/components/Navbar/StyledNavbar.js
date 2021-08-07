@@ -1,17 +1,16 @@
 import styled from "styled-components"
 
 export const StyledNavigation = styled.nav`
-  position: sticky;
-  top: 0;
   width: 100%;
+  height: 13vh;
   padding: 1rem;
-  height: 12vh;
-  /* background-color: ${({ theme }) => theme.colors.black}; */
-  background-color: transparent;
-  color: ${({ theme }) => theme.colors.lightGrey};
+  background-color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.black};
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: ${({ theme }) => theme.shadows.shadow1};
   z-index: 4000;
 `
 //hamburger icon
@@ -39,8 +38,11 @@ export const Navbox = styled.div`
     top: 0;
     right: 0;
     left: 0;
-    background-color: ${({ theme }) => theme.colors.black};
-    box-shadow: ${({ theme }) => theme.shadows.shadow2};
+    background-color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.black};
+
+    /* background-color: ${({ theme }) => theme.colors.black}; */
+    /* box-shadow: ${({ theme }) => theme.shadows.shadow2}; */
   }
 
   &[open] {

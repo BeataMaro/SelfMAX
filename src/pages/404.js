@@ -7,7 +7,7 @@ const StyledError = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   background-color: ${({ theme }) => theme.colors.white};
 

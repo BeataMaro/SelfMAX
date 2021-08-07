@@ -14,9 +14,7 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 992px) {
-  }
+  padding: 2rem;
 `
 
 const StyledHero = styled.article`

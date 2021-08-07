@@ -3,7 +3,6 @@ import styled from "styled-components"
 
 const StyledText = styled.article`
   width: 50vw;
-  margin: 2rem auto;
   background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
   height: 100%;
@@ -38,9 +37,11 @@ const terms = () => {
         przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich
         danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o
         ochronie danych). Dokument określa jakie dane i na jakich zasadach
-        przetwarzamy i jak dbamy o ich bezpieczeństwo i Państwa prawa.
-        Administratorem Państwa danych osobowych jest firma Selfmax. z siedzibą
-        przy ul. ..... ; NIP: .....; Regon: ..........; KRS: ......
+        przetwarzamy i jak dbamy o ich bezpieczeństwo i Państwa prawa. Dane
+        pochodzące z formularza kontaktowego posłużą nam jedynie do
+        odpowiedzenia na Państwa pytania. Administratorem Państwa danych
+        osobowych jest firma Selfmax. z siedzibą przy ul. ..... ; NIP: .....;
+        Regon: ..........; KRS: ......
       </p>
     </StyledText>
   )
