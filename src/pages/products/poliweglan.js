@@ -41,7 +41,7 @@ const Poliweglan = () => {
       <Seo title="Zadaszenia z Poliwęglanu" />
       <StyledProductsDetails ref={sectionRef}>
         <BreadCrumbs />
-        <h2 className="section-title">Zadaszenia z poliwęglanu</h2>
+        <h2 className="section-title">Zadaszenia z&nbsp; poliwęglanu</h2>
         <p>
           Poliwęglan komorowy grubości 16 mm ze zintegrowanym filtrem UV tworzy
           optymalną osłonę przeciwsłoneczną. Zatrzymuje 30% światła dzięki czemu

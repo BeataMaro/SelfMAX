@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Hamburger = styled.div`
-  background-color: ${({ theme }) => theme.colors.textGrey};
+  background-color: ${({ theme }) => theme.colors.black};
   width: 60px;
   height: 0.3rem;
   border-radius: 40px;
@@ -13,10 +13,10 @@ const Hamburger = styled.div`
     transform: rotate(-45deg);
     width: 30px;
     height: 0.2rem;
-    background-color: ${({ theme }) => theme.colors.lightGrey};
+    background-color: ${({ theme }) => theme.colors.black};
     &:hover,
     &:hover::before {
-      background-color: ${({ theme }) => theme.colors.white};
+      background-color: ${({ theme }) => theme.colors.textGrey};
     }
   }
 
@@ -26,7 +26,7 @@ const Hamburger = styled.div`
     content: "";
     height: 0.3rem;
     border-radius: 40px;
-    background-color: ${({ theme }) => theme.colors.textGrey};
+    background-color: ${({ theme }) => theme.colors.black};
     transition: all 0.3s linear;
   }
 
@@ -44,7 +44,7 @@ const Hamburger = styled.div`
     transform: rotate(-90deg) translate(-10px, 0) rotate(0deg);
     width: 30px;
     height: 0.2rem;
-    background-color: ${({ theme }) => theme.colors.lightGrey};
+    background-color: ${({ theme }) => theme.colors.black};
   }
 
   &[open]::after {

@@ -40,9 +40,7 @@ export const Navbox = styled.div`
     left: 0;
     background-color: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.black};
-
-    /* background-color: ${({ theme }) => theme.colors.black}; */
-    /* box-shadow: ${({ theme }) => theme.shadows.shadow2}; */
+    box-shadow: ${({ theme }) => theme.shadows.shadow1};
   }
 
   &[open] {

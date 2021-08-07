@@ -10,7 +10,7 @@ export const StyledProducts = styled.div`
 `
 export const StyledLink = styled(Link)`
   overflow: hidden;
-  border-radius: 4%;
+  border-radius: 2%;
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   width: 100%;
   height: 350px;
