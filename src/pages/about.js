@@ -15,7 +15,7 @@ const StyledTopArticle = styled.article`
 
   img {
     min-width: 600px;
-    max-height: 300px;
+    max-height: 50vh;
   }
 
   @media (max-width: 992px) {
