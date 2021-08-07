@@ -64,8 +64,8 @@ a {
 }
 
 .hero-image {
-/* clip-path: polygon(0 0, 30% 15%, 70% 15%, 100% 0%, 95% 25%, 100% 65%, 50% 100%, 0 65%, 5% 25%); */
-clip-path: polygon(50% 0%, 100% 30%, 92% 100%, 9% 100%, 0% 30%);
+clip-path: polygon(0 0, 30% 15%, 70% 15%, 100% 0%, 95% 25%, 100% 65%, 50% 100%, 0 65%, 5% 25%);
+/* clip-path: polygon(50% 0%, 100% 30%, 92% 100%, 9% 100%, 0% 30%); */
 
 max-width: 70vw;
 margin-top: 1rem;
@@ -76,18 +76,6 @@ margin-top: 1rem;
 @media (min-width: 992px) {
   max-width: 50vw;
 }
-/* &::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 50%;
-  bottom: 0;
-  content: "";
-  display: block;
-  width: 50%;
-  height: 100%;
-  background-color: yellow;
-  } */
 }
 
 .hero-button {

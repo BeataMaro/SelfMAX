@@ -41,11 +41,11 @@ const Lamele = () => {
         <BreadCrumbs />
         <h2 className="section-title">Lamele</h2>
         <p>
-          Zadaszenie z poszyciem z lameli to najbardziej funkcjonalne i
-          efektowne rozwiązanie, które jest wizytówką twojego domu. Sterowane
-          pilotem, dają pełną kontrolę nad ilością światła na tarasie. Tego typu
-          pergola ochroni Cię przed upałami w najgorętsze dni lub przed opadami,
-          gdy pogoda się pogorszy.{" "}
+          Zadaszenie z&nbsp; poszyciem z&nbsp; lameli to najbardziej
+          funkcjonalne i&nbsp; efektowne rozwiązanie, które jest wizytówką
+          twojego domu. Sterowane pilotem, dają pełną kontrolę nad ilością
+          światła na tarasie. Tego typu pergola ochroni Cię przed upałami
+          w&nbsp; najgorętsze dni lub przed opadami, gdy pogoda się pogorszy.
         </p>
         <Slider {...settings} className="slider">
           {carouselImages.map((img, idx) => (

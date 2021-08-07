@@ -42,9 +42,9 @@ const Ogrodyzimowe = () => {
         <BreadCrumbs />
         <h2 className="section-title">Ogrody zimowe</h2>
         <p>
-          Najlepszy sposób na przedłużenie sezonu letniego. W ogrodzie zimowym
-          możemy zamontować ogrzewanie na podczerwień uruchamiane pilotem, które
-          dosłownie w ciągu minuty ogrzeje twój taras.
+          Najlepszy sposób na przedłużenie sezonu letniego. W&nbsp; ogrodzie
+          zimowym możemy zamontować ogrzewanie na podczerwień uruchamiane
+          pilotem, które dosłownie w&nbsp; ciągu minuty ogrzeje twój taras.
           <br /> Możesz się nim cieszyć nawet wtedy, gdy aura nie zachęca do
           wychodzenia na zewnątrz.
         </p>
