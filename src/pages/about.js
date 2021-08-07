@@ -44,7 +44,7 @@ const StyledBottomArticle = styled.div`
 `
 
 const StyledText = styled.article`
-  width: 50%;
+  width: 40%;
   margin-left: ${({ top }) => (top ? "2rem" : "0")};
   margin-right: ${({ top }) => (top ? "0" : "2rem")};
 
