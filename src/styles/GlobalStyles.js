@@ -64,7 +64,9 @@ a {
 }
 
 .hero-image {
-clip-path: polygon(0 0, 30% 15%, 70% 15%, 100% 0%, 95% 25%, 100% 65%, 50% 100%, 0 65%, 5% 25%);
+/* clip-path: polygon(0 0, 30% 15%, 70% 15%, 100% 0%, 95% 25%, 100% 65%, 50% 100%, 0 65%, 5% 25%); */
+clip-path: polygon(50% 0%, 100% 30%, 92% 100%, 9% 100%, 0% 30%);
+
 max-width: 70vw;
 margin-top: 1rem;
 
@@ -72,7 +74,7 @@ margin-top: 1rem;
   max-width: 65vw;
 }
 @media (min-width: 992px) {
-  max-width: 40vw;
+  max-width: 50vw;
 }
 /* &::after {
   position: absolute;
@@ -85,11 +87,13 @@ margin-top: 1rem;
   width: 50%;
   height: 100%;
   background-color: yellow;
-  filter: blur(4px);
   } */
 }
 
 .hero-button {
+  @media (max-width: 768px) {
+    font-size: .5rem;
+  }
   @media (max-width: 992px) {
     font-size: .8rem;
   }

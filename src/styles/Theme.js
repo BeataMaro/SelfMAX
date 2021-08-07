@@ -11,8 +11,8 @@ const theme = {
     error: "hsl(350, 85%, 49%)",
   },
   shadows: {
-    shadow1: "1px 4px 5px rgba(30, 30, 31, 0.2)",
-    shadow2: "4px 4px 0 hsl(41, 95%, 50%)",
+    shadow1: "0 5px 5px -2px rgb(0 0 0 / 30%)",
+    shadow2: "3px 3px 0 hsl(41, 95%, 50%)",
     shadow3: "0 50px 50px -10px rgb(0 0 0 / 30%)",
   },
 }

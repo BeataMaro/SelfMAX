@@ -22,12 +22,14 @@ const StyledHero = styled.article`
     color: transparent;
     -webkit-text-stroke: 1px ${({ theme }) => theme.colors.main};
     text-shadow: ${({ theme }) => theme.shadows.shadow2};
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: 200;
     text-align: center;
     margin: 0;
+    letter-spacing: 3px;
 
     @media (max-width: 768px) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 
