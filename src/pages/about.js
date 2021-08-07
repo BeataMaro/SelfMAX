@@ -56,6 +56,7 @@ const StyledText = styled.article`
   p {
     margin: 0.8rem 0;
     line-height: 1.4;
+    font-size: 1.1rem;
     color: ${({ theme }) => theme.colors.textGrey};
   }
 `

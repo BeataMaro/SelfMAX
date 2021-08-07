@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const StyledProductsDetails = styled.section`
   p {
+    font-size: 1.1rem;
     line-height: 1.8rem;
     margin: 2rem 0;
     color: ${({ theme }) => theme.colors.textGrey};
