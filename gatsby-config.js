@@ -16,10 +16,6 @@ module.exports = {
     contact: "beata.maro@yahoo.com",
     author: "Beata Maro",
     menuLinks: [
-      // {
-      //   name: `Strona główna`,
-      //   link: `/`,
-      // },
       {
         name: `Produkty`,
         link: `/products`,

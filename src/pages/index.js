@@ -6,7 +6,7 @@ import Seo from "../components/Seo"
 export default function Home() {
   return (
     <>
-      <Seo title="Strona Główna" />
+      <Seo title="SelfMAX" />
       <Hero />
     </>
   )
