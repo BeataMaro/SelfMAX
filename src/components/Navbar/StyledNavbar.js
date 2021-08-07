@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const StyledNavigation = styled.nav`
   width: 100%;
-  height: 13vh;
+  height: 12vh;
   padding: 1rem;
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.black};
