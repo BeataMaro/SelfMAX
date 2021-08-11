@@ -42,7 +42,7 @@ const Dachyrzymskie = () => {
         <h2 className="section-title">Dachy rzymskie</h2>
         <p>
           Szczególnie polecane na lato, otwierane i&nbsp;zamykane zdalnie.
-          Poszycie jest wykonane z mocnego, wodoodpornego płótna,
+          Poszycie jest wykonane z&nbsp;mocnego, wodoodpornego płótna,
           z&nbsp;możliwością zamontowania oświetlenia zintegrowanego
           z&nbsp;konstrukcją. Dach rzymski tworzy na twoim tarasie przytulny,
           wakacyjny klimat.

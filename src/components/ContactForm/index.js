@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import { Link } from "gatsby"
-import { useForm, ValidationError } from "@formspree/react"
+import { useForm } from "@formspree/react"
 
 import { StyledForm, StyledInfo, StyledTerms } from "./StyledContactForm"
 import { Button } from "../atoms/Button"
@@ -53,7 +53,7 @@ const ContactForm = () => {
         </Button>
         {state.errors.length > 0 && (
           <span className="error">
-            Wypełnij poprawnie pola formularza oznaczone gwiadką.
+            Wypełnij poprawnie pola formularza oznaczone gwiazdką.
           </span>
         )}
 
@@ -101,7 +101,7 @@ const ContactForm = () => {
       </Button>
       {state.errors.length > 0 && (
         <span className="error">
-          Wypełnij poprawnie pola formularza oznaczone gwiadką.
+          Wypełnij poprawnie pola formularza oznaczone gwiazdką.
         </span>
       )}
     </StyledForm>

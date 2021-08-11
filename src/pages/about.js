@@ -35,14 +35,7 @@ const StyledBottomArticle = styled.div`
   }
 
   img {
-    width: 40vw;
-    min-width: 600px;
     max-width: 100%;
-
-    @media (max-width: 992px) {
-      width: 90vw;
-      max-height: 60vh;
-    }
   }
 `
 
@@ -80,7 +73,10 @@ const About = () => {
         <h2 className="section-title">O nas</h2>
 
         <StyledTopArticle>
-          <GatsbyImage image={aboutImg} alt="Plants and rock wall" />
+          <GatsbyImage
+            image={aboutImg}
+            alt="Zadaszenie z poliwęglanu - realizacja"
+          />
           <StyledText top>
             <p>
               Selfmax doskonali się w&nbsp;montażu zadaszeń aluminiowych od 2001
@@ -99,7 +95,7 @@ const About = () => {
         <StyledBottomArticle>
           <StaticImage
             src="../assets/hero/hero-flip-blurred.jpg"
-            alt="polycarbonate roof"
+            alt="Ogród zimowy"
           />
           <StyledText>
             <p>

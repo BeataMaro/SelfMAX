@@ -8,10 +8,6 @@ const StyledText = styled.article`
   height: 100%;
   padding: 2rem;
 
-  @media (max-width: 768px) {
-    width: 90vw;
-  }
-
   h2 {
     margin-bottom: 2rem;
   }

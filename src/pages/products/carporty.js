@@ -44,9 +44,9 @@ const Carporty = () => {
         <h2 className="section-title">Carporty</h2>
         <article>
           <p>
-            Wjazd o szerokości do 7,5 m bez konieczności wstawiania dodatkowych
-            podpór pośrodku sprawia, że możesz swobodnie parkować 3 pojazdy.
-            Poszycie paneli izolacyjnych w 100% chroni twoje auta przed
+            Wjazd o&nbsp;szerokości do 7,5 m bez konieczności wstawiania
+            dodatkowych podpór pośrodku sprawia, że możesz swobodnie parkować 3
+            pojazdy. Poszycie paneli izolacyjnych w 100% chroni twoje auta przed
             nagrzewaniem i&nbsp;jednocześnie zapewnia wytrzymałość na obciążenie
             śniegiem odpowiednią nawet dla rejonów górskich.
           </p>
