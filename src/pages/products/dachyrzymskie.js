@@ -41,11 +41,11 @@ const Dachyrzymskie = () => {
         <BreadCrumbs />
         <h2 className="section-title">Dachy rzymskie</h2>
         <p>
-          Szczególnie polecane na lato, otwierane i&nbsp; zamykane zdalnie.
-          Poszycie jest wykonane z mocnego, wodoodpornego płótna, z&nbsp;
-          możliwością zamontowania oświetlenia zintegrowanego z&nbsp;
-          konstrukcją. Dach rzymski tworzy na twoim tarasie przytulny, wakacyjny
-          klimat.
+          Szczególnie polecane na lato, otwierane i&nbsp;zamykane zdalnie.
+          Poszycie jest wykonane z mocnego, wodoodpornego płótna,
+          z&nbsp;możliwością zamontowania oświetlenia zintegrowanego
+          z&nbsp;konstrukcją. Dach rzymski tworzy na twoim tarasie przytulny,
+          wakacyjny klimat.
         </p>
         <Slider {...settings} className="slider">
           {images.map((img, idx) => (

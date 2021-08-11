@@ -7,6 +7,7 @@ import {
   StyledIcons,
   StyledIcon,
   StyledCol,
+  StyledAddress,
 } from "./StyledContactInfo"
 
 const ContactInfo = () => {
@@ -49,6 +50,10 @@ const ContactInfo = () => {
           </a>
         </StyledCol>
       </StyledIcons>
+      <StyledAddress>
+        <p>Niedersulzer Straße 2,</p>
+        <p> 2225 Loidesthal, Austria</p>
+      </StyledAddress>
     </StyledInfo>
   )
 }

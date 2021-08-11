@@ -41,11 +41,11 @@ const Poliweglan = () => {
       <Seo title="Zadaszenia z Poliwęglanu" />
       <StyledProductsDetails ref={sectionRef}>
         <BreadCrumbs />
-        <h2 className="section-title">Zadaszenia z&nbsp; poliwęglanu</h2>
+        <h2 className="section-title">Zadaszenia z&nbsp;poliwęglanu</h2>
         <p>
           Poliwęglan komorowy grubości 16 mm ze zintegrowanym filtrem UV tworzy
           optymalną osłonę przeciwsłoneczną. Zatrzymuje 30% światła dzięki czemu
-          na twoim tarasie jest wciąż jasno, a&nbsp; jednocześnie promienie
+          na twoim tarasie jest wciąż jasno, a&nbsp;jednocześnie promienie
           słoneczne przestają być uciążliwe. Połączenie tych zalet ze stosunkowo
           niskimi kosztami sprawia, że jest to najczęściej wybierane
           rozwiązanie.

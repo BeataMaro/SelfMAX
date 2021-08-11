@@ -22,7 +22,6 @@ export const StyledContainer = styled.div`
       0 65%,
       5% 25%
     );
-    /* clip-path: polygon(50% 0%, 100% 30%, 92% 100%, 9% 100%, 0% 30%); */
 
     max-width: 70vw;
     margin-top: 1rem;
@@ -47,17 +46,15 @@ export const StyledContainer = styled.div`
 
 export const StyledHero = styled.article`
   h1 {
-    color: transparent;
-    -webkit-text-stroke: 1px ${({ theme }) => theme.colors.main};
-    text-shadow: ${({ theme }) => theme.shadows.shadow2};
+    color: ${({ theme }) => theme.colors.main};
     font-size: 4rem;
-    font-weight: 200;
+    font-weight: 500;
     text-align: center;
     margin: 0;
     letter-spacing: 3px;
 
     @media (max-width: 768px) {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
   }
 

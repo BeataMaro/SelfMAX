@@ -19,7 +19,7 @@ const Hero = () => {
           <h1>
             <strong>SelfMAX</strong>
           </h1>
-          <h2>Zadaszenia | Ogrody zimowe | Wiaty</h2>
+          <h2>Zadaszenia | Ogrody zimowe | Carporty</h2>
         </StyledHero>
 
         <StaticImage

@@ -22,7 +22,8 @@ export const Button = styled.button`
     color: ${({ empty, theme }) =>
       empty ? theme.colors.white : theme.colors.white};
   }
-  &:active {
+  &:active,
+  &:focus {
     outline: 0.5px solid ${({ theme }) => theme.colors.lightGrey};
   }
 `

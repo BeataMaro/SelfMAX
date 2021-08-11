@@ -35,7 +35,7 @@ export const StyledCol = styled.div`
   align-items: flex-start;
 `
 
-export const StyledIcon = styled.div`
+export const StyledIcon = styled.article`
   width: 3rem;
   height: 3rem;
   color: ${({ theme }) => theme.colors.darkGrey};
@@ -44,4 +44,8 @@ export const StyledIcon = styled.div`
   display: grid;
   place-items: center;
   margin-right: 1rem;
+`
+export const StyledAddress = styled.article`
+  margin: 2rem 0;
+  line-height: 1.5rem;
 `

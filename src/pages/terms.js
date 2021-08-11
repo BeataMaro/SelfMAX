@@ -41,7 +41,7 @@ const terms = () => {
         pochodzące z formularza kontaktowego posłużą nam jedynie do
         odpowiedzenia na Państwa pytania. Administratorem Państwa danych
         osobowych jest firma Selfmax. z siedzibą przy ul. ..... ; NIP: .....;
-        Regon: ..........; KRS: ......
+        Regon: ..........;
       </p>
     </StyledText>
   )
