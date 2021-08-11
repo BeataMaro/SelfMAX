@@ -35,19 +35,21 @@ const StyledBottomArticle = styled.div`
   }
 
   img {
-    width: 45vw;
+    width: 40vw;
+    min-width: 600px;
     max-width: 100%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       width: 90vw;
+      max-height: 60vh;
     }
   }
 `
 
 const StyledText = styled.article`
-  width: 40%;
-  margin-left: ${({ top }) => (top ? "1.2rem" : "0")};
-  margin-right: ${({ top }) => (top ? "0" : "1.2rem")};
+  width: 45%;
+  margin-left: ${({ top }) => (top ? "1.5rem" : "0")};
+  margin-right: ${({ top }) => (top ? "0" : "1.5rem")};
 
   @media (max-width: 992px) {
     width: 100%;

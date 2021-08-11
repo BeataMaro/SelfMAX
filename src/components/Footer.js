@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`
@@ -22,6 +23,10 @@ const StyledFooter = styled.footer`
 
     &.copyright {
       text-align: left;
+      line-height: 1rem;
+      .cookies {
+        text-align: left;
+      }
     }
   }
 
@@ -34,10 +39,13 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <p className="copyright">
-        &copy; 2021 SelfMAX. Wszelkie prawa zastrzeżone.
+        <span>&copy; 2021 SelfMAX. Wszelkie prawa zastrzeżone.</span>
+        <p class="cookies">
+          <Link to="/terms">Polityka prywatności.</Link>
+        </p>
       </p>
       <p>
-        Powered by{" "}
+        Powered by&nbsp;
         <a
           href="https://beatamaro-portfolio.netlify.app"
           target="_blank"
