@@ -59,7 +59,7 @@ const Error404Page = () => {
         <StyledLink to="/">Wróć na stronę główną</StyledLink>
       </StyledInfo>
       <StaticImage
-        src="../assets/hero/poliweglan-hero.png"
+        src="../assets/hero/404Page.png"
         alt="Dom z zadaszeniem z poliwęglanu"
       />
     </StyledError>

@@ -8,7 +8,7 @@ import styled from "styled-components"
 import { StyledProductsDetails } from "../../components/StyledProductsDetails"
 import BreadCrumbs from "../../components/BreadCrumbs"
 import { animationMoveX } from "../../styles/Animations"
-import gif from "../../assets/products/Zabudowa/gifs/gif.gif"
+import gif from "../../assets/products/Zabudowa/gifs/zabudowa.gif"
 import ContactCorner from "../../components/ContactCorner"
 import Seo from "../../components/Seo"
 

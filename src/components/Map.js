@@ -29,7 +29,7 @@ const Map = () => {
         target="_blank"
       >
         <StyledMap>
-          <StaticImage src="../assets/map.PNG" alt="google map location" />
+          <StaticImage src="../assets/location.jpg" alt="google map location" />
         </StyledMap>
       </a>
     </article>
