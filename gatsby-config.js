@@ -12,7 +12,6 @@ module.exports = {
     title: `SelfMAX`,
     description:
       "Zadaszenia tarasowe, carporty, pergole, ogrody zimowe. Szybka realizacja, 10-letnia gwarancja, trwałość i estetyka.",
-    image: "/hero-house.png",
     copyright: "U+00A9 2021 | Beata Maro",
     contact: "beata.maro@yahoo.com",
     author: "Beata Maro",
