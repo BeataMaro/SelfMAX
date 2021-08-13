@@ -19,6 +19,7 @@ function Seo({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -27,6 +28,7 @@ function Seo({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const image = site.siteMetadata?.image
 
   return (
     <Helmet
@@ -49,23 +51,27 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: image,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
-          name: `twitter:card`,
+          name: `facebook:card`,
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
+          name: `facebook:creator`,
           content: site.siteMetadata?.author || ``,
         },
         {
-          name: `twitter:title`,
+          name: `facebook:title`,
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: `facebook:description`,
           content: metaDescription,
         },
       ].concat(meta)}
@@ -76,7 +82,7 @@ function Seo({ description, lang, meta, title }) {
 Seo.defaultProps = {
   lang: `pl`,
   meta: [],
-  description: ``,
+  description: `Zadaszenia tarasowe, carporty, pergole, ogrody zimowe. Szybka realizacja, 10-letnia gwarancja, trwałość i estetyka.`,
 }
 
 Seo.propTypes = {
