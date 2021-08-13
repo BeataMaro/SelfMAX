@@ -9,11 +9,17 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
 
 function Seo({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, file } = useStaticQuery(
     graphql`
       query {
+        file(relativeDirectory: { eq: "about" }) {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED)
+          }
+        }
         site {
           siteMetadata {
             title
@@ -26,9 +32,9 @@ function Seo({ description, lang, meta, title }) {
     `
   )
 
+  const image = getImage(file.childImageSharp)
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const image = site.siteMetadata?.image
 
   return (
     <Helmet
