@@ -87,8 +87,8 @@ module.exports = {
         name: `SelfMAX`,
         short_name: `SelfMAX`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#373634`,
+        theme_color: `#f9ac06`,
         display: "standalone",
         icon: "src/assets/logo-SelfMAX.png", // This path is relative to the root of the site.
         crossOrigin: `use-credentials`,
