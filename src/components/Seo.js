@@ -62,6 +62,10 @@ function Seo({ description, lang, meta, title }) {
           content: image.images.fallback.src,
         },
         {
+          property: `og:image:alt`,
+          content: `SelfMAX - zadaszenia z poliwęglanu`,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
