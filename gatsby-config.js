@@ -15,6 +15,7 @@ module.exports = {
     copyright: "U+00A9 2021 | Beata Maro",
     image:
       "https://selfmaxpl.gatsbyjs.io/static/0bcbdda5165e33cc44c802d2ffaca166/993d6/hero-house.webp",
+    facebookUsername: "@SelfmaxPolska",
     contact: "beata.maro@yahoo.com",
     author: "Beata Maro",
     menuLinks: [

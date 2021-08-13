@@ -33,6 +33,7 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const image = getImage(file.childImageSharp)
+  // console.log(image.images.fallback.src)
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
@@ -58,7 +59,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: image,
+          content: image.images.fallback.src,
         },
         {
           property: `og:type`,
