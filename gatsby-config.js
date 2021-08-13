@@ -13,7 +13,7 @@ module.exports = {
     description:
       "Zadaszenia tarasowe, carporty, pergole, ogrody zimowe. Szybka realizacja, 10-letnia gwarancja, trwałość i estetyka.",
     copyright: "U+00A9 2021 | Beata Maro",
-    image: "/about/hero-house.png",
+    image: "src/assets/about/hero-house.png",
     contact: "beata.maro@yahoo.com",
     author: "Beata Maro",
     menuLinks: [
