@@ -25,7 +25,6 @@ function Seo({ description, lang, meta, title }) {
             title
             description
             author
-            image
           }
         }
       }
@@ -33,7 +32,6 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const image = getImage(file.childImageSharp)
-  // console.log(image.images.fallback.src)
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
