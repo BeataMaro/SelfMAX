@@ -46,6 +46,10 @@ export const StyledForm = styled.form`
       color: ${({ theme }) => theme.colors.main};
     }
   }
+  .error {
+    color: ${({ theme }) => theme.colors.error};
+    white-space: pre-line;
+  }
 `
 
 export const StyledTerms = styled.div`
@@ -54,6 +58,9 @@ export const StyledTerms = styled.div`
   a {
     color: ${({ theme }) => theme.colors.textGrey};
     margin-left: 4px;
+  }
+  .checkboxInpt {
+    margin-right: 1rem;
   }
 `
 

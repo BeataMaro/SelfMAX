@@ -62,7 +62,6 @@ export const StyledNavlist = styled.ul`
         }
         &:hover::before {
           transform: rotate(180deg);
-          color: ${({ theme }) => theme.colors.main};
         }
         &:hover::after {
           visibility: hidden;

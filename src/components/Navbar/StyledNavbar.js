@@ -8,13 +8,27 @@ export const StyledNavigation = styled.nav`
   padding: 1rem;
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.black};
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: ${({ theme }) => theme.shadows.shadow1};
   z-index: 4000;
+  .logo {
+    max-width: 100%;
+    width: 4rem;
+    max-height: 12vh;
+    z-index: 10000;
+
+    @media (min-width: 768px) {
+      width: 5rem;
+    }
+
+    @media (min-width: 992px) {
+      width: 6rem;
+    }
+  }
 `
+
 //hamburger icon
 export const Toggle = styled.div`
   display: none;

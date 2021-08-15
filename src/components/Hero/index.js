@@ -13,28 +13,24 @@ const Hero = () => {
   }, [])
 
   return (
-    <>
-      <StyledContainer>
-        <StyledHero ref={heroRef}>
-          <h1>
-            <strong>SelfMAX</strong>
-          </h1>
-          <h2>Zadaszenia | Ogrody zimowe | Carporty</h2>
-        </StyledHero>
-
-        <StaticImage
-          src="../../assets/hero/hero2.jpg"
-          alt="Zadaszenie z poliwęglanu"
-          placeholder="blurred"
-          className="hero-image"
-        ></StaticImage>
+    <StyledContainer>
+      <StyledHero ref={heroRef}>
+        <h1>SelfMAX</h1>
+        <h2>Zadaszenia&nbsp;|&nbsp;Ogrody zimowe&nbsp;|&nbsp;Carporty</h2>
         <Link to="/products">
           <Button empty role="button" className="hero-button">
             Dowiedz się wiecej
           </Button>
         </Link>
-      </StyledContainer>
-    </>
+      </StyledHero>
+
+      <StaticImage
+        src="../../assets/hero/hero2.jpg"
+        alt="Zadaszenie z poliwęglanu"
+        placeholder="blurred"
+        className="hero-image"
+      ></StaticImage>
+    </StyledContainer>
   )
 }
 

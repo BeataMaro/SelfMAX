@@ -7,6 +7,38 @@ export const StyledProducts = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+
+  .lamele {
+    &::after {
+      content: "Lamele";
+    }
+  }
+  .carporty {
+    &::after {
+      content: "Carporty";
+    }
+  }
+  .ogrodyzimowe {
+    &::after {
+      content: "Ogrody zimowe";
+    }
+  }
+  .zabudowa {
+    &::after {
+      content: "Zabudowa";
+    }
+  }
+
+  .poliweglan {
+    &::after {
+      content: "Zadaszenia z poliwęglanu";
+    }
+  }
+  .dachyrzymskie {
+    &::after {
+      content: "Dachy rzymskie";
+    }
+  }
 `
 export const StyledLink = styled(Link)`
   overflow: hidden;
