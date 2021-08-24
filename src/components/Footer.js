@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`
@@ -39,9 +38,6 @@ export const Footer = () => {
     <StyledFooter>
       <div className="copyright">
         <p>&copy; 2021 SelfMAX. Wszelkie prawa zastrzeżone.</p>
-        <Link to="/terms" className="cookies">
-          Polityka prywatności.
-        </Link>
       </div>
       <p>
         Powered by&nbsp;
