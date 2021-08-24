@@ -41,11 +41,7 @@ export const Footer = () => {
       </div>
       <p>
         Powered by&nbsp;
-        <a
-          href="https://beatamaro-portfolio.netlify.app"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://beatamaro.github.io/" target="_blank" rel="noreferrer">
           Beta
         </a>
       </p>
